@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "2eeb882c-0569-4479-94cc-94f9a652e537": {
+      "ProjectGuid": "2eeb882c-0569-4479-94cc-94f9a652e537",
+      "DisplayName": "LocalBus",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}
