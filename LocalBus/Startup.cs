@@ -1,4 +1,6 @@
 ﻿using LocalBus.Context;
+using LocalBus.Repositories;
+using LocalBus.Repositories.Interfaces;
 using Microsoft.EntityFrameworkCore;
 
 namespace LocalBus;
@@ -16,6 +18,9 @@ public class Startup
     {
         services.AddControllersWithViews();
         services.AddDbContext<AppDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+        services.AddTransient<IAdministradorRepository, AdministradorRepository>();
+        services.AddTransient<IEscolaRepository,EscolaRepository>();
+        services.AddTransient<IPontoRepository, PontoRepository>();
     }
 
     // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
