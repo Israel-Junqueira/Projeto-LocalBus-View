@@ -8,9 +8,7 @@
     ".NETCoreApp,Version=v6.0": {
       "LocalBus/1.0.0": {
         "dependencies": {
-          "BingMapsIntellisense_6": "6.3.81310.1036",
-          "BingMapsIntellisense_7": "7.0.20140710",
-          "Microsoft.AspNet.WebHelpers": "3.2.7",
+          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "6.0.1",
           "Microsoft.EntityFrameworkCore.Design": "6.0.3",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.3",
           "Microsoft.EntityFrameworkCore.Tools": "6.0.3",
@@ -20,8 +18,6 @@
           "LocalBus.dll": {}
         }
       },
-      "BingMapsIntellisense_6/6.3.81310.1036": {},
-      "BingMapsIntellisense_7/7.0.20140710": {},
       "Humanizer.Core/2.8.26": {
         "runtime": {
           "lib/netstandard2.0/Humanizer.dll": {
@@ -56,66 +52,34 @@
         }
       },
       "MessagePackAnalyzer/2.1.152": {},
-      "Microsoft.AspNet.Razor/3.2.7": {
+      "Microsoft.AspNetCore.Cryptography.Internal/6.0.1": {
         "runtime": {
-          "lib/net45/System.Web.Razor.dll": {
-            "assemblyVersion": "3.0.0.0",
-            "fileVersion": "3.0.61128.0"
+          "lib/net6.0/Microsoft.AspNetCore.Cryptography.Internal.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.121.56714"
           }
         }
       },
-      "Microsoft.AspNet.WebHelpers/3.2.7": {
+      "Microsoft.AspNetCore.Cryptography.KeyDerivation/6.0.1": {
         "dependencies": {
-          "Microsoft.AspNet.WebPages": "3.2.7",
-          "Microsoft.AspNet.WebPages.WebData": "3.2.7"
+          "Microsoft.AspNetCore.Cryptography.Internal": "6.0.1"
         },
         "runtime": {
-          "lib/net45/Microsoft.Web.Helpers.dll": {
-            "assemblyVersion": "3.0.0.0",
-            "fileVersion": "3.0.61128.0"
+          "lib/net6.0/Microsoft.AspNetCore.Cryptography.KeyDerivation.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.121.56714"
           }
         }
       },
-      "Microsoft.AspNet.WebPages/3.2.7": {
+      "Microsoft.AspNetCore.Identity.EntityFrameworkCore/6.0.1": {
         "dependencies": {
-          "Microsoft.AspNet.Razor": "3.2.7",
-          "Microsoft.Web.Infrastructure": "1.0.0"
+          "Microsoft.EntityFrameworkCore.Relational": "6.0.3",
+          "Microsoft.Extensions.Identity.Stores": "6.0.1"
         },
         "runtime": {
-          "lib/net45/System.Web.Helpers.dll": {
-            "assemblyVersion": "3.0.0.0",
-            "fileVersion": "3.0.61128.0"
-          },
-          "lib/net45/System.Web.WebPages.Deployment.dll": {
-            "assemblyVersion": "3.0.0.0",
-            "fileVersion": "3.0.61128.0"
-          },
-          "lib/net45/System.Web.WebPages.Razor.dll": {
-            "assemblyVersion": "3.0.0.0",
-            "fileVersion": "3.0.61128.0"
-          },
-          "lib/net45/System.Web.WebPages.dll": {
-            "assemblyVersion": "3.0.0.0",
-            "fileVersion": "3.0.61128.0"
-          }
-        }
-      },
-      "Microsoft.AspNet.WebPages.Data/3.2.7": {
-        "runtime": {
-          "lib/net45/WebMatrix.Data.dll": {
-            "assemblyVersion": "3.0.0.0",
-            "fileVersion": "3.0.61128.0"
-          }
-        }
-      },
-      "Microsoft.AspNet.WebPages.WebData/3.2.7": {
-        "dependencies": {
-          "Microsoft.AspNet.WebPages.Data": "3.2.7"
-        },
-        "runtime": {
-          "lib/net45/WebMatrix.WebData.dll": {
-            "assemblyVersion": "3.0.0.0",
-            "fileVersion": "3.0.61128.0"
+          "lib/net6.0/Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll": {
+            "assemblyVersion": "6.0.1.0",
+            "fileVersion": "6.0.121.56714"
           }
         }
       },
@@ -1034,6 +998,32 @@
         }
       },
       "Microsoft.Extensions.DependencyInjection.Abstractions/6.0.0": {},
+      "Microsoft.Extensions.Identity.Core/6.0.1": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Cryptography.KeyDerivation": "6.0.1",
+          "Microsoft.Extensions.Logging": "6.0.0",
+          "Microsoft.Extensions.Options": "6.0.0"
+        },
+        "runtime": {
+          "lib/net6.0/Microsoft.Extensions.Identity.Core.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.121.56714"
+          }
+        }
+      },
+      "Microsoft.Extensions.Identity.Stores/6.0.1": {
+        "dependencies": {
+          "Microsoft.Extensions.Caching.Abstractions": "6.0.0",
+          "Microsoft.Extensions.Identity.Core": "6.0.1",
+          "Microsoft.Extensions.Logging": "6.0.0"
+        },
+        "runtime": {
+          "lib/net6.0/Microsoft.Extensions.Identity.Stores.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.121.56714"
+          }
+        }
+      },
       "Microsoft.Extensions.Logging/6.0.0": {
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection": "6.0.0",
@@ -1249,14 +1239,6 @@
           "lib/net6.0/Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll": {
             "assemblyVersion": "6.0.2.0",
             "fileVersion": "6.0.222.10402"
-          }
-        }
-      },
-      "Microsoft.Web.Infrastructure/1.0.0": {
-        "runtime": {
-          "lib/net40/Microsoft.Web.Infrastructure.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.20105.407"
           }
         }
       },
@@ -2290,20 +2272,6 @@
       "serviceable": false,
       "sha512": ""
     },
-    "BingMapsIntellisense_6/6.3.81310.1036": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-bcP309p08SLIpGBQlCWHnDTrTJWk2/tgg6Jp/DScx04EgrQ7j2xL+8WBmleXo8/FcgHdDCz+FSWSyAugSgxZXA==",
-      "path": "bingmapsintellisense_6/6.3.81310.1036",
-      "hashPath": "bingmapsintellisense_6.6.3.81310.1036.nupkg.sha512"
-    },
-    "BingMapsIntellisense_7/7.0.20140710": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-Z0wEC6BA4vZ/Mbd2qtbn/lzHfpO9E12/WIO9hyAeT9xJlHpw4duw4+nhcgjErvKwLvx0+K8ZI3x4WS6+R33GMw==",
-      "path": "bingmapsintellisense_7/7.0.20140710",
-      "hashPath": "bingmapsintellisense_7.7.0.20140710.nupkg.sha512"
-    },
     "Humanizer.Core/2.8.26": {
       "type": "package",
       "serviceable": true,
@@ -2332,40 +2300,26 @@
       "path": "messagepackanalyzer/2.1.152",
       "hashPath": "messagepackanalyzer.2.1.152.nupkg.sha512"
     },
-    "Microsoft.AspNet.Razor/3.2.7": {
+    "Microsoft.AspNetCore.Cryptography.Internal/6.0.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-BpWEZ+Ys7g9VAkbAfpG5jr5A1fKcmadCCXv3fYfps5YfTVABJIGV4uc9yvmXKxsNsjL+BzDld2gs+xtgT2gg1g==",
-      "path": "microsoft.aspnet.razor/3.2.7",
-      "hashPath": "microsoft.aspnet.razor.3.2.7.nupkg.sha512"
+      "sha512": "sha512-nWXqkRSqJFnCaSiH6g4Ld2xhjdYhuS7iuWKMlEanhJxo79b939BV5e8j32JLW6bp9O3w8aPeiIa2UnN+Q585ag==",
+      "path": "microsoft.aspnetcore.cryptography.internal/6.0.1",
+      "hashPath": "microsoft.aspnetcore.cryptography.internal.6.0.1.nupkg.sha512"
     },
-    "Microsoft.AspNet.WebHelpers/3.2.7": {
+    "Microsoft.AspNetCore.Cryptography.KeyDerivation/6.0.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-nHJFEnvCcTI/9aYZ0PJAd7l1J+XA9UMb8FCOYP/WN6sV3G20LD1ZdL/CS0AczBzPyr5H/h2ys9w1QtfGIgfcTA==",
-      "path": "microsoft.aspnet.webhelpers/3.2.7",
-      "hashPath": "microsoft.aspnet.webhelpers.3.2.7.nupkg.sha512"
+      "sha512": "sha512-v/AU/L3M/48mgj3Y7Vavi2ZIrw7PASwj5lERk2bkGVDmQr3+edzJrHscrmdtJ/3OWOOsi3PNyRWMvFnRlbpDLw==",
+      "path": "microsoft.aspnetcore.cryptography.keyderivation/6.0.1",
+      "hashPath": "microsoft.aspnetcore.cryptography.keyderivation.6.0.1.nupkg.sha512"
     },
-    "Microsoft.AspNet.WebPages/3.2.7": {
+    "Microsoft.AspNetCore.Identity.EntityFrameworkCore/6.0.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-2jwZFB7PvY+tbdz0ZP4iEo7gMrJxkCQUzoGLh6swUc6ZXl6DoKyDslmGcC/j9PFmJXCRMVIqtRorlPSMU2DuRA==",
-      "path": "microsoft.aspnet.webpages/3.2.7",
-      "hashPath": "microsoft.aspnet.webpages.3.2.7.nupkg.sha512"
-    },
-    "Microsoft.AspNet.WebPages.Data/3.2.7": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-wRnglowAe94/SMZpwEYKfXLe6U0yYu4bxMOBPIZyBAH0WE8m8I3wU43p7ZTOCTfOLWHalJ3cvN73Y23BBZqPbg==",
-      "path": "microsoft.aspnet.webpages.data/3.2.7",
-      "hashPath": "microsoft.aspnet.webpages.data.3.2.7.nupkg.sha512"
-    },
-    "Microsoft.AspNet.WebPages.WebData/3.2.7": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-AxvuTZdF1Z216x0ErUw/84QNsf42PuSFr0V3tUAzm8v0tVdg2SYTgRRxF9TgTRfkG3RA1Om5dmlyS3x3/MYotQ==",
-      "path": "microsoft.aspnet.webpages.webdata/3.2.7",
-      "hashPath": "microsoft.aspnet.webpages.webdata.3.2.7.nupkg.sha512"
+      "sha512": "sha512-FklKd0TXUaYExsSLte5k6w2krmHgUrGtbxX+vS4YEOx9yyP3DWYld0TPUplkPbyM/iNv7ou1xK63Yg+tQAiRNA==",
+      "path": "microsoft.aspnetcore.identity.entityframeworkcore/6.0.1",
+      "hashPath": "microsoft.aspnetcore.identity.entityframeworkcore.6.0.1.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Razor.Language/6.0.0": {
       "type": "package",
@@ -2626,6 +2580,20 @@
       "path": "microsoft.extensions.dependencyinjection.abstractions/6.0.0",
       "hashPath": "microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512"
     },
+    "Microsoft.Extensions.Identity.Core/6.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-m5rHD6apZDqOC7H7igyu04QtFRZYbD5rj1senEW+kWDHH2I4YTu40/cVgCMjqXjmiyCwXLsmMLWCq+p2B2Gppg==",
+      "path": "microsoft.extensions.identity.core/6.0.1",
+      "hashPath": "microsoft.extensions.identity.core.6.0.1.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Identity.Stores/6.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-/EjHGlkcQvWJCdnFWIkrPeuxOjrFjp8gHk3C9PxgNG4eW4fKakmKwPcchljl3lRsiOwX2hGeYMzHpX3QRPPE1g==",
+      "path": "microsoft.extensions.identity.stores/6.0.1",
+      "hashPath": "microsoft.extensions.identity.stores.6.0.1.nupkg.sha512"
+    },
     "Microsoft.Extensions.Logging/6.0.0": {
       "type": "package",
       "serviceable": true,
@@ -2772,13 +2740,6 @@
       "sha512": "sha512-PKNDmK8SyZZ2b/bKtKvgqRsi6jibeVUkQFjdFEtL4ROOWiqnGiBgxN0o2A+rr3WsE5klU3b6HS6JpwlMjCklkQ==",
       "path": "microsoft.visualstudio.web.codegenerators.mvc/6.0.2",
       "hashPath": "microsoft.visualstudio.web.codegenerators.mvc.6.0.2.nupkg.sha512"
-    },
-    "Microsoft.Web.Infrastructure/1.0.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-FNmvLn5m2LTU/Rs2KWVo0SIIh9Ek+U0ojex7xeDaSHw/zgEP77A8vY5cVWgUtBGS8MJfDGNn8rpXJWEIQaPwTg==",
-      "path": "microsoft.web.infrastructure/1.0.0",
-      "hashPath": "microsoft.web.infrastructure.1.0.0.nupkg.sha512"
     },
     "Microsoft.Win32.Primitives/4.3.0": {
       "type": "package",

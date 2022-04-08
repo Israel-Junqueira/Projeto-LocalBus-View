@@ -1,10 +1,12 @@
 ﻿using LocalBus.Models;
+using Microsoft.AspNetCore.Identity; // para usaar o IdentityUser
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
 
 namespace LocalBus.Context
 {
-    public class AppDbContext:DbContext
+    public class AppDbContext: IdentityDbContext<IdentityUser>
     {
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) 
         {
@@ -16,8 +18,11 @@ namespace LocalBus.Context
         public DbSet<EscolaPonto> EscolasPontos { get; set; }
         public DbSet<TipoImagem> Image { get; set; }
 
+     
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+
+            base.OnModelCreating(modelBuilder);
 
             modelBuilder.Entity<EscolaPonto>()
               .HasOne(e => e.Escola)
@@ -39,10 +44,11 @@ namespace LocalBus.Context
             modelBuilder.Entity<ImagemEscola>()
               .HasOne(e => e.TipoImagem)
               .WithMany(ep => ep.ImagemEscola)
-              .HasForeignKey(ei => ei.ImagemId);
+              .HasForeignKey(ei => ei.TipoImagemId);
 
 
         }
+         
 
     }
 }

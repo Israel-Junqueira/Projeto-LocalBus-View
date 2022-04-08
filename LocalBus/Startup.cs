@@ -1,6 +1,7 @@
 ﻿using LocalBus.Context;
 using LocalBus.Repositories;
 using LocalBus.Repositories.Interfaces;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
 namespace LocalBus;
@@ -16,6 +17,10 @@ public class Startup
     // This method gets called by the runtime. Use this method to add services to the container.
     public void ConfigureServices(IServiceCollection services)
     {
+        services.AddIdentity<IdentityUser, IdentityRole>()      //Serviço do IdentityUser
+            .AddEntityFrameworkStores<AppDbContext>()
+            .AddDefaultTokenProviders();
+
         services.AddControllersWithViews();
         services.AddDbContext<AppDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
         services.AddTransient<IEscolaRepository,EscolaRepository>();
@@ -41,6 +46,7 @@ public class Startup
 
         app.UseRouting();
 
+        app.UseAuthentication(); //adicionado para o Identity
         app.UseAuthorization();
 
         app.UseEndpoints(endpoints =>
@@ -49,5 +55,9 @@ public class Startup
                 name: "default",
                 pattern: "{controller=Home}/{action=Index}/{id?}");
         });
+
+
+      
+   
     }
 }

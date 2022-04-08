@@ -7,8 +7,8 @@ namespace LocalBus.Models
         public int ImagemEscolaId { get; set; }
         public int EscolaId { get; set; }
         public Escola Escola { get; set; }
-        public int ImagemId { get; set; }
-        public TipoImagem TipoImagem { get; set; }
+        public int TipoImagemId { get; set; }
+        public TipoImagem TipoImagem{ get; set; }
 
       
     }
