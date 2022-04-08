@@ -14,8 +14,7 @@ namespace LocalBus.Context
         public DbSet<Escola> Escolas { get; set; }
         public DbSet<Ponto> Pontos { get; set; }
         public DbSet<EscolaPonto> EscolasPontos { get; set; }
-        public DbSet<Administrador> Administrador { get; set; }
-
+        public DbSet<TipoImagem> Image { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -30,6 +29,20 @@ namespace LocalBus.Context
               .HasOne(e => e.Ponto)
               .WithMany(ep => ep.Escolas_Ponto)
               .HasForeignKey(ei => ei.PontoId);
+
+            modelBuilder.Entity<ImagemEscola>()
+            .HasOne(e => e.Escola)
+            .WithMany(ep => ep.ImagemEscolas)
+            .HasForeignKey(ei => ei.EscolaId); //isso vem da EscolaPontos
+
+
+            modelBuilder.Entity<ImagemEscola>()
+              .HasOne(e => e.TipoImagem)
+              .WithMany(ep => ep.ImagemEscola)
+              .HasForeignKey(ei => ei.ImagemId);
+
+
         }
+
     }
 }

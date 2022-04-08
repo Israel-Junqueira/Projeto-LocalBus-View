@@ -9,6 +9,12 @@ namespace LocalBus.Repositories
     {
 
         private readonly AppDbContext _context;
+
+        public PontoRepository(AppDbContext context)
+        {
+            _context = context;
+        }
+
         public IEnumerable<Ponto> Pontos => _context.Pontos.Include(c=> c.Escolas_Ponto);
 
         public IEnumerable<Ponto> AtivoPonto => _context.Pontos.Where(a=> a.AtivoPonto).Include(e => e.Escolas_Ponto);

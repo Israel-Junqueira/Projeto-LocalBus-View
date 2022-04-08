@@ -28,11 +28,9 @@ namespace LocalBus.Models
         [Display(Name = "Insira o codigo da escola")]
         public int CodigoDaEtec { get; set; }
 
-        [DataType(DataType.ImageUrl)]
-        public string ImagemUrl { get; set; }
-        public string ImageThumbnailUrl { get; set; }
         public ICollection<EscolaPonto> Escola_Ponto { get; set; }
+        public ICollection<ImagemEscola> ImagemEscolas { get; set; }
 
-        public ICollection<Administrador> Administradors { get; set; }
+
     }
 }
