@@ -52,7 +52,8 @@ namespace LocalBus.Migrations
                     latitudePonto = table.Column<double>(type: "float", nullable: false),
                     LongitudePonto = table.Column<double>(type: "float", nullable: false),
                     AtivoPonto = table.Column<bool>(type: "bit", nullable: false),
-                    DescriçãoPonto = table.Column<string>(type: "nvarchar(max)", nullable: true)
+                    DescriçãoPonto = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Nome = table.Column<string>(type:"nvarchar(100)",nullable: false)
                 },
                 constraints: table =>
                 {

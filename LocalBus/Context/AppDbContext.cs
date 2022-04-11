@@ -16,7 +16,6 @@ namespace LocalBus.Context
         public DbSet<Escola> Escolas { get; set; }
         public DbSet<Ponto> Pontos { get; set; }
         public DbSet<EscolaPonto> EscolasPontos { get; set; }
-        public DbSet<TipoImagem> Image { get; set; }
 
      
         protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -32,7 +31,7 @@ namespace LocalBus.Context
 
             modelBuilder.Entity<EscolaPonto>()
               .HasOne(e => e.Ponto)
-              .WithMany(ep => ep.Escolas_Ponto)
+              .WithMany(ep => ep.Escola_Ponto)
               .HasForeignKey(ei => ei.PontoId);
 
             modelBuilder.Entity<ImagemEscola>()

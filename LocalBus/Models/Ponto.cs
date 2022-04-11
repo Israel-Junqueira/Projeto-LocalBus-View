@@ -14,6 +14,13 @@ namespace LocalBus.Models
         public bool AtivoPonto { get; set; }
         public string DescriçãoPonto { get; set; }
 
-        public ICollection<EscolaPonto> Escolas_Ponto { get; set; }
+        [Required(ErrorMessage = "Insira o nome do ponto")]
+        public string Nome { get; set; }
+
+        public ICollection<EscolaPonto> Escola_Ponto { get; set; }
+
+
+
+
     }
 }

@@ -5,15 +5,14 @@ using Microsoft.EntityFrameworkCore;
 
 namespace LocalBus.Repositories
 {
-    public class EscolaRepository : IEscolaRepository
+    public class EscolaPontoRepository : IEscolaPontoRepository
     {
         private readonly AppDbContext _context;
-
-        public EscolaRepository(AppDbContext context)
+        public EscolaPontoRepository(AppDbContext context )
         {
             _context = context;
         }
 
-        public IEnumerable<Escola> Escolas => _context.Escolas.Include(e=>e.Escola_Ponto);
+        public IEnumerable<EscolaPonto> EscolaPontos => _context.EscolasPontos.Include(c => c.Escola).Include(c => c.Ponto);
     }
 }
