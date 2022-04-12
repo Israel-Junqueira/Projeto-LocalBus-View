@@ -22,10 +22,9 @@ public class Startup
             .AddDefaultTokenProviders();
 
         services.AddControllersWithViews();
-        services.AddDbContext<AppDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
-        services.AddTransient<IEscolaRepository,EscolaRepository>();
-        services.AddTransient<IPontoRepository, PontoRepository>();
-        services.AddTransient<ITipoImagemRepository,TIpoImagemRepository>();
+        services.AddDbContext<AppDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"))); // Container DI ele cria a instancia
+        services.AddTransient<IPontoRepository,PontoRepository>();
+       
     }
 
     // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

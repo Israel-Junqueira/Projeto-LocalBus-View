@@ -1,8 +1,8 @@
-﻿@model LocalBus.Models.EscolaPonto
-@{  
-    ViewBag.Title = "Home Page";  
-}  
-  
+﻿@model IEnumerable<LocalBus.Models.Ponto>
+
+  @{
+
+  }
 
 <div class="row">  
     <div class="col-md-9 map">  
@@ -27,7 +27,7 @@
             var marker = new Microsoft.Maps.Pushpin(new Microsoft.Maps.Location(latitude, longitude), { color: 'green' });  
   
             infobox = new Microsoft.Maps.Infobox(marker.getLocation(), {  
-                visible : false  
+                visible : true  
             });  
   
             marker.metadata = {  
@@ -58,8 +58,19 @@
         function hideInfobox(e) {  
             infobox.setOptions({ visible: false });  
         }  
-   
+
+        
+           //adiciona marcadores ao mapa  
+        @if  (Model !=  null )  
+        {  
+            foreach ( var  item  in  Model)  
+            {  
+                @:addMarker(@item.latitudePonto, @item.LongitudePonto,  '@item.Nome' ,  '@item.DescriçãoPonto' , @item.PontoId);  
+            }  
+        }  
     }  
+   
+    
 </script>  
 <script type='text/javascript' src='https://www.bing.com/api/maps/mapcontrol?branch=release&callback=loadMapScenario' async defer></script>  
   
