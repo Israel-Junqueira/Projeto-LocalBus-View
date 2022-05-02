@@ -14,5 +14,7 @@ namespace LocalBus.Repositories
         }
 
         public IEnumerable<Ponto> Pontosrepository => _context.Pontos;
+
+        public IEnumerable<Escola> Escolarepository => _context.Escolas;
     }
 }
