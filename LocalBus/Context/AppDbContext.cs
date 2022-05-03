@@ -12,7 +12,7 @@ namespace LocalBus.Context
         {
 
         }
-
+    
         public DbSet<Escola> Escolas { get; set; }
         public DbSet<Ponto> Pontos { get; set; }
         public DbSet<EscolaPonto> EscolasPontos { get; set; }
