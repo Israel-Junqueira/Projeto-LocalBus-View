@@ -1,5 +1,7 @@
 ﻿using System.Linq;
 using System.ComponentModel.DataAnnotations;
+using LocalBus.Context;
+
 namespace LocalBus.Models
 {
     public class Ponto
@@ -18,9 +20,6 @@ namespace LocalBus.Models
         public string Nome { get; set; }
 
         public ICollection<EscolaPonto> Escola_Ponto { get; set; }
-
-
-
 
     }
 }

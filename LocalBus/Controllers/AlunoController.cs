@@ -17,6 +17,7 @@ namespace LocalBus.Controllers
 
         public IActionResult Index()
         {
+
             var Pontos = _context.Pontosrepository;
            
             return View(Pontos);

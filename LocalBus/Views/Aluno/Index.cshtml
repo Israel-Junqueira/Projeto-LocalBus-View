@@ -2,82 +2,101 @@
 
 
  
-
+<!DOCTYPE html>
 <html>
-    <head>
-
+<head>
          <meta charset="UTF-8">
          <meta http-equiv="X-UA-Compatible" content="IE=edge">
-         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-         <title>Document</title>
          <script src="~/js/mapa.js"></script>
-         <script type='text/javascript' src='https://www.bing.com/api/maps/mapcontrol?callback=GetMap' async defer></script>
-     </head>
-     <div class="container">
-        <div class="row">
-            <div class="col">
-                <div class="d-flex justify-content-center">
-                    <button type="button" class="btn btn-success btn-lg" onclick="iniciarjogo()">Buscar</button>
+         <script type='text/javascript' src='https://www.bing.com/api/maps/mapcontrol?callback=GetMap&key=AkclvbgfjdRI43pyQ7TM48Mx0Gz8LpXOJzYsm8-T3b7fFOt2n-GMm0USIPHg-YLu&setLang=pt&setMkt=PT-BR' async defer></script>
+</head>
+<body onload = "GetMap()">
 
-                    <select id="nivel">
-                        <option value="">Selecione a escola</option>
-                        <option value="galinha">.......</option>
-                        <option value="Normal">........</option>
-                        <option value="Chuck">.......</option>
-                        <option value="brabo">...........</option>
-                    </select>
-                </div>
-            </div>
-        </div>
-    </div>
-    <p></p>
+<div id="myMap" style="position:relative;width:1100px;height:500px;"></div>
+<p> </p>
 
-<body>
-    <div id="myMap" style="position:relative;width:1100px;height:500px;"></div>
 
- 
+       @{
+        string[] latitude = new string[@Model.Count()];
+        string[] longitude = new string[@Model.Count()];
+        List<string> NomedosPontos = new List<string>();
+        var cont = 0;
+    }   
 
     @{
-        double[] vetlatidude = new double[Model.Count()];
-        double[] vetlongitude = new double[Model.Count()];
-        int cont = 0;
-     }
+        foreach (var item in Model)
+        {
+            NomedosPontos.Add(item.Nome);
+            latitude[cont]=Convert.ToString( item.latitudePonto);
+            longitude[cont]=Convert.ToString( item.LongitudePonto);
+            cont++;
 
-    @foreach (var item in Model)
-    {
-        
-        vetlatidude[cont] = item.latitudePonto; 
-        vetlongitude[cont] = item.LongitudePonto;
-        cont++;
+        }
     }
 
-   @* @{
-        for (int i = 0; i < Model.Count(); i++)
+    @{
+        var cont2 = 0;
+        foreach (var item in latitude)
         {
-            <h1>@vetlatidude[i]</h1>
-            <h1>@vetlongitude[i]</h1>
+            latitude[cont2] = item.Replace(',', '.');
+            cont2++;
+
         }
-    }*@
-    
-       
 
- 
+        foreach (var item in longitude)
+        {
+            longitude[cont2] = item.Replace(',', '.');
+            cont2++;
+        }
 
- 
-   <script>
-       
+        }
 
-        var lat ='@vetlatidude[0]';
-        var long='@vetlongitude[0]';
 
-        convtlat = lat.replace(/,/gi,".")
-        convtlong = long.replace(/,/gi,".")
+      <div>
+         <label for="latitude">Latitude:&nbsp;&nbsp;&nbsp;</label>
+         <input type="text" name="latitude" value="@latitude[0]"/>
+       </div>
+       <div>
+         <label for="latitude">Latitude:&nbsp;&nbsp;&nbsp;</label>
+         <input type="text" name="latitude" value="@longitude[0]"/>
+       </div>
 
-      getcoordenadas(convtlat,convtlong)
+<script>
+
+
+        function GetMap() {
         
-       
+             
+            var map = new Microsoft.Maps.Map('#myMap', { center: new Microsoft.Maps.Location(-22.488375, -48.559304), zoom: 13 });
+          
+            map.setView({
+                mapTypeId: Microsoft.Maps.MapTypeId.aerial
+            });
+            
 
-    </script>
-   
+                var loc2 = new Microsoft.Maps.Location(@latitude[0],@longitude[0])
+                var pin2 = new Microsoft.Maps.Pushpin(loc2);
+                map.entities.push(pin2);
+        
+                //map.setView({ center: loc2, zoom: 15 }); da o zoom
+        }  
+
+         function loadPins() {
+              try {
+                  for (var i = 0; i < pinLatitude.length; i++) {
+
+                      var pushpin = new Microsoft.Maps.Pushpin(new Microsoft.Maps.Location(pinLatitude[i], pinLogitude[i]),{ draggable: true });
+                      pushpin.setOptions({ visible: true });
+                      map.entities.push(pushpin);
+
+                  }
+              }
+              catch (err) {
+                alert(err)
+              }
+          }
+
+
+</script>
 </body>
 </html>
