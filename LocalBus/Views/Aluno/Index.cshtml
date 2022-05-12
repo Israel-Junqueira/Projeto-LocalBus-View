@@ -1,4 +1,5 @@
-﻿@model IEnumerable<LocalBus.Models.Ponto>
+﻿
+@model EscolaListViewModel
 
 
  
@@ -11,17 +12,40 @@
          <script type='text/javascript' src='https://www.bing.com/api/maps/mapcontrol?callback=GetMap&key=AkclvbgfjdRI43pyQ7TM48Mx0Gz8LpXOJzYsm8-T3b7fFOt2n-GMm0USIPHg-YLu&setLang=pt&setMkt=PT-BR' async defer></script>
 </head>
 <body onload = "GetMap()">
+    @* ----------------------------------------------------------------------------------------*@
+  
+    <div class="container text-center" style="padding: 20px">
+        <div class="row">
+           <div class= "dropdown">
+              <a class = "btn btn-secondary dropdown-toggle" role="button"
+                          id = "dropdownMenuLink" data-bs-toggle = "dropdown" aria-expanded="false">Escolas</a>
+                <ul class="dropdown-menu">
+                        
+                    @foreach (var item in Model.NomesDasEscolas)
+                    {
+                        <partial name="_EscolasNomes" for="@item"/>
+                    }
 
-<div id="myMap" style="position:relative;width:1100px;height:500px;"></div>
+                    <li class="dropdown-divider"></li>
+                    <li>
+                        <a class = "dropdown-item" asp-controller="Produto" asp-action="List" asp-route-categoria =""
+                        style ="color:black">Todos os Pontos</a>
+                    </li> 
+    
+                </ul>
+            </div>
+        </div>
+    </div>
+
+  @* ----------------------------------------------------------------------------------------*@
+<div id="myMap" style="position:relative;width:1100px;height:500px;" class="text-center"></div>
 <p> </p>
 
-
+        
 <script>
 
         function GetMap() {
-            let coordenadas =   @Html.Raw(Json.Serialize(Model.Select(x => new { x.latitudePonto,x.LongitudePonto} ).ToArray()));    
 
-            console.log(coordenadas)
 
             var map = new Microsoft.Maps.Map('#myMap', { center: new Microsoft.Maps.Location(-22.488375, -48.559304), zoom: 13 });
           
@@ -34,11 +58,7 @@
                 var pin2 = new Microsoft.Maps.Pushpin(loc2);
                 map.entities.push(pin2);
             
-                for (var i = 0; i < coordenadas.length  ; i++) {
-                     var pushpin = new Microsoft.Maps.Location(coordenadas[i].latitudePonto, coordenadas[i].longitudePonto);
-                     var pushpin2 = new Microsoft.Maps.Pushpin(pushpin)
-                     map.entities.push(pushpin2);
-                 }
+          
         }  
 
 </script>

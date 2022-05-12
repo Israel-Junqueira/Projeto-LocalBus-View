@@ -23,8 +23,9 @@ public class Startup
 
         services.AddControllersWithViews();
         services.AddDbContext<AppDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"))); // Container DI ele cria a instancia
-        services.AddTransient<IPontoRepository,PontoRepository>();
-       
+        services.AddTransient<IEscolaRepository,EscolaRepository>();
+        services.AddTransient<IPontosRepository,PontosRepository>();
+
     }
 
     // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

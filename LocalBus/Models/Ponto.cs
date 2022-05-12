@@ -4,11 +4,12 @@ using LocalBus.Context;
 
 namespace LocalBus.Models
 {
-    public class Ponto
+   public class Ponto
     {
+        
         public int PontoId { get; set; }
 
-        [Required(ErrorMessage ="Insira a Latitude do Ponto")]
+        [Required(ErrorMessage = "Insira a Latitude do Ponto")]
         public double latitudePonto { get; set; }
 
         [Required(ErrorMessage = "Insira a Longitude do Ponto")]
@@ -20,6 +21,6 @@ namespace LocalBus.Models
         public string Nome { get; set; }
 
         public ICollection<EscolaPonto> Escola_Ponto { get; set; }
-
+    
     }
 }
