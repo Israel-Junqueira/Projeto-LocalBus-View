@@ -1,0 +1,43 @@
+﻿@model PontosDaEscolaIndexViewModel
+
+ 
+<!DOCTYPE html>
+<html>
+<head>
+         <meta charset="UTF-8">
+         <meta http-equiv="X-UA-Compatible" content="IE=edge">
+         <script src="~/js/mapa.js"></script>
+         <script type='text/javascript' src='https://www.bing.com/api/maps/mapcontrol?callback=GetMap&key=AkclvbgfjdRI43pyQ7TM48Mx0Gz8LpXOJzYsm8-T3b7fFOt2n-GMm0USIPHg-YLu&setLang=pt&setMkt=PT-BR' async defer></script>
+</head>
+<body onload = "GetMap()">
+
+<div id="myMap" style="position:relative;width:1100px;height:500px;"></div>
+<p> </p>
+  
+<script>
+    
+        function GetMap() {
+            let coordenadas = @Html.Raw(Json.Serialize(Model.PontoDaescola));    
+            console.log(coordenadas)
+            
+
+            var map = new Microsoft.Maps.Map('#myMap', { center: new Microsoft.Maps.Location(-22.488375, -48.559304), zoom: 13 });
+          
+            map.setView({
+                mapTypeId: Microsoft.Maps.MapTypeId.aerial
+            });
+            var num = 3
+           
+                var loc2 = new Microsoft.Maps.Location(-22.521124,-48.565579)
+                var pin2 = new Microsoft.Maps.Pushpin(loc2);
+                map.entities.push(pin2);
+            
+                for (var i = 0; i < coordenadas.length  ; i++) {
+                     var pushpin = new Microsoft.Maps.Location(coordenadas[i].latitudePonto, coordenadas[i].longitudePonto);
+                     var pushpin2 = new Microsoft.Maps.Pushpin(pushpin)
+                     map.entities.push(pushpin2);
+                 }
+        }  
+</script>
+</body>
+</html>

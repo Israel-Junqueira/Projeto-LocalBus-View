@@ -7,17 +7,17 @@ namespace LocalBus.Repositories
 {
     public class PontosRepository: IPontosRepository
     {
-        private readonly AppDbContext _contect;
+        private readonly AppDbContext _context;
 
         public PontosRepository(AppDbContext contect)
         {
-            _contect = contect;
+            _context = contect;
         }
 
-        public IEnumerable<Ponto> PontosAtivos => _contect.Ponto.Where(p => p.AtivoPonto).Include(p => p.Escola_Ponto);
+        public IEnumerable<Ponto> PontosAtivos => _context.Ponto.Where(p => p.AtivoPonto).Include(p => p.Escola_Ponto);
 
-        IEnumerable<Ponto> IPontosRepository.PontosRepository => _contect.Ponto.Include(c=> c.Escola_Ponto);
+        IEnumerable<EscolaPonto> IPontosRepository.PontosRepository => (IEnumerable<EscolaPonto>)_context.EscolasPontos.Select(c=> c.EscolaPontoId);
 
-        public Ponto GetPontoById(int PontosId) => _contect.Ponto.FirstOrDefault(p => p.PontoId == PontosId);
+        public EscolaPonto GetPontoById(int PontosId) => _context.EscolasPontos.FirstOrDefault(p => p.PontoId == PontosId);
     }
 }

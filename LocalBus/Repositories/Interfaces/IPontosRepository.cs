@@ -4,8 +4,8 @@ namespace LocalBus.Repositories.Interfaces
 {
     public interface IPontosRepository
     {
-        IEnumerable<Ponto> PontosRepository { get; }
-        IEnumerable<Ponto> PontosAtivos { get; }
-        Ponto GetPontoById(int PontoId); 
+      IEnumerable<EscolaPonto> PontosRepository { get; }
+       IEnumerable<Ponto> PontosAtivos { get; }
+        EscolaPonto GetPontoById(int PontoId); 
     }
 }

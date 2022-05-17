@@ -23,13 +23,16 @@
                         
                     @foreach (var item in Model.NomesDasEscolas)
                     {
-                        <partial name="_EscolasNomes" for="@item"/>
+                      <li> 
+                          <a class="dropdown-item" asp-controller="MapAluno" asp-action="Index" style ="color:black"
+                           asp-route-IdEscola="@item.EscolaId">@item.NomeEscola </a>
+                      </li>
                     }
 
                     <li class="dropdown-divider"></li>
                     <li>
-                        <a class = "dropdown-item" asp-controller="Produto" asp-action="List" asp-route-categoria =""
-                        style ="color:black">Todos os Pontos</a>
+                        <a class = "dropdown-item" asp-controller="Aluno" asp-action="Index" asp-route-IdEscola="0"
+                        style ="color:black">Todas as Escolas</a>
                     </li> 
     
                 </ul>
@@ -43,9 +46,9 @@
 
         
 <script>
-
+         
         function GetMap() {
-
+           
 
             var map = new Microsoft.Maps.Map('#myMap', { center: new Microsoft.Maps.Location(-22.488375, -48.559304), zoom: 13 });
           
@@ -58,8 +61,12 @@
                 var pin2 = new Microsoft.Maps.Pushpin(loc2);
                 map.entities.push(pin2);
             
-          
-        }  
+                for (var i = 0; i < coordenadas.length  ; i++) {
+                     var pushpin = new Microsoft.Maps.Location(-22.488375, -48.559304);
+                     var pushpin2 = new Microsoft.Maps.Pushpin(pushpin)
+                     map.entities.push(pushpin2);
+                 }
+        }
 
 </script>
 </body>

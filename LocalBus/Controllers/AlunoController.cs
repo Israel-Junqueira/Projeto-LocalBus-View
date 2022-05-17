@@ -7,7 +7,7 @@ namespace LocalBus.Controllers
 {
     public class AlunoController : Controller
     {
-  
+
         private readonly IEscolaRepository _context;
 
         public AlunoController(IEscolaRepository context)
@@ -15,39 +15,32 @@ namespace LocalBus.Controllers
             _context = context;
         }
 
-        public IActionResult Index(string NomeEscola)
+        public IActionResult Index(int IdEscola)
         {
 
-            IEnumerable<Escola> EscolasIndex;
+            IEnumerable<Escola> EscolasId;
 
             string EscolasAtuais = string.Empty;
 
-            if (string.IsNullOrEmpty(NomeEscola))
+            if (IdEscola == 0)
             {
-                EscolasIndex = _context.EscolaRepository.OrderBy(E => E.EscolaId);
+                EscolasId = _context.EscolaRepository.OrderBy(E => E.EscolaId);
 
             }
             else
             {
-                if (string.Equals("ETEC Comendador João Rayz", NomeEscola, StringComparison.OrdinalIgnoreCase))
-                {
-                    EscolasIndex = _context.EscolaRepository.Where(E => E.NomeEscola.Equals("ETEC Comendador João Rayz")).OrderBy(e => e.NomeEscola);
-                }
-                else
-                {
-                    EscolasIndex = _context.EscolaRepository.Where(E => E.NomeEscola.Equals("ETEC  Engenheiro Herval Bellusci")).OrderBy(e=>e.NomeEscola);
-                }
+                EscolasId = _context.EscolaRepository.Where(P => P.Escola_Ponto.Equals(IdEscola)).OrderBy(c => c.Escola_Ponto.Select(c => c.Ponto.Nome));
             }
 
             var EscolasListViewModel = new EscolaListViewModel
             {
-                NomesDasEscolas = EscolasIndex
+                NomesDasEscolas = EscolasId
             };
-           
+
 
             return View(EscolasListViewModel);
+
+
         }
-
-
     }
 }
