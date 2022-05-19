@@ -14,7 +14,7 @@ namespace LocalBus.Context
         }
     
         public DbSet<Escola> Escola { get; set; }
-        public DbSet<Ponto> Ponto { get; set; }
+        public DbSet<Ponto> Pontos { get; set; }
         public DbSet<EscolaPonto> EscolasPontos { get; set; }
 
      
@@ -33,6 +33,7 @@ namespace LocalBus.Context
               .HasOne(e => e.Ponto)
               .WithMany(ep => ep.Escola_Ponto)
               .HasForeignKey(ei => ei.PontoId);
+
 
             modelBuilder.Entity<ImagemEscola>()
             .HasOne(e => e.Escola)

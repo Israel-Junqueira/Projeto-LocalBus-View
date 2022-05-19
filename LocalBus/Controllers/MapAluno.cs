@@ -2,6 +2,7 @@
 using LocalBus.Repositories.Interfaces;
 using LocalBus.ViewModels;
 using Microsoft.AspNetCore.Mvc;
+using System.Collections.ObjectModel;
 
 namespace LocalBus.Controllers
 {
@@ -15,34 +16,15 @@ namespace LocalBus.Controllers
         {
             _context = context;
         }
-
+        IEnumerable<EscolaPonto> PontosdeEscola;
         public IActionResult Index(int IdEscola)
         {
 
+            PontosdeEscola = _context.PontosDeEscolas.Where(p => p.EscolaId.Equals(IdEscola));
+            return View(PontosdeEscola);
 
-            IEnumerable<Ponto> EscolasId;
-
-            string EscolasAtuais = string.Empty;
-
-            if (IdEscola == 0)
-            {
-                EscolasId = (IEnumerable<Ponto>)_context.PontosRepository.OrderBy(E => E.PontoId);
-
-            }
-            else
-            {
-                EscolasId = (IEnumerable<Ponto>)_context.GetPontoById(IdEscola);
-                    
-            }
-
-            var PontosDaEscolaIndexViewModel = new PontosDaEscolaIndexViewModel
-            {
-               PontoDaescola = EscolasId
-            }; 
-
-
-            return View(PontosDaEscolaIndexViewModel);
-
+            //.Where(p => p.Escola.EscolaId.Equals(IdEscola));
+            //.Where(x => x.Ponto.PontoId == IdEscola);
         }
     }
 }

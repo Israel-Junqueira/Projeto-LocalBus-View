@@ -1,9 +1,10 @@
 ﻿using LocalBus.Models;
+using System.Collections.ObjectModel;
 
 namespace LocalBus.ViewModels
 {
     public class PontosDaEscolaIndexViewModel
     {
-        public IEnumerable<Ponto> PontoDaescola { get; set; }
+        public IEnumerable<Ponto> ObjetosdoRepository { get; set; }
     }
 }

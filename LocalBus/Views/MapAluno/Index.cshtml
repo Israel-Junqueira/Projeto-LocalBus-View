@@ -1,6 +1,5 @@
-﻿@model PontosDaEscolaIndexViewModel
+﻿@model IEnumerable<EscolaPonto>
 
- 
 <!DOCTYPE html>
 <html>
 <head>
@@ -17,9 +16,11 @@
 <script>
     
         function GetMap() {
-            let coordenadas = @Html.Raw(Json.Serialize(Model.PontoDaescola));    
+            let coordenadas = @Html.Raw(Json.Serialize(Model.Select(x => new { x.Ponto.latitudePonto,x.Ponto.LongitudePonto} ).ToArray()));    
+  
+           
             console.log(coordenadas)
-            
+             console.log(coordenadas.length)
 
             var map = new Microsoft.Maps.Map('#myMap', { center: new Microsoft.Maps.Location(-22.488375, -48.559304), zoom: 13 });
           
@@ -28,7 +29,7 @@
             });
             var num = 3
            
-                var loc2 = new Microsoft.Maps.Location(-22.521124,-48.565579)
+                var loc2 = new Microsoft.Maps.Location(-22.513651,-48.55294)
                 var pin2 = new Microsoft.Maps.Pushpin(loc2);
                 map.entities.push(pin2);
             
