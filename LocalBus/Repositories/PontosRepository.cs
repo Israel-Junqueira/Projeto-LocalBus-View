@@ -18,27 +18,26 @@ namespace LocalBus.Repositories
 
         public IEnumerable<Ponto> PontosAtivos => _context.Pontos.Where(p => p.AtivoPonto).Include(p => p.Escola_Ponto);
 
-        IEnumerable<EscolaPonto> IPontosRepository.PontosDeEscolas => _context.EscolasPontos.Include(x=>x.Ponto) ; 
-            
-            
-           //var resultado =_context.EscolasPontos
-           // .Join(_context.EscolasPontos, ponto => ponto.PontoId, EscolaPonto => EscolaPonto.EscolaId, (ponto, EscolaPonto) => new { ponto, EscolaPonto })
-           // .Join(_context.Escola, escolaPonto => escolaPonto.EscolaPonto.EscolaId, escola => escola.EscolaId, (escolaPonto, escola) => new { escolaPonto, escola })
-           // .Select(x => new
-           // {
-           //     x.escolaPonto.ponto.PontoId,
-           //     x.escolaPonto.ponto.Ponto.Nome,
+        IEnumerable<EscolaPonto> IPontosRepository.PontosDeEscolas =>_context.EscolasPontos.Include(x=>x.Ponto) ;
 
-           // });
+        public IEnumerable<Ponto> GetAllPonto() {
 
-        public IEnumerable<Ponto> GetPontoById(int EscolaId) {
-
-            return _context.Pontos.Where(x => x.Escola_Ponto.Equals(EscolaId));
+            return _context.Pontos;
           
         }
 
-          //.Select(x => new {Id_doPonto= x.PontoId,Id_daEscola= x.EscolaId,Objeto_Ponto= x.Ponto })
-          // .Where(x => x.Id_daEscola.Equals(EscolaId));
+       IEnumerable<Escola> IPontosRepository.GetAllEscola()
+        {
+
+            return _context.Escola;
+
+        }
+
+
+
+
+        //.Select(x => new {Id_doPonto= x.PontoId,Id_daEscola= x.EscolaId,Objeto_Ponto= x.Ponto })
+        // .Where(x => x.Id_daEscola.Equals(EscolaId));
 
 
         //_context.EscolasPontos

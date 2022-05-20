@@ -16,15 +16,17 @@ namespace LocalBus.Controllers
         {
             _context = context;
         }
-        IEnumerable<EscolaPonto> PontosdeEscola;
+      
         public IActionResult Index(int IdEscola)
         {
 
-            PontosdeEscola = _context.PontosDeEscolas.Where(p => p.EscolaId.Equals(IdEscola));
-            return View(PontosdeEscola);
+            var pontosdeEscola = _context.PontosDeEscolas.Where(p => p.EscolaId.Equals(IdEscola));
 
-            //.Where(p => p.Escola.EscolaId.Equals(IdEscola));
-            //.Where(x => x.Ponto.PontoId == IdEscola);
+            var resultadoTolist = pontosdeEscola.ToList();
+            return View(resultadoTolist);
+
+
+
         }
     }
 }
