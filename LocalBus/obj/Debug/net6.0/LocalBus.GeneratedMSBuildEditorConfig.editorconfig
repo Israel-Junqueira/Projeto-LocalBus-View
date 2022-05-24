@@ -15,16 +15,12 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\Usuario\Desktop\Geral\1_Informatica\Curso Udemy\ASP.NET\Etec-LocalBus\LocalBus\LocalBus
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Usuario/Desktop/Geral/1_Informatica/Curso Udemy/ASP.NET/Etec-LocalBus/LocalBus/LocalBus/Views/Administracao/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5pc3RyYWNhb1xJbmRleC5jc2h0bWw=
+[C:/Users/Usuario/Desktop/Geral/1_Informatica/Curso Udemy/ASP.NET/Etec-LocalBus/LocalBus/LocalBus/Views/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Usuario/Desktop/Geral/1_Informatica/Curso Udemy/ASP.NET/Etec-LocalBus/LocalBus/LocalBus/Views/Aluno/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWx1bm9cSW5kZXguY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Usuario/Desktop/Geral/1_Informatica/Curso Udemy/ASP.NET/Etec-LocalBus/LocalBus/LocalBus/Views/Cadastrese/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FkYXN0cmVzZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Usuario/Desktop/Geral/1_Informatica/Curso Udemy/ASP.NET/Etec-LocalBus/LocalBus/LocalBus/Views/Home/Index.cshtml]

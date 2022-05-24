@@ -17,6 +17,7 @@ namespace LocalBus.Context
         public DbSet<Ponto> Pontos { get; set; }
         public DbSet<EscolaPonto> EscolasPontos { get; set; }
 
+
      
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

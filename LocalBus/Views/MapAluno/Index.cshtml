@@ -16,26 +16,22 @@
 <script>
     
         function GetMap() {
-            let coordenadas = @Html.Raw(Json.Serialize(Model.Select(x => new { x.Ponto.latitudePonto,x.Ponto.LongitudePonto} ).ToArray()));    
+            let coordenadas = @Html.Raw(Json.Serialize(Model.Select(x => new { x.Ponto.latitudePonto,x.Ponto.LongitudePonto,x.Ponto.Nome} ).ToArray()));    
   
            
             console.log(coordenadas)
-             console.log(coordenadas.length)
 
-            var map = new Microsoft.Maps.Map('#myMap', { center: new Microsoft.Maps.Location(-22.488375, -48.559304), zoom: 13 });
+            var map = new Microsoft.Maps.Map('#myMap', { center: new Microsoft.Maps.Location(-22.489303078308875,-48.54630861383559), zoom: 13 });
           
             map.setView({
                 mapTypeId: Microsoft.Maps.MapTypeId.aerial
             });
             var num = 3
-           
-                var loc2 = new Microsoft.Maps.Location(-22.513651,-48.55294)
-                var pin2 = new Microsoft.Maps.Pushpin(loc2);
-                map.entities.push(pin2);
             
                 for (var i = 0; i < coordenadas.length  ; i++) {
-                     var pushpin = new Microsoft.Maps.Location(coordenadas[i].latitudePonto, coordenadas[i].longitudePonto);
-                     var pushpin2 = new Microsoft.Maps.Pushpin(pushpin)
+                     var pushpin = new Microsoft.Maps.Location(coordenadas[i].latitudePonto, coordenadas[i].longitudePonto)
+                     var pushpin2 = new Microsoft.Maps.Pushpin(pushpin,{
+                     })
                      map.entities.push(pushpin2);
                  }
         }  

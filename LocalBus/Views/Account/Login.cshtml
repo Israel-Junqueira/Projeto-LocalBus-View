@@ -1,0 +1,60 @@
+﻿@model LoginViewModel
+<!-- Section: Design Block -->
+<section class="text-center text-lg-start">
+    <style>
+        .cascading-right {
+            margin-right: -50px;
+        }
+
+    </style>
+
+    <!-- Jumbotron -->
+    <div class="container py-0">
+        <div class="row g-0 align-items-center">
+            <div class="col-lg-6 mb-5 mb-lg-0">
+                <div class="card cascading-right" style="background: hsla(0, 0%, 100%, 0.25); backdrop-filter: blur(30px); margin-top:-200px">
+                    <div class="card-body p-5 shadow-5">
+                        <h2 class="fw-bold mb-5 text-center">LocalBus </h2>
+                        <form asp-controller="Account" asp-action="Login" method="post" class="form-horizontal" role="form">
+                            <div asp-validation-summary="All" class="text-danger"></div>
+                            <input type="hidden" asp-for="ReturnUrl" />
+                            
+                            <div class="col-md-12 mb-4">
+                               
+                                <div class="form-outline">
+                                     <label class="form-label"  for="form3Example1">Username</label>
+                                    <input asp-for="UserName" class="form-control" />
+                                    <span asp-validation-for="UserName" class="text-danger"></span>
+                                   
+                                </div>
+                            </div>
+                            <div class="col-md-12 mb-4">
+                                <div class="form-outline">
+                                    <label class="form-label" for="form3Example1">Password</label>
+                                    <input asp-for="Password" class="form-control " />
+                                    <span asp-validation-for="Password" class="text-danger"></span>
+                                    
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-md-12 text-center  ">
+                                    <button type="submit" class="btn btn-primary btn-block col-md-8 mb-3">
+                                        log in
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="text-center">
+                                <a  asp-controller="Cadastrese" asp-action="Index"> Cadastre-se</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6 mb-2 mb-lg-0">
+                <img src="https://images.pexels.com/photos/4543110/pexels-photo-4543110.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="w-100 rounded-4 shadow-4"
+                     alt="" />
+            </div>
+        </div>
+    </div>
+</section>
