@@ -20,6 +20,25 @@ public class Startup
         services.AddIdentity<IdentityUser, IdentityRole>()      //Serviço do IdentityUser
             .AddEntityFrameworkStores<AppDbContext>()
             .AddDefaultTokenProviders();
+        services.AddSession(options => {
+            options.IdleTimeout = TimeSpan.FromMinutes(1);
+        });
+
+        //cofira o formato das senhas do identity
+
+        services.Configure<IdentityOptions>(options =>
+        {
+            //configurações
+
+            options.Password.RequireDigit = false;
+            options.Password.RequireLowercase = false;
+            options.Password.RequireNonAlphanumeric = false;
+            options.Password.RequireUppercase = true;
+            options.Password.RequiredLength = 6;
+            options.Password.RequiredUniqueChars = 1;
+        });
+
+
 
         services.AddControllersWithViews();
         services.AddDbContext<AppDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"))); // Container DI ele cria a instancia
@@ -43,7 +62,7 @@ public class Startup
         }
         app.UseHttpsRedirection();
         app.UseStaticFiles();
-
+        app.UseSession();
         app.UseRouting();
 
         app.UseAuthentication(); //adicionado para o Identity
@@ -51,6 +70,10 @@ public class Startup
 
         app.UseEndpoints(endpoints =>
         {
+            endpoints.MapControllerRoute(
+           name: "areas",
+           pattern: "{area:exists}/{controller=Admin}/{action=Index}/{id?}"
+         );
             endpoints.MapControllerRoute(
                 name: "default",
                 pattern: "{controller=Home}/{action=Index}/{id?}");

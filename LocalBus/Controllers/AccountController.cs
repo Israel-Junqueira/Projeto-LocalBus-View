@@ -1,6 +1,7 @@
 ﻿using LocalBus.ViewModels;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace LocalBus.Controllers
 {
@@ -46,6 +47,44 @@ namespace LocalBus.Controllers
             }
             ModelState.AddModelError("", "Usuario ou senha invalidos");
             return View(loginVm);
+        }
+
+
+        public IActionResult Registro()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Registro(RegistroViewModel registro)
+        {
+            if (ModelState.IsValid)
+            {
+                var user = new IdentityUser { UserName = registro.UserName };
+                var result = await _userManeger.CreateAsync(user, registro.Password);
+
+                if (result.Succeeded)
+                {
+    
+                    return RedirectToAction("Login", "Account");
+
+                }
+                else
+                {
+                    this.ModelState.AddModelError("", "O seu formulario possui erros! verifique a senha ou email e tente novamente. ");
+                }
+            }
+            return View(registro);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Logout()
+        {//a view desse action e uma partial view criada na pasta shered, -adicionar - view - view razor - check criar um modelo de exibição parcial 
+            HttpContext.Session.Clear();
+            HttpContext.User = null;
+            await _signInManager.SignOutAsync();
+            return RedirectToAction("Index", "Home");
         }
     }
 }

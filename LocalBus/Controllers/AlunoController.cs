@@ -17,6 +17,7 @@ namespace LocalBus.Controllers
 
         public IActionResult Index(int IdEscola)
         {
+            // if (User.Identity.IsAuthenticated) else{return RedirectToAction("login", "Account")}; autenticação para ver 
 
             IEnumerable<Escola> EscolasId;
 
@@ -28,15 +29,11 @@ namespace LocalBus.Controllers
 
 
                 EscolasListViewModel.NomesDasEscolas = EscolasId;
-                
+
             }
-           
-
-           
-
 
             return View(EscolasListViewModel);
-
+            
 
         }
     }

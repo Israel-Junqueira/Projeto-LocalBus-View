@@ -1,0 +1,25 @@
+﻿@using Microsoft.AspNetCore.Identity
+
+
+@inject SignInManager<IdentityUser> SignInManager
+
+@{if (SignInManager.IsSignedIn(User))
+{
+    <form asp-area="" asp-controller="Account" asp-action="Logout" id="logoutForm" method="post" class="navbar-left">
+
+        <ul class="nav-left">
+            <button type="submit" class="btn btn-outline-info" style="width:auto">
+                <img src="https://img.icons8.com/color-glass/2x/username.png" width"30" height="24"> - @User.Identity.Name
+            </button>
+        </ul>
+
+    </form>
+}
+else
+{
+    <ul class="nav-link text-dark">
+        <a class="nav-link text-dark" asp-controller="Account" asp-action="Login" asp-route-returnUrl=@string.Format("{0}{1}",Context.Request.Path, Context.Request.QueryString) style="color:white" &nbsp;Log in&nbsp></a>
+        <a class="nav-link text-dark" asp-controller="Account" asp-action="Registro" style="color:white" &nbsp;Registro&nbsp;&nbsp;&nbsp;> </a>
+    </ul>
+}
+}
