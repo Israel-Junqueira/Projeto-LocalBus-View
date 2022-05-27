@@ -1,6 +1,7 @@
 ﻿using LocalBus.Context;
 using LocalBus.Repositories;
 using LocalBus.Repositories.Interfaces;
+using LocalBus.Services;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
@@ -20,7 +21,8 @@ public class Startup
         services.AddIdentity<IdentityUser, IdentityRole>()      //Serviço do IdentityUser
             .AddEntityFrameworkStores<AppDbContext>()
             .AddDefaultTokenProviders();
-        services.AddSession(options => {
+        services.AddSession(options =>
+        {
             options.IdleTimeout = TimeSpan.FromMinutes(1);
         });
 
@@ -42,13 +44,18 @@ public class Startup
 
         services.AddControllersWithViews();
         services.AddDbContext<AppDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"))); // Container DI ele cria a instancia
-        services.AddTransient<IEscolaRepository,EscolaRepository>();
-        services.AddTransient<IPontosRepository,PontosRepository>();
+        services.AddTransient<IEscolaRepository, EscolaRepository>();
+        services.AddTransient<IPontosRepository, PontosRepository>();
+        services.AddScoped<ISeedUserRoleInitial, SeedUserRoleInitial>();
+
+
+        //necessario usar addPolicy para authenticar o admin
+        services.AddAuthorization(options => { options.AddPolicy("Admin", politica => { politica.RequireRole("Admin"); }); });
 
     }
 
     // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-    public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+    public void Configure(IApplicationBuilder app, IWebHostEnvironment env, ISeedUserRoleInitial seedUserRoleInitial)
     {
         if (env.IsDevelopment())
         {
@@ -65,6 +72,11 @@ public class Startup
         app.UseSession();
         app.UseRouting();
 
+        //cria os perfis
+        seedUserRoleInitial.SeedRoles();
+        //cria os usuarios e atribui ao perfil
+        seedUserRoleInitial.SeedUsers();
+
         app.UseAuthentication(); //adicionado para o Identity
         app.UseAuthorization();
 
@@ -80,7 +92,7 @@ public class Startup
         });
 
 
-      
-   
+
+
     }
 }

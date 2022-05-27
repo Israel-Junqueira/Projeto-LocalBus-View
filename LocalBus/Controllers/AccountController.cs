@@ -1,4 +1,5 @@
-﻿using LocalBus.ViewModels;
+﻿using LocalBus.Models;
+using LocalBus.ViewModels;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore.Migrations;
@@ -62,11 +63,13 @@ namespace LocalBus.Controllers
             if (ModelState.IsValid)
             {
                 var user = new IdentityUser { UserName = registro.UserName };
+                var DadosdaEscola = new Escola { EmailDaEscola = registro.Email, TelefoneDaEscola = registro.TelefonedaEscola, NomeEscola = registro.NomedaEscola};
+
                 var result = await _userManeger.CreateAsync(user, registro.Password);
 
                 if (result.Succeeded)
                 {
-    
+                    await _userManeger.AddToRoleAsync(user, "Member");
                     return RedirectToAction("Login", "Account");
 
                 }
@@ -85,6 +88,11 @@ namespace LocalBus.Controllers
             HttpContext.User = null;
             await _signInManager.SignOutAsync();
             return RedirectToAction("Index", "Home");
+        }
+
+        public IActionResult AccessDenied()
+        {
+            return View();
         }
     }
 }
