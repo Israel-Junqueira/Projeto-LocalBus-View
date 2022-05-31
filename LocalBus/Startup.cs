@@ -51,7 +51,7 @@ public class Startup
 
         //necessario usar addPolicy para authenticar o admin
         services.AddAuthorization(options => { options.AddPolicy("Admin", politica => { politica.RequireRole("Admin"); }); });
-
+        services.AddAuthorization(options => { options.AddPolicy("Member", politica => { politica.RequireRole("Member"); }); });
     }
 
     // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -89,6 +89,10 @@ public class Startup
             endpoints.MapControllerRoute(
                 name: "default",
                 pattern: "{controller=Home}/{action=Index}/{id?}");
+
+           endpoints.MapControllerRoute(
+            name: "Administrador",
+            pattern: "Administrador/{controller=Administrador}/{action=Index}/{id?}");
         });
 
 

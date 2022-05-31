@@ -15,6 +15,22 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\Usuario\Desktop\Geral\1_Informatica\Curso Udemy\ASP.NET\Etec-LocalBus\LocalBus\LocalBus
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/Usuario/Desktop/Geral/1_Informatica/Curso Udemy/ASP.NET/Etec-LocalBus/LocalBus/LocalBus/Areas/Administrador/Views/Administrador/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5pc3RyYWRvclxWaWV3c1xBZG1pbmlzdHJhZG9yXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Usuario/Desktop/Geral/1_Informatica/Curso Udemy/ASP.NET/Etec-LocalBus/LocalBus/LocalBus/Areas/Administrador/Views/Shared/_Layout1.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5pc3RyYWRvclxWaWV3c1xTaGFyZWRcX0xheW91dDEuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Usuario/Desktop/Geral/1_Informatica/Curso Udemy/ASP.NET/Etec-LocalBus/LocalBus/LocalBus/Areas/Administrador/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5pc3RyYWRvclxWaWV3c1xfVmlld0ltcG9ydHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Usuario/Desktop/Geral/1_Informatica/Curso Udemy/ASP.NET/Etec-LocalBus/LocalBus/LocalBus/Areas/Administrador/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5pc3RyYWRvclxWaWV3c1xfVmlld1N0YXJ0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Usuario/Desktop/Geral/1_Informatica/Curso Udemy/ASP.NET/Etec-LocalBus/LocalBus/LocalBus/Areas/Admin/Views/Admin/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
