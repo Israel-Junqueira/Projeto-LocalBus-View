@@ -1,0 +1,54 @@
+﻿@model LocalBus.Models.Ponto
+
+<div class="text-center">
+
+    <h1>Create</h1>
+
+    <h4>Ponto</h4>
+
+</div>
+<div class="row">
+    <div class="col-md-4 " style="margin-left:150px">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Nome" class="control-label"></label>
+                <input asp-for="Nome" class="form-control" />
+                <span asp-validation-for="Nome" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DescriçãoPonto" class="control-label"></label>
+                <input asp-for="DescriçãoPonto" class="form-control" />
+                <span asp-validation-for="DescriçãoPonto" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AtivoPonto" class="control-label"></label>
+                <input type="checkbox" asp-for="AtivoPonto" />
+                <span asp-validation-for="AtivoPonto" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="latitudePonto" class="control-label"></label>
+                <input asp-for="latitudePonto" class="form-control" />
+                <span asp-validation-for="latitudePonto" class="text-danger"></span>
+
+                <label asp-for="LongitudePonto" class="control-label"></label>
+                <input asp-for="LongitudePonto" class="form-control" />
+                <span asp-validation-for="LongitudePonto" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Escola_Ponto" class="control-label"></label>
+                <input asp-for="Escola_Ponto" class="form-control" />
+                <span asp-validation-for="Escola_Ponto" class="text-danger"></span>
+
+            </div>
+
+
+
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+

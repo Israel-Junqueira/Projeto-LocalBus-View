@@ -16,7 +16,7 @@ namespace LocalBus.Repositories
             _context = contect;
         }
 
-        public IEnumerable<Ponto> PontosAtivos => _context.Pontos.Where(p => p.AtivoPonto).Include(p => p.Escola_Ponto);
+        public IEnumerable<Ponto> PontosAtivos => _context.Pontos.Where(p => p.AtivoPonto);
 
         IEnumerable<EscolaPonto> IPontosRepository.PontosDeEscolas =>_context.EscolasPontos.Include(x=>x.Ponto) ;
 

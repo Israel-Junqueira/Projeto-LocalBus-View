@@ -1,0 +1,106 @@
+﻿ 
+<!DOCTYPE html>
+@model IEnumerable<LocalBus.Models.Ponto>
+
+<div class="text-center">
+<h1>Pontos</h1>
+
+<p>
+    <a asp-action="Create" class="btn btn-info">Criar Novo Ponto</a>
+</p>
+</div>
+
+<html>
+<head>
+         <meta charset="UTF-8">
+         <meta http-equiv="X-UA-Compatible" content="IE=edge">
+         <script src="~/js/mapa.js"></script>
+         <script type='text/javascript' src='https://www.bing.com/api/maps/mapcontrol?callback=GetMap&key=AkclvbgfjdRI43pyQ7TM48Mx0Gz8LpXOJzYsm8-T3b7fFOt2n-GMm0USIPHg-YLu&setLang=pt&setMkt=PT-BR' async defer></script>
+</head>
+<body onload = "GetMap()">
+
+<div id="myMap" style="position:absolute;width:500px;height:450px; margin-left:100px"></div>
+<p> </p>
+
+
+<script>
+    
+        function GetMap() {
+            let coordenadas = @Html.Raw(Json.Serialize(ViewData["EscolaPonto"]));    
+            console.log(coordenadas)
+
+
+            var map = new Microsoft.Maps.Map('#myMap', { center: new Microsoft.Maps.Location(-22.489303078308875,-48.54630861383559), zoom: 13 });
+          
+            map.setView({
+                mapTypeId: Microsoft.Maps.MapTypeId.aerial
+            });
+            var num = 3
+            
+                for (var i = 0; i < coordenadas.length  ; i++) {
+                     var pushpin = new Microsoft.Maps.Location(coordenadas[i].latitudePonto, coordenadas[i].longitudePonto)
+                     var pushpin2 = new Microsoft.Maps.Pushpin(pushpin,{
+                     })
+                     map.entities.push(pushpin2);
+                 }
+        }  
+</script>
+</body>
+</html>
+
+<div class="text-center " style="height:50px;width:50px; margin-left:auto; margin-right:auto "  >
+<table class="table" style="text-align:center">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Nome)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DescriçãoPonto)
+            </th>
+             <th>
+                @Html.DisplayNameFor(model => model.LongitudePonto)
+            </th>
+             <th>
+                @Html.DisplayNameFor(model => model.latitudePonto)
+            </th>
+             <th>
+                @Html.DisplayNameFor(model => model.AtivoPonto)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nome)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DescriçãoPonto)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LongitudePonto)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.latitudePonto)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AtivoPonto)
+            </td>
+
+            <td>
+
+             <div class="">
+                
+                <a asp-action="Edit" asp-route-id="@item.PontoId">Editar</a>
+                <a asp-action="Details" asp-route-id="@item.PontoId">Detalhes</a>
+                <a asp-action="Delete" asp-route-id="@item.PontoId">Deletar</a>
+             </div>
+            </td>
+           
+        </tr>
+}
+    </tbody>
+</table>
+</div>
