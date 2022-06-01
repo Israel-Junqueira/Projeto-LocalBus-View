@@ -59,7 +59,7 @@ namespace LocalBus.Services
             if (_UserManager.FindByEmailAsync("admin@localhost").Result == null)
             {
                 IdentityUser user = new IdentityUser();
-                user.UserName = "IsraelAdmin";
+                user.UserName = "Admin";
                 user.Email = "admin@localhost";
                 user.NormalizedEmail = "ADMIN@LOCALHOST";
                 user.NormalizedEmail = "ADMIN@LOCALHOST";
@@ -67,7 +67,7 @@ namespace LocalBus.Services
                 user.LockoutEnabled = false;
                 user.SecurityStamp = Guid.NewGuid().ToString();
 
-                IdentityResult result = _UserManager.CreateAsync(user, "IRj23863026870@@").Result;
+                IdentityResult result = _UserManager.CreateAsync(user, "Admin123@").Result;
 
                 if (result.Succeeded)
                 {

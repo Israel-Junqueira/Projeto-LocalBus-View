@@ -4,6 +4,7 @@ using LocalBus.Repositories.Interfaces;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 
 namespace LocalBus.Areas.Administrador.Controllers
@@ -14,8 +15,10 @@ namespace LocalBus.Areas.Administrador.Controllers
     {
         private readonly AppDbContext _context;
         private readonly IPontosRepository _context2;
-        public AdminPontosController(AppDbContext context, IPontosRepository _pontosRepository)
+        private readonly IEscolaRepository _context3;
+        public AdminPontosController(AppDbContext context, IPontosRepository _pontosRepository, IEscolaRepository _escolaRepository)
         {
+            _context3 = _escolaRepository;
             _context2 = _pontosRepository;
             _context = context;
         }
@@ -36,17 +39,19 @@ namespace LocalBus.Areas.Administrador.Controllers
         // GET: AdminPontosController/Create
         public ActionResult Create()
         {
+            ViewBag.Escolas = _context3.EscolaRepository.OrderBy(E => E.EscolaId).ToArray();
             return View();
         }
 
         // POST: AdminPontosController/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<ActionResult> Create([Bind("PontoId,latitudePonto,LongitudePonto,AtivoPonto,DescriçãoPonto,Nome")] Ponto ponto)
+        public async Task<ActionResult> Create([Bind("PontoId,latitudePonto,LongitudePonto,AtivoPonto,DescriçãoPonto,Nome,EscolaPonto")] Ponto ponto)
         {
             if (ModelState.IsValid)
             {
-                _context.Add(ponto);
+                var pontos = ponto;
+                _context.Add(pontos);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
