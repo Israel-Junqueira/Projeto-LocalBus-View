@@ -4,6 +4,7 @@ using LocalBus.Repositories.Interfaces;
 using LocalBus.Services;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using System.Text.Json.Serialization;
 
 namespace LocalBus;
 public class Startup
@@ -18,6 +19,17 @@ public class Startup
     // This method gets called by the runtime. Use this method to add services to the container.
     public void ConfigureServices(IServiceCollection services)
     {
+        services.AddControllers().AddJsonOptions(x =>
+        x.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles);
+        //usado devido ao erro System.Text.Json.JsonException:
+        //um possível ciclo de objeto foi detectado.
+        //Isso pode ser devido a um ciclo ou se a profundidade do
+        //objeto for maior que a profundidade máxima permitida de 32.
+        //Considere usar ReferenceHandler.Preserve em JsonSerializerOptions
+        //para oferecer suporte a ciclos.
+
+
+
         services.AddIdentity<IdentityUser, IdentityRole>()      //Serviço do IdentityUser
             .AddEntityFrameworkStores<AppDbContext>()
             .AddDefaultTokenProviders();

@@ -24,10 +24,13 @@ namespace LocalBus.Areas.Administrador.Controllers
         }
 
         // GET: AdminPontosController
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(int IdEscola)
         {
-            ViewData["PontoAtivo"] = _context2.PontosAtivos.ToArray();
-            return View(await _context.Pontos.ToListAsync());
+            ViewData["PontoAtivo"] = _context.EscolasPontos.Where(p => p.EscolaId.Equals(IdEscola)).Include(c=>c.Ponto).ToArray();
+
+            var result = await _context.EscolasPontos.Where(p => p.EscolaId.Equals(IdEscola)).ToListAsync();
+            var conversao = result.ToArray(); 
+            return View(conversao);
         }
 
         // GET: AdminPontosController/Details/5

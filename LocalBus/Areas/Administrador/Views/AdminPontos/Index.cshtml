@@ -1,7 +1,6 @@
 ﻿ 
 <!DOCTYPE html>
-@model IEnumerable<LocalBus.Models.Ponto>
-
+@model IEnumerable<LocalBus.Models.EscolaPonto>
 <div class="text-center">
 <h1>Pontos cadastrados da sua Escola</h1>
 
@@ -38,7 +37,7 @@
             var num = 3
             
                 for (var i = 0; i < coordenadas.length  ; i++) {
-                     var pushpin = new Microsoft.Maps.Location(coordenadas[i].latitudePonto, coordenadas[i].longitudePonto)
+                     var pushpin = new Microsoft.Maps.Location(coordenadas[i]['ponto'].latitudePonto, coordenadas[i]['ponto'].longitudePonto)
                      var pushpin2 = new Microsoft.Maps.Pushpin(pushpin,{
                      })
                      map.entities.push(pushpin2);
@@ -55,19 +54,19 @@
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.Nome)
+                @Html.DisplayNameFor(model => model.Ponto.Nome)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.DescriçãoPonto)
+                @Html.DisplayNameFor(model => model.Ponto.DescriçãoPonto)
             </th>
              <th>
-                @Html.DisplayNameFor(model => model.LongitudePonto)
+                @Html.DisplayNameFor(model => model.Ponto.LongitudePonto)
             </th>
              <th>
-                @Html.DisplayNameFor(model => model.latitudePonto)
+                @Html.DisplayNameFor(model => model.Ponto.latitudePonto)
             </th>
              <th>
-                @Html.DisplayNameFor(model => model.AtivoPonto)
+                @Html.DisplayNameFor(model => model.Ponto.AtivoPonto)
             </th>
             <th></th>
         </tr>
@@ -76,19 +75,19 @@
 @foreach (var item in Model) {
         <tr>
             <td>
-                @Html.DisplayFor(modelItem => item.Nome)
+                @Html.DisplayFor(modelItem => item.Ponto.Nome)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.DescriçãoPonto)
+                @Html.DisplayFor(modelItem => item.Ponto.DescriçãoPonto)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.LongitudePonto)
+                @Html.DisplayFor(modelItem => item.Ponto.LongitudePonto)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.latitudePonto)
+                @Html.DisplayFor(modelItem => item.Ponto.latitudePonto)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.AtivoPonto)
+                @Html.DisplayFor(modelItem => item.Ponto.AtivoPonto)
             </td>
 
             <td>
