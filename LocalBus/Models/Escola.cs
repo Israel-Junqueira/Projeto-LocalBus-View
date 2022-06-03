@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using System;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
@@ -28,9 +30,11 @@ namespace LocalBus.Models
         [Display(Name = "Insira o codigo da escola")]
         public int CodigoDaEtec { get; set; }
 
+
         public ICollection<EscolaPonto> Escola_Ponto { get; set; }
         public ICollection<ImagemEscola> ImagemEscolas { get; set; }
 
+     
 
     }
 }

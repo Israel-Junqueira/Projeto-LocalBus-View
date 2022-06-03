@@ -35,7 +35,7 @@ namespace LocalBus.Context
               .WithMany(ep => ep.Escola_Ponto)
               .HasForeignKey(ei => ei.PontoId);
 
-
+           
             modelBuilder.Entity<ImagemEscola>()
             .HasOne(e => e.Escola)
             .WithMany(ep => ep.ImagemEscolas)

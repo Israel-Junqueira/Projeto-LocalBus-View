@@ -3,7 +3,7 @@
 @model IEnumerable<LocalBus.Models.Ponto>
 
 <div class="text-center">
-<h1>Pontos</h1>
+<h1>Pontos cadastrados da sua Escola</h1>
 
 <p>
     <a asp-action="Create" class="btn btn-info">Criar Novo Ponto</a>
@@ -26,7 +26,7 @@
 <script>
     
         function GetMap() {
-            let coordenadas = @Html.Raw(Json.Serialize(ViewData["EscolaPonto"]));    
+            let coordenadas = @Html.Raw(Json.Serialize(ViewData["PontoAtivo"]));    
             console.log(coordenadas)
 
 
@@ -47,6 +47,8 @@
 </script>
 </body>
 </html>
+
+<h4 style="margin-left:910px">Seus Pontos</h4>
 
 <div class="text-center " style="height:50px;width:50px; margin-left:auto; margin-right:auto "  >
 <table class="table" style="text-align:center">

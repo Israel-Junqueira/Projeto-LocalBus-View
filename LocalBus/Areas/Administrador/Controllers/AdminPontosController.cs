@@ -26,7 +26,7 @@ namespace LocalBus.Areas.Administrador.Controllers
         // GET: AdminPontosController
         public async Task<IActionResult> Index()
         {
-            ViewData["EscolaPonto"] = _context2.PontosAtivos.ToArray();
+            ViewData["PontoAtivo"] = _context2.PontosAtivos.ToArray();
             return View(await _context.Pontos.ToListAsync());
         }
 
@@ -46,15 +46,25 @@ namespace LocalBus.Areas.Administrador.Controllers
         // POST: AdminPontosController/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<ActionResult> Create([Bind("PontoId,latitudePonto,LongitudePonto,AtivoPonto,DescriçãoPonto,Nome,EscolaPonto")] Ponto ponto)
+        public async Task<ActionResult> Create([Bind("PontoId,latitudePonto,LongitudePonto,AtivoPonto,DescriçãoPonto,Nome,EscolaId,PontoId")] Ponto ponto,EscolaPonto escolaPonto)
         {
-            if (ModelState.IsValid)
+            try
             {
-                var pontos = ponto;
-                _context.Add(pontos);
-                await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+                if (ModelState.IsValid)
+                {
+                    var pontos = ponto;
+                    _context.Add(pontos);
+                    await _context.SaveChangesAsync();
+                    return RedirectToAction(nameof(Index));
+                }
             }
+            catch (Exception ex)
+            {
+                ModelState.AddModelError(""," Não foi possível salvar as alterações. " +
+             "Tente novamente e se o problema persistir " +
+             "consulte o administrador do sistema"+ "Error:"+ex);
+            }
+
             return View(ponto);
         }
 
