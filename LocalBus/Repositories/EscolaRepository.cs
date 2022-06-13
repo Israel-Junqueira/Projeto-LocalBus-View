@@ -19,6 +19,10 @@ namespace LocalBus.Repositories
 
         public Escola GetEscolaGetEscolaById(int EscolaId) => _context.Escola.FirstOrDefault(e => e.EscolaId == EscolaId);
 
-        public Escola GetPontoById(int EscolaId) => _context.Escola.FirstOrDefault(p => p.EscolaId == EscolaId);
+
+         string IEscolaRepository.GetEscolaById(string IdUsuarioLogado)
+        {
+           return _context.Escola.FirstOrDefault(e => e.MyUserId == IdUsuarioLogado).EscolaId.ToString();
+        }
     }
 }

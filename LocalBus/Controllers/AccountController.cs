@@ -9,11 +9,11 @@ namespace LocalBus.Controllers
 {
     public class AccountController : Controller
     {
-        private readonly UserManager<IdentityUser> _userManeger;
-        private readonly SignInManager<IdentityUser> _signInManager;
+        private readonly UserManager<MyUser> _userManeger;
+        private readonly SignInManager<MyUser> _signInManager;
         private readonly AppDbContext _context;
 
-        public AccountController(UserManager<IdentityUser> userManeger, SignInManager<IdentityUser> signInManager,AppDbContext appDbContext)
+        public AccountController(UserManager<MyUser> userManeger, SignInManager<MyUser> signInManager,AppDbContext appDbContext)
         {
             _context = appDbContext;
             _userManeger = userManeger;
@@ -65,15 +65,15 @@ namespace LocalBus.Controllers
         {
             if (ModelState.IsValid)
             {
-                var user = new IdentityUser { UserName = registro.UserName };
-                var DadosdaEscola = new Escola { EmailDaEscola = registro.Email, TelefoneDaEscola = registro.TelefonedaEscola, NomeEscola = registro.NomedaEscola,CodigoDaEtec = registro.CodigoEtec};
+                var user = new MyUser { UserName = registro.UserName };
+                
                
                 var result = await _userManeger.CreateAsync(user, registro.Password);
-
+                var DadosdaEscola = new Escola { EmailDaEscola = registro.Email, TelefoneDaEscola = registro.TelefonedaEscola, NomeEscola = registro.NomedaEscola, CodigoDaEtec = registro.CodigoEtec};
                 if (result.Succeeded)
                 {
                     await _userManeger.AddToRoleAsync(user, "Member");
-                    _context.Add(new Escola { CodigoDaEtec = DadosdaEscola.CodigoDaEtec,EmailDaEscola = DadosdaEscola.EmailDaEscola,NomeEscola=DadosdaEscola.NomeEscola,TelefoneDaEscola=DadosdaEscola.TelefoneDaEscola });
+                    _context.Add(new Escola { CodigoDaEtec = DadosdaEscola.CodigoDaEtec,EmailDaEscola = DadosdaEscola.EmailDaEscola,NomeEscola=DadosdaEscola.NomeEscola,TelefoneDaEscola=DadosdaEscola.TelefoneDaEscola,MyUserId=user.Id});
                    _context.SaveChanges();
                     return RedirectToAction("Login", "Account");
 

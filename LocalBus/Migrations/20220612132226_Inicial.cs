@@ -5,24 +5,10 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace LocalBus.Migrations
 {
-    public partial class AdicionarIdentity : Migration
+    public partial class Inicial : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.DropForeignKey(
-                name: "FK_ImagemEscola_Image_ImagemId",
-                table: "ImagemEscola");
-
-            migrationBuilder.RenameColumn(
-                name: "ImagemId",
-                table: "ImagemEscola",
-                newName: "TipoImagemId");
-
-            migrationBuilder.RenameIndex(
-                name: "IX_ImagemEscola_ImagemId",
-                table: "ImagemEscola",
-                newName: "IX_ImagemEscola_TipoImagemId");
-
             migrationBuilder.CreateTable(
                 name: "AspNetRoles",
                 columns: table => new
@@ -60,6 +46,41 @@ namespace LocalBus.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_AspNetUsers", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Pontos",
+                columns: table => new
+                {
+                    PontoId = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    latitudePonto = table.Column<double>(type: "float", nullable: false),
+                    LongitudePonto = table.Column<double>(type: "float", nullable: false),
+                    AtivoPonto = table.Column<bool>(type: "bit", nullable: false),
+                    DescriçãoPonto = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Nome = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Pontos", x => x.PontoId);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "TipoImagem",
+                columns: table => new
+                {
+                    TipoImagemId = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Nome = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Extencao = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Descricao = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Picture = table.Column<byte[]>(type: "varbinary(max)", nullable: true),
+                    Length = table.Column<int>(type: "int", nullable: false),
+                    ContentType = table.Column<string>(type: "nvarchar(max)", nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_TipoImagem", x => x.TipoImagemId);
                 });
 
             migrationBuilder.CreateTable(
@@ -168,6 +189,80 @@ namespace LocalBus.Migrations
                         onDelete: ReferentialAction.Cascade);
                 });
 
+            migrationBuilder.CreateTable(
+                name: "Escola",
+                columns: table => new
+                {
+                    EscolaId = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    NomeEscola = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: false),
+                    TelefoneDaEscola = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    EmailDaEscola = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    CodigoDaEtec = table.Column<int>(type: "int", nullable: false),
+                    MyUserId = table.Column<string>(type: "nvarchar(450)", nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Escola", x => x.EscolaId);
+                    table.ForeignKey(
+                        name: "FK_Escola_AspNetUsers_MyUserId",
+                        column: x => x.MyUserId,
+                        principalTable: "AspNetUsers",
+                        principalColumn: "Id");
+                });
+
+            migrationBuilder.CreateTable(
+                name: "EscolasPontos",
+                columns: table => new
+                {
+                    EscolaPontoId = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    EscolaId = table.Column<int>(type: "int", nullable: false),
+                    PontoId = table.Column<int>(type: "int", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_EscolasPontos", x => x.EscolaPontoId);
+                    table.ForeignKey(
+                        name: "FK_EscolasPontos_Escola_EscolaId",
+                        column: x => x.EscolaId,
+                        principalTable: "Escola",
+                        principalColumn: "EscolaId",
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_EscolasPontos_Pontos_PontoId",
+                        column: x => x.PontoId,
+                        principalTable: "Pontos",
+                        principalColumn: "PontoId",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "ImagemEscola",
+                columns: table => new
+                {
+                    ImagemEscolaId = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    EscolaId = table.Column<int>(type: "int", nullable: false),
+                    TipoImagemId = table.Column<int>(type: "int", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_ImagemEscola", x => x.ImagemEscolaId);
+                    table.ForeignKey(
+                        name: "FK_ImagemEscola_Escola_EscolaId",
+                        column: x => x.EscolaId,
+                        principalTable: "Escola",
+                        principalColumn: "EscolaId",
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_ImagemEscola_TipoImagem_TipoImagemId",
+                        column: x => x.TipoImagemId,
+                        principalTable: "TipoImagem",
+                        principalColumn: "TipoImagemId",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
             migrationBuilder.CreateIndex(
                 name: "IX_AspNetRoleClaims_RoleId",
                 table: "AspNetRoleClaims",
@@ -207,21 +302,36 @@ namespace LocalBus.Migrations
                 unique: true,
                 filter: "[NormalizedUserName] IS NOT NULL");
 
-            migrationBuilder.AddForeignKey(
-                name: "FK_ImagemEscola_Image_TipoImagemId",
+            migrationBuilder.CreateIndex(
+                name: "IX_Escola_MyUserId",
+                table: "Escola",
+                column: "MyUserId",
+                unique: true,
+                filter: "[MyUserId] IS NOT NULL");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_EscolasPontos_EscolaId",
+                table: "EscolasPontos",
+                column: "EscolaId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_EscolasPontos_PontoId",
+                table: "EscolasPontos",
+                column: "PontoId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_ImagemEscola_EscolaId",
                 table: "ImagemEscola",
-                column: "TipoImagemId",
-                principalTable: "Image",
-                principalColumn: "TipoImagemId",
-                onDelete: ReferentialAction.Cascade);
+                column: "EscolaId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_ImagemEscola_TipoImagemId",
+                table: "ImagemEscola",
+                column: "TipoImagemId");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.DropForeignKey(
-                name: "FK_ImagemEscola_Image_TipoImagemId",
-                table: "ImagemEscola");
-
             migrationBuilder.DropTable(
                 name: "AspNetRoleClaims");
 
@@ -238,28 +348,25 @@ namespace LocalBus.Migrations
                 name: "AspNetUserTokens");
 
             migrationBuilder.DropTable(
+                name: "EscolasPontos");
+
+            migrationBuilder.DropTable(
+                name: "ImagemEscola");
+
+            migrationBuilder.DropTable(
                 name: "AspNetRoles");
 
             migrationBuilder.DropTable(
+                name: "Pontos");
+
+            migrationBuilder.DropTable(
+                name: "Escola");
+
+            migrationBuilder.DropTable(
+                name: "TipoImagem");
+
+            migrationBuilder.DropTable(
                 name: "AspNetUsers");
-
-            migrationBuilder.RenameColumn(
-                name: "TipoImagemId",
-                table: "ImagemEscola",
-                newName: "ImagemId");
-
-            migrationBuilder.RenameIndex(
-                name: "IX_ImagemEscola_TipoImagemId",
-                table: "ImagemEscola",
-                newName: "IX_ImagemEscola_ImagemId");
-
-            migrationBuilder.AddForeignKey(
-                name: "FK_ImagemEscola_Image_ImagemId",
-                table: "ImagemEscola",
-                column: "ImagemId",
-                principalTable: "Image",
-                principalColumn: "TipoImagemId",
-                onDelete: ReferentialAction.Cascade);
         }
     }
 }

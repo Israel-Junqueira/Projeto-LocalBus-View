@@ -1,4 +1,5 @@
 ﻿using LocalBus.Context;
+using LocalBus.Models;
 using LocalBus.Repositories;
 using LocalBus.Repositories.Interfaces;
 using LocalBus.Services;
@@ -30,9 +31,10 @@ public class Startup
 
 
 
-        services.AddIdentity<IdentityUser, IdentityRole>()      //Serviço do IdentityUser
+        services.AddIdentity<MyUser, IdentityRole>()      //Serviço do IdentityUser
             .AddEntityFrameworkStores<AppDbContext>()
             .AddDefaultTokenProviders();
+
         services.AddSession(options =>
         {
             options.IdleTimeout = TimeSpan.FromMinutes(1);
@@ -55,7 +57,9 @@ public class Startup
 
 
         services.AddControllersWithViews();
+
         services.AddDbContext<AppDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"))); // Container DI ele cria a instancia
+        services.AddDbContext<AppDbContext>(ServiceLifetime.Transient);
         services.AddTransient<IEscolaRepository, EscolaRepository>();
         services.AddTransient<IPontosRepository, PontosRepository>();
         services.AddScoped<ISeedUserRoleInitial, SeedUserRoleInitial>();

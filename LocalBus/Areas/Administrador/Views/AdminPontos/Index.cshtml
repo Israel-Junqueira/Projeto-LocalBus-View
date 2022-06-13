@@ -1,107 +1,117 @@
-﻿ 
+﻿
 <!DOCTYPE html>
-@model IEnumerable<LocalBus.Models.EscolaPonto>
-<div class="text-center">
-<h1>Pontos cadastrados da sua Escola</h1>
+@{
+    var Teste = ViewBag.PontosAtivoConvertido;
+    Console.WriteLine();
+}
+@model IEnumerable<EscolaPonto>
 
-<p>
-    <a asp-action="Create" class="btn btn-info">Criar Novo Ponto</a>
-</p>
+<div class="text-center">
+    <h1>Pontos cadastrados da sua Escola</h1>
+
+    <p>
+        <a asp-action="Create" class="btn btn-info">Criar Novo Ponto</a>
+    </p>
 </div>
 
 <html>
 <head>
-         <meta charset="UTF-8">
-         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-         <script src="~/js/mapa.js"></script>
-         <script type='text/javascript' src='https://www.bing.com/api/maps/mapcontrol?callback=GetMap&key=AkclvbgfjdRI43pyQ7TM48Mx0Gz8LpXOJzYsm8-T3b7fFOt2n-GMm0USIPHg-YLu&setLang=pt&setMkt=PT-BR' async defer></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="~/js/mapa.js"></script>
+    <script type='text/javascript' src='https://www.bing.com/api/maps/mapcontrol?callback=GetMap&key=AkclvbgfjdRI43pyQ7TM48Mx0Gz8LpXOJzYsm8-T3b7fFOt2n-GMm0USIPHg-YLu&setLang=pt&setMkt=PT-BR' async defer></script>
+    <link rel="stylesheet" href="~/css/TableStyle.css" asp-append-version="true" />
 </head>
-<body onload = "GetMap()">
+<body onload="GetMap()">
 
-<div id="myMap" style="position:absolute;width:500px;height:450px; margin-left:100px"></div>
-<p> </p>
+    <div id="myMap" style="position:absolute;width:500px;height:450px; margin-left:100px"></div>
+    <p> </p>
 
 
-<script>
-    
+    <script>
+
         function GetMap() {
-            let coordenadas = @Html.Raw(Json.Serialize(ViewData["PontoAtivo"]));    
+            let coordenadas = @Html.Raw(Json.Serialize(ViewData["PontoAtivo"]));
             console.log(coordenadas)
 
 
             var map = new Microsoft.Maps.Map('#myMap', { center: new Microsoft.Maps.Location(-22.489303078308875,-48.54630861383559), zoom: 13 });
-          
+
             map.setView({
                 mapTypeId: Microsoft.Maps.MapTypeId.aerial
             });
             var num = 3
-            
+
                 for (var i = 0; i < coordenadas.length  ; i++) {
                      var pushpin = new Microsoft.Maps.Location(coordenadas[i]['ponto'].latitudePonto, coordenadas[i]['ponto'].longitudePonto)
                      var pushpin2 = new Microsoft.Maps.Pushpin(pushpin,{
                      })
                      map.entities.push(pushpin2);
                  }
-        }  
-</script>
+        }
+    </script>
 </body>
 </html>
 
 <h4 style="margin-left:910px">Seus Pontos</h4>
 
-<div class="text-center " style="height:50px;width:50px; margin-left:auto; margin-right:auto "  >
-<table class="table" style="text-align:center">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Ponto.Nome)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Ponto.DescriçãoPonto)
-            </th>
-             <th>
-                @Html.DisplayNameFor(model => model.Ponto.LongitudePonto)
-            </th>
-             <th>
-                @Html.DisplayNameFor(model => model.Ponto.latitudePonto)
-            </th>
-             <th>
-                @Html.DisplayNameFor(model => model.Ponto.AtivoPonto)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Ponto.Nome)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Ponto.DescriçãoPonto)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Ponto.LongitudePonto)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Ponto.latitudePonto)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Ponto.AtivoPonto)
-            </td>
+<div class="content">
+    <table class="rTable  " style="margin-left:600px" >
+        <thead>
+            <tr>
+                <th>
+                    Nome
+                </th>
+                <th>
+                   Descrição 
+                </th>
+                <th>
+                    Longitude 
+                </th>
+                <th>
+                    latitude 
+                </th>
+                <th>
+                    Ativos
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @{
+                foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @item.Ponto.Nome
+                        </td>
+                        <td>
+                            @item.Ponto.DescriçãoPonto
+                        </td>
+                        <td>
+                            @item.Ponto.LongitudePonto
+                        </td>
+                        <td>
+                            @item.Ponto.latitudePonto
+                        </td>
+                        <td>
+                         @Html.DisplayFor(modelItem => item.Ponto.AtivoPonto)
+                        </td>
 
-            <td>
+                        <td>
 
-             <div class="">
-                
-                <a asp-action="Edit" asp-route-id="@item.PontoId">Editar</a>
-                <a asp-action="Details" asp-route-id="@item.PontoId">Detalhes</a>
-                <a asp-action="Delete" asp-route-id="@item.PontoId">Deletar</a>
-             </div>
-            </td>
-           
-        </tr>
-}
-    </tbody>
-</table>
-</div>
+                            <div class="">
+
+                                <a asp-action="Edit" asp-route-id="@item.Ponto.PontoId">Editar</a>
+                                <a asp-action="Details" asp-route-id="@item.Ponto.PontoId">Detalhes</a>
+                                <a asp-action="Delete" asp-route-id="@item.Ponto.PontoId">Deletar</a>
+                            </div>
+                        </td>
+
+                    </tr>
+                }
+            }
+
+        </tbody>
+    </table>
+    </div>

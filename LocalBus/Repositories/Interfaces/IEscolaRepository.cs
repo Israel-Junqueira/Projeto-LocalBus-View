@@ -6,6 +6,6 @@ namespace LocalBus.Repositories.Interfaces
     {
         IEnumerable<Escola> EscolaRepository { get; }
         IEnumerable<Escola> NomesDasEscolas { get; }
-        Escola GetPontoById(int EscolaId);
+       string GetEscolaById(string IdUsuarioLogado);
     }
 }

@@ -3,6 +3,7 @@ using LocalBus.Models;
 using LocalBus.Repositories.Interfaces;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -16,21 +17,28 @@ namespace LocalBus.Areas.Administrador.Controllers
         private readonly AppDbContext _context;
         private readonly IPontosRepository _context2;
         private readonly IEscolaRepository _context3;
-        public AdminPontosController(AppDbContext context, IPontosRepository _pontosRepository, IEscolaRepository _escolaRepository)
+        private readonly UserManager<MyUser> userManager1;
+        public AdminPontosController(UserManager<MyUser> userManager, AppDbContext context, IPontosRepository _pontosRepository, IEscolaRepository _escolaRepository)
         {
+            userManager1 = userManager;
             _context3 = _escolaRepository;
             _context2 = _pontosRepository;
             _context = context;
         }
 
         // GET: AdminPontosController
-        public async Task<IActionResult> Index(int IdEscola)
+        public async Task<IActionResult> Index()
         {
-            ViewData["PontoAtivo"] = _context.EscolasPontos.Where(p => p.EscolaId.Equals(IdEscola)).Include(c=>c.Ponto).ToArray();
-
-            var result = await _context.EscolasPontos.Where(p => p.EscolaId.Equals(IdEscola)).ToListAsync();
-            var conversao = result.ToArray(); 
-            return View(conversao);
+            var ids = userManager1.GetUserId(User);
+            var IdDaEscolaOnlineString = _context.Escola.FirstOrDefault(e => e.MyUserId == ids).EscolaId.ToString();
+            var IdDaEscolaOnlineInt = Convert.ToInt32(IdDaEscolaOnlineString);
+            ViewData["PontoAtivo"] = _context.EscolasPontos.Where(p => p.EscolaId.Equals(IdDaEscolaOnlineInt)).Include(c=>c.Ponto).Where(c=>c.Ponto.AtivoPonto==true).ToArray();
+        
+            var pontosDoUsuarioLogado = _context.EscolasPontos.Where(p => p.EscolaId.Equals(IdDaEscolaOnlineInt)).Include(c => c.Ponto).ToArray();
+            var result = await _context.EscolasPontos.Where(p => p.EscolaId.Equals(ids)).ToListAsync();
+            var conversao = result.ToArray();
+            ViewBag.PontosAtivoConvertido = _context.EscolasPontos.Where(p => p.EscolaId.Equals(IdDaEscolaOnlineInt)).Include(c => c.Ponto).ToArray(); 
+            return View(pontosDoUsuarioLogado);
         }
 
         // GET: AdminPontosController/Details/5
@@ -49,15 +57,26 @@ namespace LocalBus.Areas.Administrador.Controllers
         // POST: AdminPontosController/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<ActionResult> Create([Bind("PontoId,latitudePonto,LongitudePonto,AtivoPonto,DescriçãoPonto,Nome,EscolaId,PontoId")] Ponto ponto,EscolaPonto escolaPonto)
+        public async Task<ActionResult> Create([Bind("PontoId,latitudePonto,LongitudePonto,AtivoPonto,DescriçãoPonto,Nome")] Ponto ponto,EscolaPonto escolaPonto)
         {
             try
             {
                 if (ModelState.IsValid)
                 {
+                    
                     var pontos = ponto;
+                 
                     _context.Add(pontos);
                     await _context.SaveChangesAsync();
+
+                    var IdPonto = pontos.PontoId;
+                    var idUsuarioLogado = userManager1.GetUserId(User);
+                    var IdDaEscolaRefenteAoUsuarioLogado = _context3.GetEscolaById(idUsuarioLogado);
+                    var IdDaEscola = Convert.ToInt32(IdDaEscolaRefenteAoUsuarioLogado);
+                    escolaPonto.PontoId = IdPonto;
+                    escolaPonto.EscolaId= IdDaEscola;
+                    _context.Add(escolaPonto);
+                  await _context.SaveChangesAsync();
                     return RedirectToAction(nameof(Index));
                 }
             }
@@ -72,45 +91,85 @@ namespace LocalBus.Areas.Administrador.Controllers
         }
 
         // GET: AdminPontosController/Edit/5
-        public ActionResult Edit(int id)
+        public async Task<ActionResult> Edit(int id)
         {
-            return View();
+            if (id == null)
+            {
+                return NotFound();
+            }
+            var Ponto = await _context.Pontos.FindAsync(id);
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            return View(Ponto);
         }
 
         // POST: AdminPontosController/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, IFormCollection collection)
+        public async Task<IActionResult> Edit(int id,[Bind("PontoId,latitudePonto,LongitudePonto,AtivoPonto,DescriçãoPonto,Nome")] Ponto ponto)
         {
-            try
+            if(id != ponto.PontoId)
             {
+                return NotFound();
+            }
+            if (ModelState.IsValid)
+            {
+                try
+                {
+                    _context.Update(ponto);
+                    await _context.SaveChangesAsync();
+                }
+                catch(DbUpdateConcurrencyException ex)
+                {
+                    if (!PontoExiste(ponto.PontoId))
+                    {
+                        return NotFound(ex);
+                    }
+                    else
+                    {
+                        throw;
+                    }
+                }
                 return RedirectToAction(nameof(Index));
             }
-            catch
-            {
-                return View();
-            }
+            return View(ponto);
         }
 
         // GET: AdminPontosController/Delete/5
-        public ActionResult Delete(int id)
+        [HttpGet]
+        public async Task<ActionResult> Delete(int id)
         {
-            return View();
+            if (id == null)
+            {
+                return NotFound();
+            }
+            var Ponto = await _context.Pontos.Include(p => p.Escola_Ponto).FirstOrDefaultAsync(m => m.PontoId == id);
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            return View(Ponto);
         }
 
         // POST: AdminPontosController/Delete/5
-        [HttpPost]
+        [HttpPost,ActionName("Delete")]
         [ValidateAntiForgeryToken]
-        public ActionResult Delete(int id, IFormCollection collection)
+        public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            try
-            {
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
+
+            var ponto = await _context.Pontos.FindAsync(id);
+            _context.Pontos.Remove(ponto);
+            await _context.SaveChangesAsync();
+            return RedirectToAction(nameof(Index));
+        }
+
+        private bool PontoExiste(int id)
+        {
+            return _context.Pontos.Any(e=>e.PontoId == id);
         }
     }
 }

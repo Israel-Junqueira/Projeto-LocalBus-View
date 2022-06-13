@@ -8,6 +8,8 @@ namespace LocalBus.Models
 {   [Table("Escola")]
     public class Escola
     {
+        
+
         [Key]
         public int EscolaId { get; set; }
 
@@ -29,7 +31,10 @@ namespace LocalBus.Models
         [Required(ErrorMessage = "E necessario informar o Codigo da escola")]
         [Display(Name = "Insira o codigo da escola")]
         public int CodigoDaEtec { get; set; }
-
+        
+        public string MyUserId { get; set; }
+        [ForeignKey("MyUserId")]
+        public MyUser MyUser { get; set; }
 
         public ICollection<EscolaPonto> Escola_Ponto { get; set; }
         public ICollection<ImagemEscola> ImagemEscolas { get; set; }
