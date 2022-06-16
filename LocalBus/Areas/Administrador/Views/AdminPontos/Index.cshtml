@@ -32,7 +32,6 @@
 
         function GetMap() {
             let coordenadas = @Html.Raw(Json.Serialize(ViewData["PontoAtivo"]));
-            console.log(coordenadas)
 
 
             var map = new Microsoft.Maps.Map('#myMap', { center: new Microsoft.Maps.Location(-22.489303078308875,-48.54630861383559), zoom: 13 });
@@ -40,7 +39,6 @@
             map.setView({
                 mapTypeId: Microsoft.Maps.MapTypeId.aerial
             });
-            var num = 3
 
                 for (var i = 0; i < coordenadas.length  ; i++) {
                      var pushpin = new Microsoft.Maps.Location(coordenadas[i]['ponto'].latitudePonto, coordenadas[i]['ponto'].longitudePonto)
@@ -103,7 +101,6 @@
                             <div class="">
 
                                 <a asp-action="Edit" asp-route-id="@item.Ponto.PontoId">Editar</a>
-                                <a asp-action="Details" asp-route-id="@item.Ponto.PontoId">Detalhes</a>
                                 <a asp-action="Delete" asp-route-id="@item.Ponto.PontoId">Deletar</a>
                             </div>
                         </td>
