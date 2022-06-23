@@ -25,8 +25,8 @@ namespace LocalBus.ViewModels
         [DataType(DataType.PhoneNumber)]
         [Display(Name = "Insira o telefone da escola")]
         public string TelefonedaEscola { get; set; }
-        [Required(ErrorMessage = "Informe o nome")]
-        [Display(Name = "Escola")]
+        [Required(ErrorMessage = "Informe o nome da escola")]
+        [Display(Name = "Nome da Escola")]
         public string NomedaEscola { get; set; }
     }
 }

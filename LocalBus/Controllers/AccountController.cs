@@ -3,6 +3,7 @@ using LocalBus.Models;
 using LocalBus.ViewModels;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace LocalBus.Controllers
@@ -19,6 +20,60 @@ namespace LocalBus.Controllers
             _userManeger = userManeger;
             _signInManager = signInManager;
         }
+     
+
+        [HttpGet]
+        public async Task<IActionResult> Perfil(string id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+            var UsuarioEscola =  _context.Escola.FirstOrDefault(e=> e.MyUserId.Equals(id));
+            var iddaEscola = UsuarioEscola.EscolaId;
+            ViewBag.UsuarioLogado = _context.Users.Where(c => c.Id.Equals(id));
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            return View(UsuarioEscola);
+        }
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Perfil(string id, [Bind("EscolaId,NomeEscola,TelefoneDaEscola,EmailDaEscola,CodigoDaEtec,MyUserId")] Escola escola)
+        {
+            if (id != escola.MyUserId)
+            {
+                return NotFound();
+            }
+            if (ModelState.IsValid)
+            {
+                try
+                {
+                    _context.Update(escola);
+                    await _context.SaveChangesAsync();
+                }
+                catch (DbUpdateConcurrencyException ex)
+                {
+                    if (!EscolaExiste(escola.EscolaId))
+                    {
+                        return NotFound(ex);
+                    }
+                    else
+                    {
+                        throw;
+                    }
+                }
+                return RedirectToAction("Perfil", "Account");
+            }
+            return View(escola);
+        }
+        private bool EscolaExiste(int id)
+        {
+            return _context.Escola.Any(e => e.EscolaId == id);
+        }
+
         [HttpGet]
         public IActionResult Login(string returnUrl)
         {
@@ -85,7 +140,14 @@ namespace LocalBus.Controllers
             }
             return View(registro);
         }
-
+        [HttpGet]
+        public async Task<IActionResult> Logout1()
+        {
+            HttpContext.Session.Clear();
+            HttpContext.User = null;
+            await _signInManager.SignOutAsync();
+            return RedirectToAction("Index", "Home");
+        }
         [HttpPost]
         public async Task<IActionResult> Logout()
         {//a view desse action e uma partial view criada na pasta shered, -adicionar - view - view razor - check criar um modelo de exibição parcial 
