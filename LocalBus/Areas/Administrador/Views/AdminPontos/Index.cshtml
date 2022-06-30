@@ -13,8 +13,8 @@
         <a asp-action="Create" class="btn btn-info">Criar Novo Ponto</a>
     </p>
 </div>
-
-<html>
+<div class="row">
+    <div class="form-group col-md-6">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -24,7 +24,7 @@
 </head>
 <body onload="GetMap()">
 
-    <div id="myMap" style="position:absolute;width:500px;height:450px; margin-left:100px"></div>
+    <div id="myMap" style="width:500px;height:450px; margin-left:100px"></div>
     <p> </p>
 
 
@@ -49,12 +49,12 @@
         }
     </script>
 </body>
-</html>
-
+</div>
+ <div class="form-group col-md-6">
 <h4 style="margin-left:910px">Seus Pontos</h4>
 
 <div class="content">
-    <table class="rTable  " style="margin-left:600px" >
+    <table class="rTable">
         <thead>
             <tr>
                 <th>
@@ -64,13 +64,7 @@
                    Descrição 
                 </th>
                 <th>
-                    Longitude 
-                </th>
-                <th>
-                    latitude 
-                </th>
-                <th>
-                    Ativos
+                    Ativo
                 </th>
                 <th></th>
             </tr>
@@ -85,12 +79,6 @@
                         </td>
                         <td>
                             @item.Ponto.DescriçãoPonto
-                        </td>
-                        <td>
-                            @item.Ponto.LongitudePonto
-                        </td>
-                        <td>
-                            @item.Ponto.latitudePonto
                         </td>
                         <td>
                          @Html.DisplayFor(modelItem => item.Ponto.AtivoPonto)
@@ -111,4 +99,6 @@
 
         </tbody>
     </table>
+    </div>
+    </div>
     </div>

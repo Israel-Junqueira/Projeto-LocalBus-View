@@ -31,8 +31,9 @@ namespace LocalBus.Models
         [Required(ErrorMessage = "E necessario informar o Codigo da escola")]
         [Display(Name = "Insira o codigo da escola")]
         public int CodigoDaEtec { get; set; }
-        
+        [Display(Name = "Seu ID")]
         public string MyUserId { get; set; }
+       
         [ForeignKey("MyUserId")]
         public MyUser MyUser { get; set; }
 

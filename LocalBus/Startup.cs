@@ -29,7 +29,7 @@ public class Startup
         //Considere usar ReferenceHandler.Preserve em JsonSerializerOptions
         //para oferecer suporte a ciclos.
 
-
+        
 
         services.AddIdentity<MyUser, IdentityRole>()      //Serviço do IdentityUser
             .AddEntityFrameworkStores<AppDbContext>()
@@ -53,8 +53,8 @@ public class Startup
             options.Password.RequiredLength = 6;
             options.Password.RequiredUniqueChars = 1;
         });
-
-
+        //nome da seção
+        services.Configure<ConfigurationImagens>(Configuration.GetSection("ConfigurationPastaImagens")); //necessario para imgs
 
         services.AddControllersWithViews();
 

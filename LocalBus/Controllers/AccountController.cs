@@ -1,10 +1,12 @@
 ﻿using LocalBus.Context;
 using LocalBus.Models;
 using LocalBus.ViewModels;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Migrations;
+using Microsoft.Extensions.Options;
 
 namespace LocalBus.Controllers
 {
@@ -13,9 +15,12 @@ namespace LocalBus.Controllers
         private readonly UserManager<MyUser> _userManeger;
         private readonly SignInManager<MyUser> _signInManager;
         private readonly AppDbContext _context;
-
-        public AccountController(UserManager<MyUser> userManeger, SignInManager<MyUser> signInManager,AppDbContext appDbContext)
+        private readonly ConfigurationImagens _myConfig;
+        private readonly IWebHostEnvironment _hostingEvironment;
+        public AccountController(IWebHostEnvironment hostEnvironment,IOptions<ConfigurationImagens> myconfiguration,UserManager<MyUser> userManeger, SignInManager<MyUser> signInManager,AppDbContext appDbContext)
         {
+            _hostingEvironment = hostEnvironment;
+            _myConfig = myconfiguration.Value;
             _context = appDbContext;
             _userManeger = userManeger;
             _signInManager = signInManager;
@@ -39,6 +44,58 @@ namespace LocalBus.Controllers
 
             return View(UsuarioEscola);
         }
+                                                                //quando clica em enviar
+                                                               //recebe a lista de arquivos 
+        public async Task<IActionResult> UploadFiles(List<IFormFile> files)
+        {
+
+
+        //---------------Faz a verificação se tem arquivos enviados------//
+            if (files == null || files.Count == 0)
+            {
+                ViewData["Error"] = "Erro: Arquivo(s) não selecionado(s)";
+                return View(ViewData);
+            }
+            if (files.Count > 1)
+            {
+                ViewData["Erro"] = "Error: Envie apenas uma foto";
+                return View(ViewData);
+            }
+
+        //------------------Soma quantidade de bytes------------//
+            long size = files.Sum(f => f.Length);
+
+
+            var filePathsName = new List<string>(); //nome dos arquivos que sera passado pra view
+                                            
+        //------------------ Monta o Caminho que sera enviado os arquivos ---------//
+            //aqui pega o caminho da wwwroot +, caminho do local de armazenamento das imagens que vc ira enviar  
+            var filePaths = Path.Combine(_hostingEvironment.WebRootPath, _myConfig.NomePastaImagensProdutos);
+
+        //------------------Percorre cada arquivo para verificar se e do tipo que foi determinado------------//
+            foreach (var formFile in files)
+            {
+                if(formFile.FileName.Contains(".jpg")|| formFile.FileName.Contains(".png") || formFile.FileName.Contains(".gif"))
+                {
+                    var fileNamewithPath = string.Concat(filePaths, "\\", formFile.FileName);
+                    filePathsName.Add(fileNamewithPath);
+                                                                            //aq se o arquivo existir ele sobrescreve se não existir ele cria
+                    using (var steam = new FileStream(fileNamewithPath, FileMode.Create))
+                    {                      //aq copia a string para a pasta de destino q e a file namewithPath
+                        await formFile.CopyToAsync(steam);
+                    }
+                }
+            }
+
+            ViewData["Resultado"] = $"{files.Count} arquivos foram enviados ao servidor," + $"com tamanho total de : {size} bytes";
+
+            ViewBag.Arquivos = filePathsName;
+            return View(ViewData);
+
+        }
+
+
+
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Perfil(string id, [Bind("EscolaId,NomeEscola,TelefoneDaEscola,EmailDaEscola,CodigoDaEtec,MyUserId")] Escola escola)
