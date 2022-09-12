@@ -53,7 +53,7 @@ body {
     height: 0;
     margin: 40px 0 0px 20px;
     background: radial-gradient(circle, #9932cc, #bf40bf);
-    border-radius: 90%;
+    border-radius: 40%;
     transition: 0.70s ease;
 }
 
@@ -78,7 +78,7 @@ body {
     }
 
 .change-bg {
-    width: 520px;
-    height: 495px;
+    width: 720px;
+    height: 795px;
     transform: translate(-17%,-40%);
 }

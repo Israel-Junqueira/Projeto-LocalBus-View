@@ -33,7 +33,9 @@ public class Startup
 
         services.AddIdentity<MyUser, IdentityRole>()      //Serviço do IdentityUser
             .AddEntityFrameworkStores<AppDbContext>()
-            .AddDefaultTokenProviders();
+            .AddDefaultTokenProviders()
+            .AddPasswordValidator<ValidadorDeSenha<MyUser>>();
+            
 
         services.AddSession(options =>
         {
@@ -42,16 +44,27 @@ public class Startup
 
         //cofira o formato das senhas do identity
 
+        services.Configure<DataProtectionTokenProviderOptions>(
+            options => options.TokenLifespan = TimeSpan.FromMinutes(3)
+           );;
+    
+
         services.Configure<IdentityOptions>(options =>
         {
-            //configurações
-
+            //configurações senha
+         //   options.SignIn.RequireConfirmedAccount = false; //aprovação de conta preciso ver depois
+            options.SignIn.RequireConfirmedEmail = true;
             options.Password.RequireDigit = false;
             options.Password.RequireLowercase = false;
             options.Password.RequireNonAlphanumeric = false;
             options.Password.RequireUppercase = true;
             options.Password.RequiredLength = 6;
             options.Password.RequiredUniqueChars = 1;
+
+            //bloqueio de usuario
+         // options.Lockout.MaxFailedAccessAttempts = 3;
+        //  options.Lockout.AllowedForNewUsers = true;
+            
         });
         //nome da seção
         services.Configure<ConfigurationImagens>(Configuration.GetSection("ConfigurationPastaImagens")); //necessario para imgs

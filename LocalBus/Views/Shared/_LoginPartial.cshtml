@@ -18,15 +18,18 @@
       
         <div class="container-fluid" style="margin-left:190px">
         <div id="menu">
-            <div id="menu-bar" onclick="menuOnClick()">
+            <div id="menu-bar" onclick="menuOnClick()" onmouseenter="menuOnClick()" >
               
                 <img src="https://img.icons8.com/color-glass/2x/username.png" width="30" height="30" >
                 
             </div>
             <nav class="nav" id="nav">
                 <ul>
-                    <li><a><h3>@User.Identity.Name</h3></a></li>
+                    <li><img src="~/Images/usadasnoprojeto/perfil-de-usuario.png" width="50px"height="50px"> <a asp-controller="Account" asp-action="Perfil" asp-route-id="@UserManager.GetUserId(User)" ><h3>@User.Identity.Name</h3></a></li>
+                     <hr />
                     <li><a asp-controller="Account" asp-action="Perfil" asp-route-id="@UserManager.GetUserId(User)" >Perfil da Escola</a></li>
+                    <li><a asp-controller="Account" asp-action="Foto"> Foto </a></li>
+                     <hr />
                     <li><a href="#">Configurações do Usuario</a></li>
                     <li><a asp-controller="Account" asp-action="Logout1"> Sair </a></li>
                 

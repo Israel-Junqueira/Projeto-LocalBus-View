@@ -3,3 +3,8 @@
     document.getElementById("nav").classList.toggle("change");
     document.getElementById("menu-bg").classList.toggle("change-bg");
 }
+
+function menuOver() {
+  
+    document.getElementById("menu-bg").classList.toggle("change-bg");
+}

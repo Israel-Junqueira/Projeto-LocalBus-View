@@ -71,6 +71,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxBY2Nlc3NEZW5pZWQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Usuario/Desktop/Geral/1_Informatica/Curso Udemy/ASP.NET/Etec-LocalBus/LocalBus/LocalBus/Views/Account/ForgotPassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxGb3Jnb3RQYXNzd29yZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Usuario/Desktop/Geral/1_Informatica/Curso Udemy/ASP.NET/Etec-LocalBus/LocalBus/LocalBus/Views/Account/Foto.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxGb3RvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Usuario/Desktop/Geral/1_Informatica/Curso Udemy/ASP.NET/Etec-LocalBus/LocalBus/LocalBus/Views/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -85,6 +93,22 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/Usuario/Desktop/Geral/1_Informatica/Curso Udemy/ASP.NET/Etec-LocalBus/LocalBus/LocalBus/Views/Account/Registro.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Ryby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Usuario/Desktop/Geral/1_Informatica/Curso Udemy/ASP.NET/Etec-LocalBus/LocalBus/LocalBus/Views/Account/ResetPassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZXNldFBhc3N3b3JkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Usuario/Desktop/Geral/1_Informatica/Curso Udemy/ASP.NET/Etec-LocalBus/LocalBus/LocalBus/Views/Account/Sucesso.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxTdWNlc3NvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Usuario/Desktop/Geral/1_Informatica/Curso Udemy/ASP.NET/Etec-LocalBus/LocalBus/LocalBus/Views/Account/SucessoAlteracaoSenha.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxTdWNlc3NvQWx0ZXJhY2FvU2VuaGEuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Usuario/Desktop/Geral/1_Informatica/Curso Udemy/ASP.NET/Etec-LocalBus/LocalBus/LocalBus/Views/Account/UploadFiles.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxVcGxvYWRGaWxlcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Usuario/Desktop/Geral/1_Informatica/Curso Udemy/ASP.NET/Etec-LocalBus/LocalBus/LocalBus/Views/Aluno/Index.cshtml]

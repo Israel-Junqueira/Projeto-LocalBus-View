@@ -1,4 +1,7 @@
-﻿namespace LocalBus.Models
+﻿using System.Collections.Generic;
+using System.IO;
+using Microsoft.AspNetCore.Http;
+namespace LocalBus.Models
 {
     public class FileManagerModel
     {

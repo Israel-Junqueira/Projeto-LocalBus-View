@@ -7,7 +7,6 @@ C:\Users\Usuario\Desktop\Geral\1_Informatica\Curso Udemy\ASP.NET\Etec-LocalBus\L
 C:\Users\Usuario\Desktop\Geral\1_Informatica\Curso Udemy\ASP.NET\Etec-LocalBus\LocalBus\LocalBus\bin\Debug\net6.0\LocalBus.dll
 C:\Users\Usuario\Desktop\Geral\1_Informatica\Curso Udemy\ASP.NET\Etec-LocalBus\LocalBus\LocalBus\bin\Debug\net6.0\ref\LocalBus.dll
 C:\Users\Usuario\Desktop\Geral\1_Informatica\Curso Udemy\ASP.NET\Etec-LocalBus\LocalBus\LocalBus\bin\Debug\net6.0\LocalBus.pdb
-C:\Users\Usuario\Desktop\Geral\1_Informatica\Curso Udemy\ASP.NET\Etec-LocalBus\LocalBus\LocalBus\obj\Debug\net6.0\LocalBus.csproj.AssemblyReference.cache
 C:\Users\Usuario\Desktop\Geral\1_Informatica\Curso Udemy\ASP.NET\Etec-LocalBus\LocalBus\LocalBus\obj\Debug\net6.0\LocalBus.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Usuario\Desktop\Geral\1_Informatica\Curso Udemy\ASP.NET\Etec-LocalBus\LocalBus\LocalBus\obj\Debug\net6.0\LocalBus.AssemblyInfoInputs.cache
 C:\Users\Usuario\Desktop\Geral\1_Informatica\Curso Udemy\ASP.NET\Etec-LocalBus\LocalBus\LocalBus\obj\Debug\net6.0\LocalBus.AssemblyInfo.cs
@@ -272,3 +271,8 @@ C:\Users\Usuario\Desktop\Geral\1_Informatica\Curso Udemy\ASP.NET\Etec-LocalBus\L
 C:\Users\Usuario\Desktop\Geral\1_Informatica\Curso Udemy\ASP.NET\Etec-LocalBus\LocalBus\LocalBus\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
 C:\Users\Usuario\Desktop\Geral\1_Informatica\Curso Udemy\ASP.NET\Etec-LocalBus\LocalBus\LocalBus\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\Usuario\Desktop\Geral\1_Informatica\Curso Udemy\ASP.NET\Etec-LocalBus\LocalBus\LocalBus\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\Users\Usuario\Desktop\Geral\1_Informatica\Curso Udemy\ASP.NET\Etec-LocalBus\LocalBus\LocalBus\bin\Debug\net6.0\MailKit.dll
+C:\Users\Usuario\Desktop\Geral\1_Informatica\Curso Udemy\ASP.NET\Etec-LocalBus\LocalBus\LocalBus\bin\Debug\net6.0\MimeKit.dll
+C:\Users\Usuario\Desktop\Geral\1_Informatica\Curso Udemy\ASP.NET\Etec-LocalBus\LocalBus\LocalBus\bin\Debug\net6.0\NETCore.MailKit.dll
+C:\Users\Usuario\Desktop\Geral\1_Informatica\Curso Udemy\ASP.NET\Etec-LocalBus\LocalBus\LocalBus\bin\Debug\net6.0\BouncyCastle.Crypto.dll
+C:\Users\Usuario\Desktop\Geral\1_Informatica\Curso Udemy\ASP.NET\Etec-LocalBus\LocalBus\LocalBus\obj\Debug\net6.0\LocalBus.csproj.AssemblyReference.cache
