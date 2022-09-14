@@ -1,81 +1,324 @@
 ﻿
-<html lang="en">
+<!DOCTYPE html>
+<html lang="pt-br">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - LocalBus</title>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-     <link rel="stylesheet" href="~/LocalBus.styles.css" asp-append-version="true" />
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Start your development with LeadMark landing page.">
+    <meta name="author" content="Devcrud">
+    <title>LeadMark Landing page | Free Bootstrap 4.3.x landing page</title>
+    <!-- font icons -->
+    <link rel="stylesheet" href="~/css2/themify-icons.css">
+    <!-- Bootstrap + LeadMark main styles -->
+	<link rel="stylesheet" href="~/css2/leadmark.css">
+
 </head>
-<body >
-    <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-0">
-            <div class="container-fluid">
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
 
-
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-
-
-                    <ul class="navbar-nav flex-grow-1" style="margin-top:-5px">
-
-                        <li class="navbar-brand">
-                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">
-                                <img src="https://www.iconbunny.com/icons/media/catalog/product/1/4/140.9-school-bus-icon-iconbunny.jpg" alt="" width"30" height="24" /><strong>LocalBus</strong>
-                            </a>
-                        </li>
-
-                        <li class="nav-item" style="margin-top:9px">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Team</a>
-                        <li class="nav-item">
-
-
-                        </li>
-
-                        <li class="nav-item" style="margin-top:9px">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Aluno" asp-action="Index"> Aluno</a>
-                        </li>
-
-
-
-                        <li class="navbar-collapse flex-sm-row-reverse nav-link text-dark">
+    <!-- page Navigation -->
+    <nav class="navbar custom-navbar navbar-expand-md navbar-light fixed-top" data-spy="affix" data-offset-top="10">
+        <div class="container">
+            <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">
+              <img src="https://www.iconbunny.com/icons/media/catalog/product/1/4/140.9-school-bus-icon-iconbunny.jpg" alt="Logo"/>LocalBus
+            </a>
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">                     
+                    <li class="nav-item">
+                        <a class="nav-link" href="#service">Homenagem</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Equipe</a>
+                       
+                    </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#Mentores">Mentores</a>
+                       
+                    </li>
+                   <li>
+                        <a class="nav-link" asp-area="" asp-controller="Aluno" asp-action="Index"> Aluno</a>
+                   </li>
+                                      
+                        <li class="nav-item ">
                            @await Html.PartialAsync("_LoginPartial")
-
                             @{
                             if (User.IsInRole("Admin"))
                                 {
-                                    <a class="nav-link text-dark" asp-area="Admin" asp-controller="Admin" asp-action="Index"> Admin</a>
+                                 <a class="ml-4 nav-link btn btn-primary btn-sm rounded" asp-area="Admin" asp-controller="Admin" asp-action="Index"> Admin</a>
                                 }
                             if(User.IsInRole("Member"))
-                            {
-                                 <a class="nav-link text-dark" asp-area="Administrador" asp-controller="Administrador" asp-action="Index"> Gestão de Pontos</a>
+                                 {
+                                 <a class="ml-4 nav-link btn btn-primary btn-sm rounded" asp-area="Administrador" asp-controller="Administrador" asp-action="Index"> Gestão de Pontos</a>
+                                 }
                             }
-                            }
-                            </li>
+                        </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-                    </ul>
+    <header class="header">
+        <div class="overlay">
+     
+            <h1 class="subtitle">"NENHUM OBSTACULO SERÁ <h2 style="font-size:50px";>Grande</h2>SE A SUA VONTADE DE VENCER FOR MAIOR "</h1>
+            <p></p>
+            <p></p>
+            <p></p>
+            <h1 class="title">Bem vindos ao Local-Bus</h1>  
+        </div>  
+        <div class="shape">
+            <svg viewBox="0 0 1500 200">
+                <path d="m 0,240 h 1500.4828 v -71.92164 c 0,0 -286.2763,-81.79324 -743.19024,-81.79324 C 300.37862,86.28512 0,168.07836 0,168.07836 Z"/>
+            </svg>
+        </div>  
+        <div class="mouse-icon"><div class="wheel"></div></div>
+    </header>
+
+    <section  id="service" class="section pt-0">
+        <div class="container">
+            <h6 class="section-title text-center">Agradecimentos</h6>
+            <h6 class="section-subtitle text-center mb-5 pb-3">Gratidão  "Centro Paulo Souza" - "ETEC Comendador João Rayz" - E aos Queridos Professores</h6>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card mb-4 mb-md-0">
+                        <div class="card-body">
+                            <small class="text-primary font-weight-bold">01</small>
+                            <h5 class="card-title mt-3"> Beatae quo <h5>
+                            <p class="mb-0">Lorem ipsum dolor sit amet, cquasi cupiditate voluptate debitis saepe dolorem totam dolor repudiandae quo nihil, repellendus nesciunt ab fuga quae, minima reprehenderit sequi fugit.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4 mb-md-0">
+                        <div class="card-body">
+                            <small class="text-primary font-weight-bold">02</small>
+                            <h5 class="card-title mt-3">Delectus Suscipit<h5>
+                            <p class="mb-0">Lorem ipsum dolor sit amet, cquasi cupiditate voluptate debitis saepe dolorem totam dolor repudiandae quo nihil, repellendus nesciunt ab fuga quae, minima reprehenderit sequi fugit.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4 mb-md-0">
+                        <div class="card-body">
+                            <small class="text-primary font-weight-bold">03</small>
+                            <h5 class="card-title mt-3">Itaque harum<h5>
+                            <p class="mb-0">Lorem ipsum dolor sit amet, cquasi cupiditate voluptate debitis saepe dolorem totam dolor repudiandae quo nihil, repellendus nesciunt ab fuga quae, minima reprehenderit sequi fugit.</p>
+                        </div>
+                    </div>
+                </div> 
+                
+            </div>
+        </div>
+    </section>
+    <!-- End OF Service Section -->
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="section portfolio-section">
+        <div class="container">
+            <h6 class="section-title text-center">Desenvolvedores</h6>
+            <h6 class="section-subtitle mb-5 text-center">Equipe designada para missão</h6>
+            <div class="filters">
+                <a href="#" data-filter=".new" class="active">
+                    Frontend
+                </a>
+                <a href="#" data-filter=".advertising">
+                    Backend
+                </a>
+                <a href="#" data-filter=".branding">
+                    MindSet
+                </a>
+                <a href="#" data-filter=".web">
+                    Documentação
+                </a>
+            </div>
+            <div class="portfolio-container"> 
+                <div class="col-md-6 col-lg-4 web new">
+                    <div class="portfolio-item">
+                        <img src="~/images/Leyout/Taina1126.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
+                        <div class="content-holder">
+                            <a class="img-popup" href="~/images/Leyout/aina1126.jpg"></a>
+                            <div class="text-holder">
+                                <h6 class="title">Israel R Junqueira</h6>
+                                <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
+                            </div>
+                        </div>   
+                    </div>             
+                </div>
+                <div class="col-md-6 col-lg-4 web new">
+                    <div class="portfolio-item">
+                        <img src="~/images/Leyout/Israel623.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
+                        <div class="content-holder">
+                            <a class="img-popup" href="~/images/Leyout/web-2.jpg"></a>
+                            <div class="text-holder">
+                                <h6 class="title">WEB</h6>
+                                <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
+                            </div>
+                        </div> 
+                    </div>                         
+                </div>
+                <div class="col-md-6 col-lg-4 advertising new">
+                    <div class="portfolio-item">
+                        <img src="~/images/Leyout/Pedro744x523.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">                         
+                        <div class="content-holder">
+                            <a class="img-popup" href="~/images/Leyout/Pedro750x360.jpg"></a>
+                            <div class="text-holder">
+                                <h6 class="title">ADVERSTISING</h6>
+                                <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
+                            </div>
+                        </div>    
+                    </div>              
+                </div> 
+                   <div class="col-md-6 col-lg-4 advertising new">
+                    <div class="portfolio-item">
+                        <img src="~/images/Leyout/Milena750x563.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">       
+                       <div class="content-holder">
+                            <a class="img-popup" href="assets/imgs/advertising-3.jpg"></a>
+                            <div class="text-holder">
+                                <h6 class="title">ADVERSITING</h6>
+                                <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
+                            </div>
+                        </div>
+                    </div>                                                       
+                </div> 
+                       <div class="col-md-6 col-lg-4 advertising new"> 
+                    <div class="portfolio-item">
+                        <img src="~/images/Leyout/Naile750x500.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">            
+                        <div class="content-holder">
+                            <a class="img-popup" href="assets/imgs/advertising-4.jpg"></a>
+                            <div class="text-holder">
+                                <h6 class="title">ADVERTISING</h6>
+                                <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
+                            </div>
+                        </div>
+                    </div>
+                            
+                </div>
+
+         
+            </div>   
+        </div>            
+    </section>
+    <!-- End of portfolio section -->
+
+    <!-- Blog Section -->
+    <section class="section" id="blog">
+        <div class="container">
+            <h6 class="section-title mb-0 text-center">Latest Articles</h6>
+            <h6 class="section-subtitle mb-5 text-center">Architecto provident deserunt eveniet libero</h6>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card border-0 mb-4">
+                        <img src="assets/imgs/blog-1.jpg" alt="" class="card-img-top w-100">
+                        <div class="card-body">                         
+                            <h6 class="card-title">Pariatur Omnis Harum quae sint.</h6>
+                            <p>Fuga quae ratione inventore Perferendis porro.</p>
+                            <a href="javascript:void(0)" class="small text-muted">Go To The Article</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card border-0 mb-4">
+                        <img src="assets/imgs/blog-2.jpg" alt="" class="card-img-top w-100">
+                        <div class="card-body">                         
+                            <h6 class="card-title"> Harum Quae Porro</h5>
+                            <p>Fuga quae ratione inventore Perferendis porro.</p>
+                            <a href="javascript:void(0)" class="small text-muted">Go To The Article</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card border-0 mb-4">
+                        <img src="assets/imgs/blog-3.jpg" alt="" class="card-img-top w-100">
+                        <div class="card-body">                         
+                            <h6 class="card-title">Qui optio neque alias</h6>
+                            <p>Fuga quae ratione inventore Perferendis porro.</p>
+                            <a href="javascript:void(0)" class="small text-muted">Go To The Article</a>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </nav>
-    </header>
-    <div class="container">
+        </div>
+    </section>
+    <!-- End of Blog Section -->
+
+    <!-- Testmonial Section -->
+    <section class="section" id="Mentores">
+        <div class="container">
+            <h6 class="section-title text-center mb-0">Professores</h6>
+            <h6 class="section-subtitle mb-5 text-center">"Não conheço missão maior e mais nobre que a de dirigir as inteligências jovens e preparar os homens do futuro"</h6>
+            <div class="row">
+                <div class="col-md-4 my-3 my-md-0">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="media align-items-center mb-3">
+                                <img class="mr-3" src="assets/imgs/avatar.jpg" alt="">
+                                <div class="media-body">
+                                    <h6 class="mt-1 mb-0">John Doe</h6>
+                                    <small class="text-muted mb-0">Business Analyst</small>     
+                                </div>
+                            </div>
+                            <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus enim modi, id dicta reiciendis itaque.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 my-3 my-md-0">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="media align-items-center mb-3">
+                                <img class="mr-3" src="assets/imgs/avatar-1.jpg" alt="">
+                                <div class="media-body">
+                                    <h6 class="mt-1 mb-0">Maria Garcia</h6>
+                                    <small class="text-muted mb-0">Insurance Agent</small>      
+                                </div>
+                            </div>
+                            <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus enim modi, id dicta reiciendis itaque.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 my-3 my-md-0">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="media align-items-center mb-3">
+                                <img class="mr-3" src="assets/imgs/avatar-2.jpg" alt="">
+                                <div class="media-body">
+                                    <h6 class="mt-1 mb-0">Mason Miller</h6>
+                                    <small class="text-muted mb-0">Residential Appraiser</small>        
+                                </div>
+                            </div>
+                            <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus enim modi, id dicta reiciendis itaque.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+ 
+    
+	
+	<!-- core  -->
+    <script src="~/lib/jquery/dist/jquery-3.4.1.js"></script>
+    <script src="~/lib/bootstrap/dist/jslayot/bootstrap.bundle.js"></script>
+
+    <!-- bootstrap 3 affix -->
+	<script src="~/lib/bootstrap/dist/jslayot/bootstrap.affix.js"></script>
+
+    <!-- Isotope -->
+    <script src="~/lib/bootstrap/dist/isotope/isotope.pkgd.js"></script>
+
+    <!-- LeadMark js -->
+    <script src="~/js/leadmark.js"></script>
+
+     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            <!--  &copy; 2022 - LocalBus - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>-->
-        </div>
-    </footer>
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>

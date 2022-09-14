@@ -1,6 +1,4 @@
-body {
-    background-color: #1C2127;
-}
+
 
 .container {
     position: absolute;
@@ -186,7 +184,7 @@ body {
     65% {
         transform: translateX(0)
     }
-}
+} 
 
 @keyframes flux {
     0%, 100% {

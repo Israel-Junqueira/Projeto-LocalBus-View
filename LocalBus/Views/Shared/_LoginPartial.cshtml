@@ -8,7 +8,7 @@
 
 <html>
 <head>
-    <link rel="stylesheet" href="~/css/MenuLogin.css" asp-append-version="true" />
+   
     <script src="~/js/MenuLogin.js"></script>
 </head>
 
@@ -16,39 +16,36 @@
 {
        <form asp-area="" asp-controller="Account" asp-action="Logout" id="logoutForm" method="post" class="navbar-left">
       
-        <div class="container-fluid" style="margin-left:190px">
-        <div id="menu">
-            <div id="menu-bar" onclick="menuOnClick()" onmouseenter="menuOnClick()" >
-              
-                <img src="https://img.icons8.com/color-glass/2x/username.png" width="30" height="30" >
+       
+            <div id="menu">
+                <div id="menu-bar" onclick="menuOnClick()" >
+                    <img src="https://img.icons8.com/color-glass/2x/username.png">
+                </div>
+                <nav class="nav" id="nav">
+                    <ul>
+                        <li><a asp-controller="Account" asp-action="Perfil" asp-route-id="@UserManager.GetUserId(User)" ><h3>@User.Identity.Name</h3></a></li>
+                         <hr />
+                        <li><a asp-controller="Account" asp-action="Perfil" asp-route-id="@UserManager.GetUserId(User)" >Perfil da Escola</a></li>
+                        <li><a asp-controller="Account" asp-action="Foto"> Foto </a></li>
+                         <hr />
+                        <li><a href="#">Configurações do Usuario</a></li>
+                        <li><a asp-controller="Account" asp-action="Logout1"> Sair </a></li>
                 
+                    </ul>
+                </nav>
             </div>
-            <nav class="nav" id="nav">
-                <ul>
-                    <li><img src="~/Images/usadasnoprojeto/perfil-de-usuario.png" width="50px"height="50px"> <a asp-controller="Account" asp-action="Perfil" asp-route-id="@UserManager.GetUserId(User)" ><h3>@User.Identity.Name</h3></a></li>
-                     <hr />
-                    <li><a asp-controller="Account" asp-action="Perfil" asp-route-id="@UserManager.GetUserId(User)" >Perfil da Escola</a></li>
-                    <li><a asp-controller="Account" asp-action="Foto"> Foto </a></li>
-                     <hr />
-                    <li><a href="#">Configurações do Usuario</a></li>
-                    <li><a asp-controller="Account" asp-action="Logout1"> Sair </a></li>
-                
-                </ul>
-            </nav>
-        </div>
 
         <div class="menu-bg" id="menu-bg"></div>
-      </div>
+     
     </form>
-         
-   
+        
 }
 else
 {
 
     <ul class="navbar-nav nav-left">
-        <a class="nav-link text-dark" asp-controller="Account" asp-action="Login" asp-route-returnUrl="@string.Format("{0}{1}",Context.Request.Path, Context.Request.QueryString)" style="color:white"> &nbsp;Log in &nbsp;</a>
-        <a class="nav-link text-dark" asp-controller="Account" asp-action="Registro" style="color:white"> &nbsp;Registro&nbsp;&nbsp;&nbsp; </a>
+        <a class="ml-4 nav-link btn btn-primary btn-sm rounded " asp-controller="Account" asp-action="Login" asp-route-returnUrl="@string.Format("{0}{1}",Context.Request.Path, Context.Request.QueryString)"> Login</a>
+        <a class="ml-4 nav-link btn btn-primary btn-sm rounded " asp-controller="Account" asp-action="Registro">Registro </a>
     </ul>
 
 }

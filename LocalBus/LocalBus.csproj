@@ -8,13 +8,84 @@
 
   <ItemGroup>
     <Compile Remove="Views\LoginController1\**" />
+    <Compile Remove="wwwroot\imgs\**" />
     <Content Remove="Views\LoginController1\**" />
+    <Content Remove="wwwroot\imgs\**" />
     <EmbeddedResource Remove="Views\LoginController1\**" />
+    <EmbeddedResource Remove="wwwroot\imgs\**" />
     <None Remove="Views\LoginController1\**" />
+    <None Remove="wwwroot\imgs\**" />
   </ItemGroup>
 
   <ItemGroup>
     <Compile Remove="Controllers\PerfilController.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="wwwroot\Images\header.jpg" />
+    <Content Remove="wwwroot\Images\Leyout\about-1.jpg" />
+    <Content Remove="wwwroot\Images\Leyout\about-2.jpg" />
+    <Content Remove="wwwroot\Images\Leyout\about.jpg" />
+    <Content Remove="wwwroot\Images\Leyout\advertising-1.jpg" />
+    <Content Remove="wwwroot\Images\Leyout\advertising-2.jpg" />
+    <Content Remove="wwwroot\Images\Leyout\advertising-3.jpg" />
+    <Content Remove="wwwroot\Images\Leyout\advertising-4.jpg" />
+    <Content Remove="wwwroot\Images\Leyout\avatar-1.jpg" />
+    <Content Remove="wwwroot\Images\Leyout\avatar-2.jpg" />
+    <Content Remove="wwwroot\Images\Leyout\avatar.jpg" />
+    <Content Remove="wwwroot\Images\Leyout\blog-1.jpg" />
+    <Content Remove="wwwroot\Images\Leyout\blog-2.jpg" />
+    <Content Remove="wwwroot\Images\Leyout\blog-3.jpg" />
+    <Content Remove="wwwroot\Images\Leyout\branding-1.jpg" />
+    <Content Remove="wwwroot\Images\Leyout\branding-2.jpg" />
+    <Content Remove="wwwroot\Images\Leyout\branding-3.jpg" />
+    <Content Remove="wwwroot\Images\Leyout\branding-4.jpg" />
+    <Content Remove="wwwroot\Images\Leyout\branding-5.jpg" />
+    <Content Remove="wwwroot\Images\Leyout\Israel750x460.jpg" />
+    <Content Remove="wwwroot\Images\Leyout\Israel750x550.jpg" />
+    <Content Remove="wwwroot\Images\Leyout\Israel750x600.jpg" />
+    <Content Remove="wwwroot\Images\Leyout\Milena2.jpg" />
+    <Content Remove="wwwroot\Images\Leyout\Milena399.jpg" />
+    <Content Remove="wwwroot\Images\Leyout\Nailiexemplo750x523.jpg" />
+    <Content Remove="wwwroot\Images\Leyout\Taina750.jpg" />
+    <Content Remove="wwwroot\Images\Leyout\Taina800.jpg" />
+    <Content Remove="wwwroot\Images\Leyout\Taina900.jpg" />
+    <Content Remove="wwwroot\Images\Leyout\web-1.jpg" />
+    <Content Remove="wwwroot\Images\Leyout\web-2.jpg" />
+    <Content Remove="wwwroot\Images\Leyout\web-3.jpg" />
+    <Content Remove="wwwroot\Images\Leyout\web-4.jpg" />
+    <Content Remove="wwwroot\lib\bootstrap\dist\css\bootstrap-grid2.css" />
+    <Content Remove="wwwroot\lib\bootstrap\dist\css\bootstrap-grid2.css.map" />
+    <Content Remove="wwwroot\lib\bootstrap\dist\css\bootstrap-grid2.min.css" />
+    <Content Remove="wwwroot\lib\bootstrap\dist\css\bootstrap-grid2.min.css.map" />
+    <Content Remove="wwwroot\lib\bootstrap\dist\css\bootstrap-grid2.rtl.css" />
+    <Content Remove="wwwroot\lib\bootstrap\dist\css\bootstrap-grid2.rtl.css.map" />
+    <Content Remove="wwwroot\lib\bootstrap\dist\css\bootstrap-grid2.rtl.min.css" />
+    <Content Remove="wwwroot\lib\bootstrap\dist\css\bootstrap-grid2.rtl.min.css.map" />
+    <Content Remove="wwwroot\lib\bootstrap\dist\css\bootstrap-reboot2.css" />
+    <Content Remove="wwwroot\lib\bootstrap\dist\css\bootstrap-reboot2.css.map" />
+    <Content Remove="wwwroot\lib\bootstrap\dist\css\bootstrap-reboot2.min.css" />
+    <Content Remove="wwwroot\lib\bootstrap\dist\css\bootstrap-reboot2.min.css.map" />
+    <Content Remove="wwwroot\lib\bootstrap\dist\css\bootstrap-reboot2.rtl.css" />
+    <Content Remove="wwwroot\lib\bootstrap\dist\css\bootstrap-reboot2.rtl.css.map" />
+    <Content Remove="wwwroot\lib\bootstrap\dist\css\bootstrap-reboot2.rtl.min.css" />
+    <Content Remove="wwwroot\lib\bootstrap\dist\css\bootstrap-reboot2.rtl.min.css.map" />
+    <Content Remove="wwwroot\lib\bootstrap\dist\css\bootstrap-utilities2.css" />
+    <Content Remove="wwwroot\lib\bootstrap\dist\css\bootstrap-utilities2.css.map" />
+    <Content Remove="wwwroot\lib\bootstrap\dist\css\bootstrap-utilities2.min.css" />
+    <Content Remove="wwwroot\lib\bootstrap\dist\css\bootstrap-utilities2.min.css.map" />
+    <Content Remove="wwwroot\lib\bootstrap\dist\css\bootstrap-utilities2.rtl.css" />
+    <Content Remove="wwwroot\lib\bootstrap\dist\css\bootstrap-utilities2.rtl.css.map" />
+    <Content Remove="wwwroot\lib\bootstrap\dist\css\bootstrap-utilities2.rtl.min.css" />
+    <Content Remove="wwwroot\lib\bootstrap\dist\css\bootstrap-utilities2.rtl.min.css.map" />
+    <Content Remove="wwwroot\lib\bootstrap\dist\css\bootstrap2.css" />
+    <Content Remove="wwwroot\lib\bootstrap\dist\css\bootstrap2.css.map" />
+    <Content Remove="wwwroot\lib\bootstrap\dist\css\bootstrap2.min.css" />
+    <Content Remove="wwwroot\lib\bootstrap\dist\css\bootstrap2.min.css.map" />
+    <Content Remove="wwwroot\lib\bootstrap\dist\css\bootstrap2.rtl.css" />
+    <Content Remove="wwwroot\lib\bootstrap\dist\css\bootstrap2.rtl.css.map" />
+    <Content Remove="wwwroot\lib\bootstrap\dist\css\bootstrap2.rtl.min.css" />
+    <Content Remove="wwwroot\lib\bootstrap\dist\css\bootstrap2.rtl.min.css.map" />
   </ItemGroup>
 
   <ItemGroup>
@@ -35,6 +106,7 @@
 
   <ItemGroup>
     <Folder Include="wwwroot\Images\Pontos\" />
+    <Folder Include="wwwroot\NovaPasta\" />
   </ItemGroup>
 
 </Project>
