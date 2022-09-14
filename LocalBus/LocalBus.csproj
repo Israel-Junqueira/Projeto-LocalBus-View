@@ -8,13 +8,13 @@
 
   <ItemGroup>
     <Compile Remove="Views\LoginController1\**" />
-    <Compile Remove="wwwroot\imgs\**" />
+    <Compile Remove="wwwroot\NovaPasta\**" />
     <Content Remove="Views\LoginController1\**" />
-    <Content Remove="wwwroot\imgs\**" />
+    <Content Remove="wwwroot\NovaPasta\**" />
     <EmbeddedResource Remove="Views\LoginController1\**" />
-    <EmbeddedResource Remove="wwwroot\imgs\**" />
+    <EmbeddedResource Remove="wwwroot\NovaPasta\**" />
     <None Remove="Views\LoginController1\**" />
-    <None Remove="wwwroot\imgs\**" />
+    <None Remove="wwwroot\NovaPasta\**" />
   </ItemGroup>
 
   <ItemGroup>
@@ -22,6 +22,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Content Remove="wwwroot\busao32.ico" />
     <Content Remove="wwwroot\Images\header.jpg" />
     <Content Remove="wwwroot\Images\Leyout\about-1.jpg" />
     <Content Remove="wwwroot\Images\Leyout\about-2.jpg" />
@@ -46,7 +47,6 @@
     <Content Remove="wwwroot\Images\Leyout\Israel750x600.jpg" />
     <Content Remove="wwwroot\Images\Leyout\Milena2.jpg" />
     <Content Remove="wwwroot\Images\Leyout\Milena399.jpg" />
-    <Content Remove="wwwroot\Images\Leyout\Nailiexemplo750x523.jpg" />
     <Content Remove="wwwroot\Images\Leyout\Taina750.jpg" />
     <Content Remove="wwwroot\Images\Leyout\Taina800.jpg" />
     <Content Remove="wwwroot\Images\Leyout\Taina900.jpg" />
@@ -106,7 +106,7 @@
 
   <ItemGroup>
     <Folder Include="wwwroot\Images\Pontos\" />
-    <Folder Include="wwwroot\NovaPasta\" />
+    <Folder Include="wwwroot\imgs\" />
   </ItemGroup>
 
 </Project>

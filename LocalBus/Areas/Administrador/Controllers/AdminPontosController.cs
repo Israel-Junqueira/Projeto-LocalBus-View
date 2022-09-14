@@ -93,12 +93,16 @@ namespace LocalBus.Areas.Administrador.Controllers
         // GET: AdminPontosController/Edit/5
         public async Task<ActionResult> Edit(int id)
         {
+#pragma warning disable CS0472 // O resultado da expressão é sempre o mesmo, pois um valor deste tipo nunca é 'null' 
             if (id == null)
+#pragma warning restore CS0472 // O resultado da expressão é sempre o mesmo, pois um valor deste tipo nunca é 'null' 
             {
                 return NotFound();
             }
             var Ponto = await _context.Pontos.FindAsync(id);
+#pragma warning disable CS0472 // O resultado da expressão é sempre o mesmo, pois um valor deste tipo nunca é 'null' 
             if (id == null)
+#pragma warning restore CS0472 // O resultado da expressão é sempre o mesmo, pois um valor deste tipo nunca é 'null' 
             {
                 return NotFound();
             }

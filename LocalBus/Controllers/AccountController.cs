@@ -43,7 +43,7 @@ namespace LocalBus.Controllers
      
 
         [HttpGet]
-        public async Task<IActionResult> Perfil(string id)
+        public IActionResult Perfil(string id)
         {
             if (id == null)
             {
