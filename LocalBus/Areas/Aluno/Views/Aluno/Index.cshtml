@@ -1,0 +1,75 @@
+﻿@model EscolaListViewModel
+
+
+ 
+<!DOCTYPE html>
+<html>
+<head>
+         <meta charset="UTF-8">
+         <meta http-equiv="X-UA-Compatible" content="IE=edge">
+         <script src="~/js/mapa.js"></script>
+         <script type='text/javascript' src='https://www.bing.com/api/maps/mapcontrol?callback=GetMap&key=AkclvbgfjdRI43pyQ7TM48Mx0Gz8LpXOJzYsm8-T3b7fFOt2n-GMm0USIPHg-YLu&setLang=pt&setMkt=PT-BR' async defer></script>
+</head>
+<body onload = "GetMap()">
+    @* ----------------------------------------------------------------------------------------*@
+  
+    <div class="container text-center" style="padding: 23px">
+        <div class="row">
+           <div class= "dropdown">
+              <a class = "btn btn-secondary dropdown-toggle" role="button"
+                          id = "dropdownMenuLink" data-bs-toggle = "dropdown" aria-expanded="false">Escolas</a>
+                <ul class="dropdown-menu">
+                        
+                    @foreach (var item in Model.NomesDasEscolas)
+                    {
+                      <li> 
+                          <a class="dropdown-item" asp-controller="MapAluno" asp-action="Index" style ="color:black"
+                           asp-route-IdEscola="@item.EscolaId">@item.NomeEscola </a>
+                      </li>
+                    }
+
+                    <li class="dropdown-divider"></li>
+                    <li>
+                        <a class = "dropdown-item" asp-controller="Aluno" asp-action="Index" asp-route-IdEscola="0"
+                        style ="color:black">Todas as Escolas</a>
+                    </li> 
+    
+                </ul>
+            </div>
+        </div>
+    </div>
+
+  @* ----------------------------------------------------------------------------------------*@
+<div id="myMap" style="position:relative;width:1100px;height:500px;" class="text-center"></div>
+<p> </p>
+
+        
+<script>
+         
+        function GetMap() {
+           
+
+            var map = new Microsoft.Maps.Map('#myMap', 
+            {
+                center: new Microsoft.Maps.Location(-22.489303078308875, -48.54630861383559), 
+                zoom: 13
+            
+            });
+          
+            map.setView({
+                mapTypeId: Microsoft.Maps.MapTypeId.aerial
+            });
+            var num = 3
+           
+                var loc2 = new Microsoft.Maps.Location(-22.489303078308875,-48.54630861383559)
+                var pin2 = new Microsoft.Maps.Pushpin(loc2,{
+                title:"ETEC",
+                subTitle:"João Rayz"
+                });
+                map.entities.push(pin2);
+            
+        }
+
+</script>
+</body>
+</html>

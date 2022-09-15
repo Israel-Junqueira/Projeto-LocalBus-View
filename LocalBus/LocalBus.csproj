@@ -54,38 +54,6 @@
     <Content Remove="wwwroot\Images\Leyout\web-2.jpg" />
     <Content Remove="wwwroot\Images\Leyout\web-3.jpg" />
     <Content Remove="wwwroot\Images\Leyout\web-4.jpg" />
-    <Content Remove="wwwroot\lib\bootstrap\dist\css\bootstrap-grid2.css" />
-    <Content Remove="wwwroot\lib\bootstrap\dist\css\bootstrap-grid2.css.map" />
-    <Content Remove="wwwroot\lib\bootstrap\dist\css\bootstrap-grid2.min.css" />
-    <Content Remove="wwwroot\lib\bootstrap\dist\css\bootstrap-grid2.min.css.map" />
-    <Content Remove="wwwroot\lib\bootstrap\dist\css\bootstrap-grid2.rtl.css" />
-    <Content Remove="wwwroot\lib\bootstrap\dist\css\bootstrap-grid2.rtl.css.map" />
-    <Content Remove="wwwroot\lib\bootstrap\dist\css\bootstrap-grid2.rtl.min.css" />
-    <Content Remove="wwwroot\lib\bootstrap\dist\css\bootstrap-grid2.rtl.min.css.map" />
-    <Content Remove="wwwroot\lib\bootstrap\dist\css\bootstrap-reboot2.css" />
-    <Content Remove="wwwroot\lib\bootstrap\dist\css\bootstrap-reboot2.css.map" />
-    <Content Remove="wwwroot\lib\bootstrap\dist\css\bootstrap-reboot2.min.css" />
-    <Content Remove="wwwroot\lib\bootstrap\dist\css\bootstrap-reboot2.min.css.map" />
-    <Content Remove="wwwroot\lib\bootstrap\dist\css\bootstrap-reboot2.rtl.css" />
-    <Content Remove="wwwroot\lib\bootstrap\dist\css\bootstrap-reboot2.rtl.css.map" />
-    <Content Remove="wwwroot\lib\bootstrap\dist\css\bootstrap-reboot2.rtl.min.css" />
-    <Content Remove="wwwroot\lib\bootstrap\dist\css\bootstrap-reboot2.rtl.min.css.map" />
-    <Content Remove="wwwroot\lib\bootstrap\dist\css\bootstrap-utilities2.css" />
-    <Content Remove="wwwroot\lib\bootstrap\dist\css\bootstrap-utilities2.css.map" />
-    <Content Remove="wwwroot\lib\bootstrap\dist\css\bootstrap-utilities2.min.css" />
-    <Content Remove="wwwroot\lib\bootstrap\dist\css\bootstrap-utilities2.min.css.map" />
-    <Content Remove="wwwroot\lib\bootstrap\dist\css\bootstrap-utilities2.rtl.css" />
-    <Content Remove="wwwroot\lib\bootstrap\dist\css\bootstrap-utilities2.rtl.css.map" />
-    <Content Remove="wwwroot\lib\bootstrap\dist\css\bootstrap-utilities2.rtl.min.css" />
-    <Content Remove="wwwroot\lib\bootstrap\dist\css\bootstrap-utilities2.rtl.min.css.map" />
-    <Content Remove="wwwroot\lib\bootstrap\dist\css\bootstrap2.css" />
-    <Content Remove="wwwroot\lib\bootstrap\dist\css\bootstrap2.css.map" />
-    <Content Remove="wwwroot\lib\bootstrap\dist\css\bootstrap2.min.css" />
-    <Content Remove="wwwroot\lib\bootstrap\dist\css\bootstrap2.min.css.map" />
-    <Content Remove="wwwroot\lib\bootstrap\dist\css\bootstrap2.rtl.css" />
-    <Content Remove="wwwroot\lib\bootstrap\dist\css\bootstrap2.rtl.css.map" />
-    <Content Remove="wwwroot\lib\bootstrap\dist\css\bootstrap2.rtl.min.css" />
-    <Content Remove="wwwroot\lib\bootstrap\dist\css\bootstrap2.rtl.min.css.map" />
   </ItemGroup>
 
   <ItemGroup>
@@ -99,7 +67,7 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
-    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.6" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.8" />
     <PackageReference Include="NETCore.MailKit" Version="2.1.0" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.3.0" />
   </ItemGroup>
@@ -107,6 +75,10 @@
   <ItemGroup>
     <Folder Include="wwwroot\Images\Pontos\" />
     <Folder Include="wwwroot\imgs\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Views\Home\Index.cshtml" />
   </ItemGroup>
 
 </Project>

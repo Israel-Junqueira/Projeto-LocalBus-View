@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Start your development with LeadMark landing page.">
+    <meta name="author" content="Devcrud">
+    <!-- font icons -->
+    <link rel="stylesheet" href="~/css2/themify-icons.css">
+    <!-- Bootstrap + LeadMark main styles -->
+    <link rel="stylesheet" href="~/css2/leadmark.css">
+    <link rel="shortcut icon" href="~/bus.ico" type="image/x-icon" />
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+    <nav class="navbar navbar-expand-md navbar-light bg-white border-bottom-0 box-shadow mb-0 ">
+            <div class="container">
+                <a class="navbar-brand" asp-area="Aluno" asp-controller="Home" asp-action="Index">
+                    <img src="~/Images/Leyout/bus.png" alt="Logo" />
+                </a>
+                <div class="collapse navbar-collapse">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item" >
+                            <a class="nav-link" asp-area="Aluno" asp-controller="Home" asp-action="Index">Pagina Inicial</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="Aluno" asp-controller="Aluno" asp-action="Index"> Aluno</a>
+                        </li>
+                        <li class="nav-item">
+                            @await Html.PartialAsync("_LoginPartial")
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+    </nav>
+    <div>
+        @RenderBody()
+    </div>
+</body>
+</html>

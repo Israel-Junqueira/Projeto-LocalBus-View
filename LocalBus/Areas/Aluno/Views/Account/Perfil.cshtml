@@ -1,0 +1,58 @@
+﻿@using Microsoft.AspNetCore.Identity
+@model LocalBus.Models.Escola
+
+@inject UserManager<MyUser> UserManager
+<h4>Escola</h4>
+<hr />
+
+<head>
+  <script src = " https://unpkg.com/sweetalert/dist/sweetalert.min.js " > </script > 
+    <link rel="stylesheet" href="~/css/sweetalert.css">
+    <script src="~/js/sweetalert.js"></script>
+
+
+</head>
+
+<div class="row">
+    <div class="col-md-6">
+        <form asp-action="Perfil">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="EscolaId" />
+            <div class="form-group">
+                <label asp-for="NomeEscola" class="control-label"></label>
+                <input asp-for="NomeEscola" class="form-control" />
+                <span asp-validation-for="NomeEscola" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TelefoneDaEscola" class="control-label"></label>
+                <input asp-for="TelefoneDaEscola" class="form-control" />
+                <span asp-validation-for="TelefoneDaEscola" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EmailDaEscola" class="control-label"></label>
+                <input asp-for="EmailDaEscola" class="form-control" />
+                <span asp-validation-for="EmailDaEscola" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CodigoDaEtec" class="control-label"></label>
+                <input asp-for="CodigoDaEtec" class="form-control" />
+                <span asp-validation-for="CodigoDaEtec" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MyUserId" class="control-label"></label>
+                <input asp-for="MyUserId" class="form-control" readonly />
+                <span asp-validation-for="MyUserId" class="text-danger"></span>
+            </div>
+            <br />
+            <div class="form-group">
+                <input type="submit" value="Save" id="salvar" class="btn btn-primary" />
+
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+

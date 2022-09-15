@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-	<meta charset="utf-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Start your development with LeadMark landing page.">
     <meta name="author" content="Devcrud">
@@ -10,51 +10,48 @@
     <!-- font icons -->
     <link rel="stylesheet" href="~/css2/themify-icons.css">
     <!-- Bootstrap + LeadMark main styles -->
-	<link rel="stylesheet" href="~/css2/leadmark.css">
-    <link rel ="shortcut icon" href="~/bus.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="~/css2/leadmark.css">
+    <link rel="shortcut icon" href="~/bus.ico" type="image/x-icon" />
 
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
 
     <!-- Navbar-->
-    <nav class="navbar custom-navbar navbar-expand-md navbar-light fixed-top" data-spy="affix" data-offset-top="10">
+    <nav class=" navbar custom-navbar navbar-expand-md navbar-light fixed-top" data-spy="affix" data-offset-top="10">
         <div class="container">
             <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">
-              <img src="~/Images/Leyout/bus.png" alt="Logo"/> 
+                <img src="~/Images/Leyout/bus.png" alt="Logo" />
             </a>
             <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto">                     
+                <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
                         <a class="nav-link" href="#service">Homenagem</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#portfolio">Equipe</a>
-                       
                     </li>
-                      <li class="nav-item">
+                    <li class="nav-item">
                         <a class="nav-link" href="#Mentores">Mentores</a>
-                       
                     </li>
-                   <li>
-                        <a class="nav-link" asp-area="" asp-controller="Aluno" asp-action="Index"> Aluno</a>
-                   </li>
-                                      
-                        <li class="nav-item ">
-                           @await Html.PartialAsync("_LoginPartial")
-                            @{
+                    <li>
+                        <a class="nav-link" asp-area="Aluno" asp-controller="Aluno" asp-action="Index"> Aluno</a>
+                    </li>
+                    <li class="nav-item ">
+                        @await Html.PartialAsync("_LoginPartial")
+                        @{
                             if (User.IsInRole("Admin"))
-                                {
-                                 <a class="ml-4 nav-link btn btn-primary btn-sm rounded" asp-area="Admin" asp-controller="Admin" asp-action="Index"> Admin</a>
-                                }
-                            if(User.IsInRole("Member"))
-                                 {
-                                 <a class="ml-4 nav-link btn btn-primary btn-sm rounded" asp-area="Administrador" asp-controller="Administrador" asp-action="Index"> Gestão de Pontos</a>
-                                 }
+                            {
+                                <a class="ml-4 nav-link btn btn-primary btn-sm rounded" asp-area="Admin" asp-controller="Admin" asp-action="Index"> Admin</a>
                             }
-                        </li>
+                            if (User.IsInRole("Member"))
+                            {
+                                <a class="ml-4 nav-link btn btn-primary btn-sm rounded" asp-area="Administrador" asp-controller="Administrador" asp-action="Index"> Gestão de Pontos</a>
+                            }
+                        }
+                    </li>
                 </ul>
             </div>
         </div>
@@ -62,22 +59,22 @@
 
     <header class="header">
         <div class="overlay">
-     
-            <h1 class="subtitle">"NENHUM OBSTACULO SERÁ <h2 style="font-size:50px";>GRANDE</h2>SE A SUA VONTADE DE VENCER FOR MAIOR "</h1>
+
+            <h1 class="subtitle">"NENHUM OBSTÁCULO SERÁ <h2 style="font-size:50px" ;>GRANDE</h2>SE A SUA VONTADE DE VENCER FOR MAIOR "</h1>
             <p></p>
             <p></p>
             <p></p>
-            <h1 class="title">Bem vindos ao Local-Bus</h1>  
-        </div>  
+            <h1 class="title">Bem vindos ao Local-Bus</h1>
+        </div>
         <div class="shape">
             <svg viewBox="0 0 1500 200">
-                <path d="m 0,240 h 1500.4828 v -71.92164 c 0,0 -286.2763,-81.79324 -743.19024,-81.79324 C 300.37862,86.28512 0,168.07836 0,168.07836 Z"/>
+                <path d="m 0,240 h 1500.4828 v -71.92164 c 0,0 -286.2763,-81.79324 -743.19024,-81.79324 C 300.37862,86.28512 0,168.07836 0,168.07836 Z" />
             </svg>
-        </div>  
+        </div>
         <div class="mouse-icon"><div class="wheel"></div></div>
     </header>
 
-    <section  id="service" class="section pt-0">
+    <section id="service" class="section pt-0">
         <div class="container">
             <h6 class="section-title text-center">Agradecimentos</h6>
             <h6 class="section-subtitle text-center mb-5 pb-3">Gratidão  "Centro Paulo Souza" - "ETEC Comendador João Rayz" - "Estado de Sâo Paulo"</h6>
@@ -88,7 +85,7 @@
                         <div class="card-body">
                             <small class="text-primary font-weight-bold">01</small>
                             <h5 class="card-title mt-3"> Centro Paula Souza </h5>
-                            <p class="mb-0"> <img src="~/Images/Leyout/CPS.jpg" alt="Logo"/> </p>
+                            <p class="mb-0"> <img src="~/Images/Leyout/CPS.jpg" alt="Logo" /> </p>
                         </div>
                     </div>
                 </div>
@@ -97,7 +94,7 @@
                         <div class="card-body">
                             <small class="text-primary font-weight-bold">02</small>
                             <h5 class="card-title mt-3">ETEC</h5>
-                            <p class="mb-0"><img src="~/Images/Leyout/Etec.jpg" alt="Logo"/></p>
+                            <p class="mb-0"><img src="~/Images/Leyout/Etec.jpg" alt="Logo" /></p>
                         </div>
                     </div>
                 </div>
@@ -106,16 +103,15 @@
                         <div class="card-body">
                             <small class="text-primary font-weight-bold">03</small>
                             <h5 class="card-title mt-3">Estado de São Paulo</h5>
-                            <p class="mb-0"><img src="~/Images/Leyout/GoSp.jpg" alt="Logo"/></p>
+                            <p class="mb-0"><img src="~/Images/Leyout/GoSp.jpg" alt="Logo" /></p>
                         </div>
                     </div>
-                </div> 
-                
+                </div>
+
             </div>
         </div>
     </section>
     <!-- End OF Service Section -->
-
     <!-- Desenvolvedores -->
     <section id="portfolio" class="section portfolio-section">
         <div class="container">
@@ -135,7 +131,7 @@
                     Documentação
                 </a>
             </div>
-            <div class="portfolio-container"> 
+            <div class="portfolio-container">
                 <div class="col-md-6 col-lg-4 doc web new">
                     <div class="portfolio-item">
                         <img src="~/images/Leyout/Taina1126.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
@@ -145,8 +141,8 @@
                                 <h6 class="title">Taina Leticia</h6>
                                 <p class="subtitle">"Comece a fazer para o mundo o que você quer ver no mundo"</p>
                             </div>
-                        </div>   
-                    </div>             
+                        </div>
+                    </div>
                 </div>
                 <div class="col-md-6 col-lg-4 front new back">
                     <div class="portfolio-item">
@@ -157,36 +153,36 @@
                                 <h6 class="title">Israel Junqueira</h6>
                                 <p class="subtitle">"Não deixe de sonhar. Há uma vida inteira para tornar seus sonhos possíveis."</p>
                             </div>
-                        </div> 
-                    </div>                         
+                        </div>
+                    </div>
                 </div>
                 <div class="col-md-6 col-lg-4 front back new">
                     <div class="portfolio-item">
-                        <img src="~/images/Leyout/Pedro744x523.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">                         
+                        <img src="~/images/Leyout/Pedro744x523.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
                         <div class="content-holder">
                             <a class="img-popup" href="~/images/Leyout/Pedro750x360.jpg"></a>
                             <div class="text-holder">
                                 <h6 class="title">Pedro Tunin</h6>
                                 <p class="subtitle">"Valorize as coisas simples que estão perto de você." </p>
                             </div>
-                        </div>    
-                    </div>              
-                </div> 
-                   <div class="col-md-6 col-lg-4 doc new">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 doc new">
                     <div class="portfolio-item">
-                        <img src="~/images/Leyout/Milena750x563.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">       
-                       <div class="content-holder">
+                        <img src="~/images/Leyout/Milena750x563.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
+                        <div class="content-holder">
                             <a class="img-popup" href="assets/imgs/advertising-3.jpg"></a>
                             <div class="text-holder">
                                 <h6 class="title">Milena Queiroz</h6>
                                 <p class="subtitle">"Que os momentos felizes sejam maioria"</p>
                             </div>
                         </div>
-                    </div>                                                       
-                </div> 
-                       <div class="col-md-6 col-lg-4 doc new"> 
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 doc new">
                     <div class="portfolio-item">
-                        <img src="~/images/Leyout/Naile750x500.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">            
+                        <img src="~/images/Leyout/Naile750x500.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
                         <div class="content-holder">
                             <a class="img-popup" href="assets/imgs/advertising-4.jpg"></a>
                             <div class="text-holder">
@@ -195,16 +191,14 @@
                             </div>
                         </div>
                     </div>
-                            
+
                 </div>
 
-         
-            </div>   
-        </div>            
+
+            </div>
+        </div>
     </section>
     <!-- End of portfolio section -->
-
-
     <!-- Testmonial Section -->
     <section class="section" id="Mentores">
         <div class="container">
@@ -218,8 +212,8 @@
                                 <img class="mr-3" src="~/Images/Leyout/Gallo.jpg " alt="">
                                 <div class="media-body">
                                     <h6 class="mt-1 mb-0">José Antonio Gallo Junior</h6>
-                                    <small class="text-muted mb-0">Docente no Etec Comendador João Rays |  Desenvolvimento de software</small>     
-                                     
+                                    <small class="text-muted mb-0">Docente no Etec Comendador João Rays |  Desenvolvimento de software</small>
+
                                 </div>
                             </div>
                             <p class="mb-0">"Nenhuma noite é escura demais para aqueles que têm luz própria."</p>
@@ -233,7 +227,7 @@
                                 <img class="mr-3" src="~/Images/Leyout/val.jpg " alt="">
                                 <div class="media-body">
                                     <h6 class="mt-1 mb-0">Valdemir Pedro</h6>
-                                    <small class="text-muted mb-0">Coordenador na Etec Comendador João Rays e Professor | Desenvolvimento de software</small>      
+                                    <small class="text-muted mb-0">Coordenador na Etec Comendador João Rays e Professor | Desenvolvimento de software</small>
                                 </div>
                             </div>
                             <p class="mb-0">"Viver não é esperar a tempestade passar, é aprender a dançar na chuva."</p>
@@ -247,7 +241,7 @@
                                 <img class="mr-3" src="~/Images/Leyout/sergio.jpg " alt="">
                                 <div class="media-body">
                                     <h6 class="mt-1 mb-0">Sérgio Lacerda</h6>
-                                    <small class="text-muted mb-0">Docente no Etec Comendador João Rays | Planejamente de TCC</small>        
+                                    <small class="text-muted mb-0">Docente no Etec Comendador João Rays | Planejamente de TCC</small>
                                 </div>
                             </div>
                             <p class="mb-0">"Seja humilde para admitir seus erros, inteligente para aprender com eles e maduro para corrigi-los."</p>
@@ -261,22 +255,22 @@
                                 <img class="mr-3" src="~/Images/Leyout/rosi.jpg " alt="">
                                 <div class="media-body">
                                     <h6 class="mt-1 mb-0">Rosiene Tondelli Cazale</h6>
-                                    <small class="text-muted mb-0">Docente no Comendador João Rays | Infraestrutura e Redes</small>        
+                                    <small class="text-muted mb-0">Docente no Comendador João Rays | Infraestrutura e Redes</small>
                                 </div>
                             </div>
                             <p class="mb-0">"Ensinar não é transferir conhecimento, mas criar as possibilidades para a sua própria produção ou a sua construção."</p>
                         </div>
                     </div>
                 </div>
-                
-                  <div class="col-md-4 my-3 my-md-0">
+
+                <div class="col-md-4 my-3 my-md-0">
                     <div class="card">
                         <div class="card-body">
                             <div class="media align-items-center mb-3">
                                 <img class="mr-3" src="~/Images/Leyout/edriano.jpg " alt="">
                                 <div class="media-body">
                                     <h6 class="mt-1 mb-0">Edriano Campana</h6>
-                                    <small class="text-muted mb-0">Docente no Comendador João Rays | Banco de Dados </small>        
+                                    <small class="text-muted mb-0">Docente no Comendador João Rays | Banco de Dados </small>
                                 </div>
                             </div>
                             <p class="mb-0">"A felicidade está a nossa espera, só precisamos convidá-la para que seja companheira na nossa vida."</p>
@@ -287,15 +281,15 @@
         </div>
     </section>
 
- 
-    
-	
-	<!-- core  -->
+
+
+
+    <!-- core  -->
     <script src="~/lib/jquery/dist/jquery-3.4.1.js"></script>
     <script src="~/lib/bootstrap/dist/jslayot/bootstrap.bundle.js"></script>
 
     <!-- bootstrap 3 affix -->
-	<script src="~/lib/bootstrap/dist/jslayot/bootstrap.affix.js"></script>
+    <script src="~/lib/bootstrap/dist/jslayot/bootstrap.affix.js"></script>
 
     <!-- Isotope -->
     <script src="~/lib/bootstrap/dist/isotope/isotope.pkgd.js"></script>
@@ -303,7 +297,7 @@
     <!-- LeadMark js -->
     <script src="~/js/leadmark.js"></script>
 
-     <div class="container">
+    <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
         </main>

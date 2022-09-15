@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace LocalBus.Areas.Admin.Controllers
 {
     [Area("Admin")]
-    [Authorize("Admin")]
+    [Authorize(Roles="Admin")]
     public class AdminController : Controller
     {
       
