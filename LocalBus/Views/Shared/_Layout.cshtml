@@ -6,12 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Start your development with LeadMark landing page.">
     <meta name="author" content="Devcrud">
-    <title>LeadMark Landing page | Free Bootstrap 4.3.x landing page</title>
-    <!-- font icons -->
-    <link rel="stylesheet" href="~/css2/themify-icons.css">
-    <!-- Bootstrap + LeadMark main styles -->
-    <link rel="stylesheet" href="~/css2/leadmark.css">
+     <link rel="stylesheet" href="~/css2/themify-icons.css">
     <link rel="shortcut icon" href="~/bus.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="~/css2/leadmark.css">
 
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
@@ -37,7 +34,7 @@
                         <a class="nav-link" href="#Mentores">Mentores</a>
                     </li>
                     <li>
-                        <a class="nav-link" asp-area="Aluno" asp-controller="Aluno" asp-action="Index"> Aluno</a>
+                        <a class="nav-link" asp-area="Usuario" asp-controller="Aluno" asp-action="Index"> Aluno</a>
                     </li>
                     <li class="nav-item ">
                         @await Html.PartialAsync("_LoginPartial")

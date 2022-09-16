@@ -22,13 +22,13 @@
                 </div>
                 <nav class="nav" id="nav">
                     <ul>
-                        <li><a asp-controller="Account" asp-area = "Aluno" asp-action="Perfil" asp-route-id="@UserManager.GetUserId(User)" ><h3>@User.Identity.Name</h3></a></li>
+                        <li><a asp-controller="Account" asp-area = "Usuario" asp-action="Perfil" asp-route-id="@UserManager.GetUserId(User)" ><h3>@User.Identity.Name</h3></a></li>
                          <hr />
-                        <li><a asp-controller="Account" asp-area = "Aluno" asp-action="Perfil" asp-route-id="@UserManager.GetUserId(User)" >Perfil da Escola</a></li>
-                        <li><a asp-controller="Account" asp-area = "Aluno" asp-action="Foto"> Foto </a></li>
+                        <li><a asp-controller="Account" asp-area = "Usuario" asp-action="Perfil" asp-route-id="@UserManager.GetUserId(User)" >Perfil da Escola</a></li>
+                        <li><a asp-controller="Account" asp-area = "Usuario" asp-action="Foto"> Foto </a></li>
                          <hr />
                         <li><a href="#">Configurações do Usuario</a></li>
-                        <li><a asp-controller="Account" asp-area = "Aluno" asp-action="Logout1"> Sair </a></li>
+                        <li><a asp-controller="Account" asp-area = "Usuario" asp-action="Logout"> Sair </a></li>
                 
                     </ul>
                 </nav>
@@ -43,8 +43,8 @@ else
 {
 
     <ul class="navbar-nav nav-left">
-        <a class="ml-4 nav-link btn btn-primary btn-sm rounded "asp-area ="Aluno" asp-controller="Account" asp-action="Login" asp-route-returnUrl="@string.Format("{0}{1}",Context.Request.Path, Context.Request.QueryString)"> Login</a>
-        <a class="ml-4 nav-link btn btn-primary btn-sm rounded "asp-area ="Aluno" asp-controller="Account" asp-action="Registro">Registro </a>
+        <a class="ml-4 nav-link btn btn-primary btn-sm rounded "asp-area ="Usuario" asp-controller="Account" asp-action="Login" asp-route-returnUrl="@string.Format("{0}{1}",Context.Request.Path, Context.Request.QueryString)"> Login</a>
+        <a class="ml-4 nav-link btn btn-primary btn-sm rounded "asp-area ="Usuario" asp-controller="Account" asp-action="Registro">Registro </a>
     </ul>
 
 }

@@ -5,6 +5,7 @@ using LocalBus.ViewModels;
 
 namespace LocalBus.Controllers
 {
+    [Area("Usuario")]
     public class AlunoController : Controller
     {
 
@@ -14,7 +15,7 @@ namespace LocalBus.Controllers
         {
             _context = context;
         }
-        [Area ("Aluno")]
+      
         public IActionResult Index(int IdEscola)
         {
             // if (User.Identity.IsAuthenticated) else{return RedirectToAction("login", "Account")}; autenticação para ver 

@@ -20,7 +20,7 @@ using MimeKit.Text;
 
 namespace LocalBus.Controllers
 {
-    [Area("Aluno")]
+    [Area("Usuario")]
     public class AccountController : Controller
     {
         private readonly UserManager<MyUser> _userManeger;
@@ -41,7 +41,7 @@ namespace LocalBus.Controllers
         }
 
      
-
+        
         [HttpGet]
         public IActionResult Perfil(string id)
         {
@@ -318,7 +318,7 @@ namespace LocalBus.Controllers
             return View("Login");
         }
         [HttpGet]
-        public async Task<IActionResult> Logout1()
+        public async Task<IActionResult> Logout()
         {
             HttpContext.Session.Clear();
             HttpContext.User = null;
@@ -326,7 +326,7 @@ namespace LocalBus.Controllers
             return RedirectToAction("Index", "Home");
         }
         [HttpPost]
-        public async Task<IActionResult> Logout()
+        public async Task<IActionResult> Logout1()
         {//a view desse action e uma partial view criada na pasta shered, -adicionar - view - view razor - check criar um modelo de exibição parcial 
             HttpContext.Session.Clear();
             HttpContext.User = null;

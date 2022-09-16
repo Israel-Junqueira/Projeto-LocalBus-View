@@ -6,6 +6,7 @@ using System.Collections.ObjectModel;
 
 namespace LocalBus.Controllers
 {
+    [Area("Usuario")]
     public class MapAluno : Controller
     {
 
@@ -16,7 +17,7 @@ namespace LocalBus.Controllers
         {
             _context = context;
         }
-      
+        
         public IActionResult Index(int IdEscola)
         {
 

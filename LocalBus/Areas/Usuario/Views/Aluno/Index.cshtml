@@ -1,0 +1,37 @@
+﻿@model EscolaListViewModel
+
+@await Html.PartialAsync("_LayoutAluno");
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script type='text/javascript' src='https://www.bing.com/api/maps/mapcontrol?callback=GetMap&key=AkclvbgfjdRI43pyQ7TM48Mx0Gz8LpXOJzYsm8-T3b7fFOt2n-GMm0USIPHg-YLu&setLang=pt&setMkt=PT-BR' async defer></script>
+</head>
+<body onload="GetMap()">
+    <script>
+        function GetMap() {
+
+
+            var map = new Microsoft.Maps.Map('#myMap',
+            {
+                center: new Microsoft.Maps.Location(-22.489303078308875, -48.54630861383559),
+                zoom: 13
+
+            });
+
+            map.setView({
+                mapTypeId: Microsoft.Maps.MapTypeId.aerial
+            });
+            var num = 3
+
+                var loc2 = new Microsoft.Maps.Location(-22.489303078308875,-48.54630861383559)
+                var pin2 = new Microsoft.Maps.Pushpin(loc2,{
+                title:"ETEC",
+                subTitle:"João Rayz"
+                });
+                map.entities.push(pin2);
+              }
+    </script>
+</body>
+</html>

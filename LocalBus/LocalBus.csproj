@@ -8,13 +8,9 @@
 
   <ItemGroup>
     <Compile Remove="Views\LoginController1\**" />
-    <Compile Remove="wwwroot\NovaPasta\**" />
     <Content Remove="Views\LoginController1\**" />
-    <Content Remove="wwwroot\NovaPasta\**" />
     <EmbeddedResource Remove="Views\LoginController1\**" />
-    <EmbeddedResource Remove="wwwroot\NovaPasta\**" />
     <None Remove="Views\LoginController1\**" />
-    <None Remove="wwwroot\NovaPasta\**" />
   </ItemGroup>
 
   <ItemGroup>
@@ -57,6 +53,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.AspNet.Identity.Core" Version="2.2.3" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.1" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.3">
       <PrivateAssets>all</PrivateAssets>

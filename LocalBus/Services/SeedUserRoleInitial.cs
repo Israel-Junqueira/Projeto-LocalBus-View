@@ -58,6 +58,26 @@ namespace LocalBus.Services
                     _UserManager.AddToRoleAsync(user, "Admin").Wait();
                 }
             }
+
+            if (_UserManager.FindByEmailAsync("Member").Result == null)
+            {
+                MyUser user = new MyUser();
+                user.UserName = "Member";
+                user.Email = "Member@localhost";
+                user.NormalizedEmail = "MEMBER@LOCALHOST";
+                user.NormalizedEmail = "MEMBER@LOCALHOST";
+                user.EmailConfirmed = true;
+                user.LockoutEnabled = false;
+                user.SecurityStamp = Guid.NewGuid().ToString();
+
+
+                IdentityResult result = _UserManager.CreateAsync(user, "Member123@").Result;
+
+                if (result.Succeeded)
+                {
+                    _UserManager.AddToRoleAsync(user, "Member").Wait();
+                }
+            }
         }
     }
 }

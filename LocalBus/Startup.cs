@@ -121,13 +121,13 @@ public class Startup
 
            endpoints.MapControllerRoute(
             name: "Administrador",
-            pattern: "Administrador/{controller=Administrador}/{action=Index}/{id?}");
+            pattern: "Administrador/{controller=Home}/{action=Index}/{id?}");
 
-            endpoints.MapControllerRoute(
-                name: "Aluno",
-                pattern: "Aluno/{controller=Aluno}/{action=Index}/{id?}"
-              );
-        
+                    endpoints.MapControllerRoute(
+             name: "Usuario",
+             pattern: "Usuario/{controller=Home}/{action=Index}/{id?}");
+      
+
         });
 
 
