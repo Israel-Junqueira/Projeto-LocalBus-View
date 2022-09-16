@@ -189,7 +189,7 @@ namespace LocalBus.Controllers
 
                 await _userManeger.AccessFailedAsync(user); //o cara tentou acessar e errou a senha 
                 var email = new MimeMessage();
-                email.From.Add(MailboxAddress.Parse("bimborcas123@outlook.com"));
+                email.From.Add(MailboxAddress.Parse("LocalBusEtec@outlook.com"));
                 email.To.Add(MailboxAddress.Parse(user.Email));
                 email.Subject = "🚌..BIII 🚌..BIII - Tentativa de Login Falhou";
                 var data = new DateTime();
@@ -208,7 +208,7 @@ namespace LocalBus.Controllers
                         smtp.ServerCertificateValidationCallback = (s, c, h, e) => true;
                         smtp.Connect("smtp.office365.com", 587, SecureSocketOptions.StartTls);
 
-                        smtp.Authenticate("bimborcas123@outlook.com", "lfmrra@@");
+                        smtp.Authenticate("LocalBusEtec@outlook.com", "LocalBus123@");
                         smtp.Send(email);
                         smtp.Disconnect(true);
                     }
