@@ -1,17 +1,10 @@
 
-body {
-    font-family: 'Roboto', sans-serif;
-    background-color: white;
-}
 
 #menu {
     z-index: 2;
 }
 
 #menu-bar {
-    width: 45px;
-    height: 10px;
-    margin: 22px 20px 23px 13px;
     cursor: pointer;
 }
 
@@ -20,6 +13,7 @@ body {
 .nav {
     transition: 0.3s ease;
     display: none;
+
 }
 
     .nav ul {
@@ -42,9 +36,7 @@ body {
             }
             
 .menu-bg, #menu {
-    top: -5px;
-    left: 1160px;
-    position: absolute;
+    position:absolute ;
 }
 
 .menu-bg {
@@ -70,7 +62,7 @@ body {
     }
 
     .change #bar2 {
-        opacity: 0;
+        opacity: 20;
     }
 
     .change #bar3 {

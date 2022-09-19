@@ -9,21 +9,19 @@
 <html>
 <head>
       <script src="~/js/MenuLogin.js"></script>
+       <link rel="stylesheet" href="~/css/MenuLogin.css">
+       
 </head>
 
 @if (SignInManager.IsSignedIn(User))
-{
-       <form asp-area="" asp-controller="Account" asp-action="Logout" id="logoutForm" method="post" class="navbar-left">
-      
-       
-            <div id="menu">
-                <div id="menu-bar" onclick="menuOnClick()" >
-                    <img src="https://img.icons8.com/color-glass/2x/username.png">
-                </div>
-                <nav class="nav" id="nav">
+{      
+            <div class="" id="menu" onclick="menuOnClick()">
+                   <a class="navbar-brand" id="menu-bar"> 
+                       <img  src="https://img.icons8.com/color-glass/2x/username.png"> 
+                   </a> 
+                <div class="nav" id="nav">
                     <ul>
-                        <li><a asp-controller="Account" asp-area = "Usuario" asp-action="Perfil" asp-route-id="@UserManager.GetUserId(User)" ><h3>@User.Identity.Name</h3></a></li>
-                         <hr />
+                        <li><a asp-controller="Account" asp-area = "Usuario" asp-action="Perfil" asp-route-id="@UserManager.GetUserId(User)" ><h3>@User.Identity.Name</h3></a></li> <hr />
                         <li><a asp-controller="Account" asp-area = "Usuario" asp-action="Perfil" asp-route-id="@UserManager.GetUserId(User)" >Perfil da Escola</a></li>
                         <li><a asp-controller="Account" asp-area = "Usuario" asp-action="Foto"> Foto </a></li>
                          <hr />
@@ -31,20 +29,16 @@
                         <li><a asp-controller="Account" asp-area = "Usuario" asp-action="Logout"> Sair </a></li>
                 
                     </ul>
-                </nav>
+                </div>
+               
             </div>
-
         <div class="menu-bg" id="menu-bg"></div>
-     
-    </form>
-        
+      
 }
 else
 {
-
     <ul class="navbar-nav nav-left">
         <a class="ml-4 nav-link btn btn-primary btn-sm rounded "asp-area ="Usuario" asp-controller="Account" asp-action="Login" asp-route-returnUrl="@string.Format("{0}{1}",Context.Request.Path, Context.Request.QueryString)"> Login</a>
         <a class="ml-4 nav-link btn btn-primary btn-sm rounded "asp-area ="Usuario" asp-controller="Account" asp-action="Registro">Registro </a>
     </ul>
-
 }

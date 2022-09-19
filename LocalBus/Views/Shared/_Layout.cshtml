@@ -36,8 +36,9 @@
                     <li>
                         <a class="nav-link" asp-area="Usuario" asp-controller="Aluno" asp-action="Index"> Aluno</a>
                     </li>
-                    <li class="nav-item ">
-                        @await Html.PartialAsync("_LoginPartial")
+
+
+                    <li class = "nav-item ml-4 ">
                         @{
                             if (User.IsInRole("Admin"))
                             {
@@ -48,9 +49,14 @@
                                 <a class="ml-4 nav-link btn btn-primary btn-sm rounded" asp-area="Administrador" asp-controller="Administrador" asp-action="Index"> Gestão de Pontos</a>
                             }
                         }
-                    </li>
+                   </li>
+                   <li class"nav-item">
+                         @await Html.PartialAsync("_LoginPartial")
+                   </li>
+                 
                 </ul>
             </div>
+             
         </div>
     </nav>
 
