@@ -56,6 +56,10 @@ html {
     line-height: 1.15;
     -webkit-text-size-adjust: 100%;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+}
+.Barrahorizontal {
+    overflow-x: hidden;
 }
 
 article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
@@ -71,6 +75,7 @@ body {
     color: #444;
     text-align: left;
     background-color: white;
+    overflow-x: hidden;
 }
 
 [tabindex="-1"]:focus {

@@ -1,165 +1,53 @@
-﻿
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 
 <html>
-<head>
+<head class="Barrahorizontal">
     <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Start your development with LeadMark landing page.">
     <title>@ViewBag.Title</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css " asp-append-version="true" />
-    <link rel="stylesheet" href="~/LocalBus.styles.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/js/AccessDenied.js" asp-append-version="true" />
-
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="~/css2/leadmark.css" />
+    <link rel="stylesheet" href="~/css/MenuAdmin.css" />
 </head>
-<body>
-    <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-0">
-        <div class="container-fluid">
 
-
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-
-
-                <ul class="navbar-nav flex-grow-1" style="margin-top:-5px">
-
-                    <li class="navbar-brand">
-                        <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">
-                            <img src="https://www.iconbunny.com/icons/media/catalog/product/1/4/140.9-school-bus-icon-iconbunny.jpg" alt="" width"30" height="24" /><strong>LocalBus</strong>
-                        </a>
-                    </li>
-
-                    <li class="nav-item" style="margin-top:9px">
-                        <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Team</a>
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home" class="Barrahorizontal">
+    <nav class="navbar navbar-expand-md  bg-white border-bottom-0 box-shadow mb-0">
+        <div class="container">
+            <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">
+                <img src="~/Images/Leyout/bus.png" alt="Logo" />
+            </a>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-
-
+                        <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">Pagina Inicial</a>
                     </li>
-
-                    <li class="nav-item" style="margin-top:9px">
-                        <a class="nav-link text-dark" asp-area="" asp-controller="Aluno" asp-action="Index"> Aluno</a>
+                    <li class="nav-item">
+                        <a class="nav-link" asp-area="Usuario" asp-controller="Aluno" asp-action="Index"> Aluno</a>
                     </li>
-
-
-
-                    <li class="navbar-collapse flex-sm-row-reverse nav-link text-dark">
+                    <li class="nav-item">
                         @await Html.PartialAsync("_LoginPartial")
-                           
-                     <a class="nav-link text-dark" asp-area="Administrador" asp-controller="Administrador" asp-action="Index"> Gestão de Pontos</a>
-                            
                     </li>
-
                 </ul>
             </div>
+
         </div>
     </nav>
-    <header>
-        <style>
-            #menu__toggle {
-                opacity: 0;
-            }
-
-                #menu__toggle:checked + .menu__btn > span {
-                    transform: rotate(45deg);
-                }
-
-                    #menu__toggle:checked + .menu__btn > span::before {
-                        top: 0;
-                        transform: rotate(0deg);
-                    }
-
-                    #menu__toggle:checked + .menu__btn > span::after {
-                        top: 0;
-                        transform: rotate(90deg);
-                    }
-
-                #menu__toggle:checked ~ .menu__box {
-                    left: 0 !important;
-                }
-
-            .menu__btn {
-                position: fixed;
-                top: 20px;
-                left: 34px;
-                width: 26px;
-                height: 26px;
-                cursor: pointer;
-                z-index: 1;
-                margin-top: 70px;
-            }
-
-                .menu__btn > span,
-                .menu__btn > span::before,
-                .menu__btn > span::after {
-                    display: block;
-                    position: absolute;
-                    width: 100%;
-                    height: 2px;
-                    background-color: #8B008B;
-                    transition-duration: .25s;
-                }
-
-                    .menu__btn > span::before {
-                        content: '';
-                        top: -8px;
-                    }
-
-                    .menu__btn > span::after {
-                        content: '';
-                        top: 8px;
-                    }
-
-            .menu__box {
-                display: block;
-                position: fixed;
-                top: 0;
-                left: -22.65%;
-                width: 300px;
-                height: 50%;
-                margin: 73px;
-                padding: 80px 0;
-                list-style: none;
-                background-color: #BA55D3;
-                box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
-                transition-duration: .50s;
-            }
-
-            .menu__item {
-                display: block;
-                padding: 12px 24px;
-                color: #333;
-                font-family: 'Roboto', sans-serif;
-                font-size: 20px;
-                font-weight: 600;
-                text-decoration: none;
-                transition-duration: .25s;
-            }
-
-                .menu__item:hover {
-                    background-color: #CFD8DC;
-                }
-
-        </style>
-
-
-        <div class="hamburger-menu" style="position:absolute">
-            <input id="menu__toggle" type="checkbox" />
-            <label class="menu__btn" for="menu__toggle">
-                <span></span>
-            </label>
-
-            <ul class="menu__box">
-                <li><a class="menu__item" asp-area="Administrador"  asp-action="Index" asp-controller="AdminPontos"> Adicionar novo Ponto</a></li>
-            </ul>
-        </div>
-
+    <header class="overlay">
+    <input id="menu__toggle" type="checkbox" />
+    <label class="menu__btn" for="menu__toggle">
+        <span></span>
+    </label>
+        <ul class="menu__box">
+        <li><a class="menu__item" asp-area="Administrador" asp-action="Index" asp-controller="AdminPontos"> Adicionar novo Ponto</a></li>
+    </ul>
     </header>
 
     <div>
         @RenderBody()
     </div>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>

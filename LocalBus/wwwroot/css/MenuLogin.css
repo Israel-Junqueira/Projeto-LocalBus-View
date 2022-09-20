@@ -43,9 +43,9 @@
     z-index: 1;
     width: 0;
     height: 0;
-    margin: 40px 0 0px 20px;
-    background: radial-gradient(circle, #9932cc, #bf40bf);
-    border-radius: 40%;
+    margin: 30px 0px 0px 50px;
+    background: radial-gradient(circle, #8A2BE2, #2A1226);
+    border-radius: 90%;
     transition: 0.70s ease;
 }
 
