@@ -2,16 +2,12 @@
 
 <html>
 <head class="Barrahorizontal">
-    <meta name="viewport" content="width=device-width" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Start your development with LeadMark landing page.">
     <title>@ViewBag.Title</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="~/css2/leadmark.css" />
-    <link rel="stylesheet" href="~/css/MenuAdmin.css" />
 </head>
 
-<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home" class="Barrahorizontal">
+<body>
     <nav class="navbar navbar-expand-md  bg-white border-bottom-0 box-shadow mb-0">
         <div class="container">
             <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">
@@ -33,17 +29,7 @@
 
         </div>
     </nav>
-    <header class="overlay">
-    <input id="menu__toggle" type="checkbox" />
-    <label class="menu__btn" for="menu__toggle">
-        <span></span>
-    </label>
-        <ul class="menu__box">
-        <li><a class="menu__item" asp-area="Administrador" asp-action="Index" asp-controller="AdminPontos"> Adicionar novo Ponto</a></li>
-    </ul>
-    </header>
-
-    <div>
+     <div>
         @RenderBody()
     </div>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
