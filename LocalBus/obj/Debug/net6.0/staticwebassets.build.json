@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "PlNjsubRJogq8YEa6tVi8WjZPKGUgxLl5Cghg3JioFY=",
+  "Hash": "qlKD8qvupQyow401nywiT1Bl3t8Gd6vdIyTt6isA2gg=",
   "Source": "LocalBus",
   "BasePath": "_content/LocalBus",
   "Mode": "Default",
@@ -187,12 +187,12 @@
       "OriginalItemSpec": "wwwroot\\Images\\Escolas\\Enviarimg.png"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\Images\\LayoutAdministrador\\locais2teste.jpg",
+      "Identity": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\Images\\LayoutAdministrador\\apps_findmymobile_feature01_slide01_mo.png",
       "SourceId": "LocalBus",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\",
       "BasePath": "_content/LocalBus",
-      "RelativePath": "Images/LayoutAdministrador/locais2teste.jpg",
+      "RelativePath": "Images/LayoutAdministrador/apps_findmymobile_feature01_slide01_mo.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -201,15 +201,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Images\\LayoutAdministrador\\locais2teste.jpg"
+      "OriginalItemSpec": "wwwroot\\Images\\LayoutAdministrador\\apps_findmymobile_feature01_slide01_mo.png"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\Images\\LayoutAdministrador\\mao500.jpg",
+      "Identity": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\Images\\LayoutAdministrador\\iphone.png",
       "SourceId": "LocalBus",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\",
       "BasePath": "_content/LocalBus",
-      "RelativePath": "Images/LayoutAdministrador/mao500.jpg",
+      "RelativePath": "Images/LayoutAdministrador/iphone.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -218,15 +218,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Images\\LayoutAdministrador\\mao500.jpg"
+      "OriginalItemSpec": "wwwroot\\Images\\LayoutAdministrador\\iphone.png"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\Images\\LayoutAdministrador\\mao500.png",
+      "Identity": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\Images\\LayoutAdministrador\\mao.png",
       "SourceId": "LocalBus",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\",
       "BasePath": "_content/LocalBus",
-      "RelativePath": "Images/LayoutAdministrador/mao500.png",
+      "RelativePath": "Images/LayoutAdministrador/mao.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -235,15 +235,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Images\\LayoutAdministrador\\mao500.png"
+      "OriginalItemSpec": "wwwroot\\Images\\LayoutAdministrador\\mao.png"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\Images\\LayoutAdministrador\\onibus.jpg",
+      "Identity": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\Images\\LayoutAdministrador\\maps.jpg",
       "SourceId": "LocalBus",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\",
       "BasePath": "_content/LocalBus",
-      "RelativePath": "Images/LayoutAdministrador/onibus.jpg",
+      "RelativePath": "Images/LayoutAdministrador/maps.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -252,15 +252,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Images\\LayoutAdministrador\\onibus.jpg"
+      "OriginalItemSpec": "wwwroot\\Images\\LayoutAdministrador\\maps.jpg"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\Images\\LayoutAdministrador\\onibuscolorido.jpg",
+      "Identity": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\Images\\LayoutAdministrador\\retro-abstract-background-vintage-geometric-stripes-design-simple-colorful-lines-classic-grunge-wallpaper-vector-1.png",
       "SourceId": "LocalBus",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\",
       "BasePath": "_content/LocalBus",
-      "RelativePath": "Images/LayoutAdministrador/onibuscolorido.jpg",
+      "RelativePath": "Images/LayoutAdministrador/retro-abstract-background-vintage-geometric-stripes-design-simple-colorful-lines-classic-grunge-wallpaper-vector-1.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -269,7 +269,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Images\\LayoutAdministrador\\onibuscolorido.jpg"
+      "OriginalItemSpec": "wwwroot\\Images\\LayoutAdministrador\\retro-abstract-background-vintage-geometric-stripes-design-simple-colorful-lines-classic-grunge-wallpaper-vector-1.png"
     },
     {
       "Identity": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\Images\\Leyout\\bus 450.jpg",
