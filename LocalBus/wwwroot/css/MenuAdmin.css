@@ -1,44 +1,132 @@
-﻿.borda{
+﻿.wrapper {
+    display: flex;
+    width: 100%;
+}
+#dismiss {
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    /* top right corner of the sidebar */
+    top: 10px;
+    right: 10px;
+    cursor:pointer;
+}
+
+#sidebar {
+    width: -250px;
+    position: fixed;
+    top: 180px;
+    left: -250px;
+    height: 100vh;
+    z-index: 999;
+    background: #7386D5;
+    color: #fff;
+    transition: all 0.3s;
+}
+    #sidebar.active {
+        margin-left: 250px;
+    }
+    #sidebar .sidebar-header {
+        padding: 20px;
+        background: #6d7fcc;
+    }
+@media (max-width: 768px) {
+    #sidebar {
+        margin-left: -250px;
+    }
+
+        #sidebar.active {
+            margin-right: -250px;
+        }
+}
+
+.container-fluid{
+    background:#7E50C0;
+    padding:20px;
+}
+#sidebar ul.components {
+    padding: 20px 0;
+    border-bottom: 1px solid #47748b;
+}
+
+#sidebar ul p {
+    color: #fff;
+    padding: 10px;
+}
+
+#sidebar ul li a {
+    padding: 10px;
+    font-size: 1.1em;
+    display: block;
+}
+
+    #sidebar ul li a:hover {
+        color: #7386D5;
+        background: #fff;
+    }
+
+#sidebar ul li.active > a, a[aria-expanded="true"] {
+    color: #fff;
+    background: #6d7fcc;
+}
+
+ul ul a {
+    font-size: 0.9em !important;
+    padding-left: 30px !important;
+    
+}
+.borda{
     border: 2px solid #000000 ;
 }
 .container-flex{
     margin-top:-20px;
     max-width: 100%;
     height:992px;
-    border: 2px solid #000000;
     display:flex;
     background: #7E50C0;
 }
 
+
 .img {
-    width: 550px;
-    height: 400px;
+    width: 800px;
+    height: 600px;
     margin-left: auto;
     margin-right: auto;
     margin-top:50px;
     margin-bottom: auto;
     display: block;
-    border: 2px solid #000000;
+ 
+}
+.card2 {
+    margin-top:50px;
+    height: auto;
+    margin-left: auto;
+    float: right;
+    flex-direction: column;
+    background-color: #60EBE8;
+    text-align: start;
 }
 .textoapresentacao{
     display:block;
 }
     .textoapresentacao h1 {
         margin-left:auto;
-        text-align: start;
+        text-align: center;
         margin-top: 50px;
         color: #000000;
         border: 2px solid #000000;
         max-width: 50%;
-        background-color:#0FE2E6
+        background-color:#0FE2E6;
+        max-width: 230px;
     }
     .textoapresentacao p {
         background-color:#FE6C00;
         margin-left: auto;
-        max-width: 300px;
+        max-width: 380px;
         color: white;
         border: 2px solid #000000;
     }
+
 
 
 .body {
@@ -97,17 +185,20 @@
             content: '';
             top: 8px;
         }
-
+.absolute{
+    position:absolute;
+}
 .menu__box {
+    display: flex;
     margin-top: -300px;
-    position:fixed;
+    position: fixed;
     left: -200px;
     width: 150px;
     height: 100%;
     margin: 50px;
     list-style: none;
-    background-color: #cc0091cc;
-    box-shadow: 1px 1px 25px rgb(254, 1, 211);
+    background-color: #00000088;
+    box-shadow: 1px 1px 25px rgb(255, 255, 255);
     transition-duration: .50s;
 }
 .barrinha {

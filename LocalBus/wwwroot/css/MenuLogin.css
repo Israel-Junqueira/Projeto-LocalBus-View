@@ -13,26 +13,31 @@
 .nav {
     transition: 0.3s ease;
     display: none;
+  
 
 }
 
-    .nav ul {
-        padding:  23px;
-    }
+
+.nav ul {
+    padding: 23px;
+}
 
     .nav li {
         list-style: none;
         padding: 5px 0;
+
     }
 
         .nav li a {
-            color: white;
+            color: #000000;
             font-size: 20px;
             text-decoration: none;
+            
         }
 
             .nav li a:hover {
                 font-weight: bold;
+                
             }
             
 .menu-bg, #menu {
