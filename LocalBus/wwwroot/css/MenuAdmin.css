@@ -1,4 +1,8 @@
-﻿.wrapper {
+﻿.btn-info:hover {
+    box-shadow: 1px 1px 15px rgb(0, 0, 0);
+}
+
+.wrapper {
     display: flex;
     width: 100%;
 }
@@ -10,25 +14,26 @@
     top: 10px;
     right: 10px;
     cursor:pointer;
+    
 }
 
 #sidebar {
     width: -250px;
     position: fixed;
-    top: 180px;
-    left: -250px;
+    top: 104px;
+    left: -170px;
     height: 100vh;
     z-index: 999;
-    background: #7386D5;
+    background: #8051C2;
     color: #fff;
-    transition: all 0.3s;
+    transition: all 0.5s;
 }
     #sidebar.active {
         margin-left: 250px;
     }
     #sidebar .sidebar-header {
         padding: 20px;
-        background: #6d7fcc;
+        background: #18192A;
     }
 @media (max-width: 768px) {
     #sidebar {
@@ -40,10 +45,7 @@
         }
 }
 
-.container-fluid{
-    background:#7E50C0;
-    padding:20px;
-}
+
 #sidebar ul.components {
     padding: 20px 0;
     border-bottom: 1px solid #47748b;
@@ -61,7 +63,7 @@
 }
 
     #sidebar ul li a:hover {
-        color: #7386D5;
+        color: rgb(0, 0, 0);
         background: #fff;
     }
 
@@ -75,131 +77,11 @@ ul ul a {
     padding-left: 30px !important;
     
 }
-.borda{
-    border: 2px solid #000000 ;
-}
-.container-flex{
-    margin-top:-20px;
-    max-width: 100%;
-    height:992px;
-    display:flex;
-    background: #7E50C0;
-}
-
-
-.img {
-    width: 800px;
-    height: 600px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top:50px;
-    margin-bottom: auto;
-    display: block;
- 
-}
-.card2 {
-    margin-top:50px;
-    height: auto;
-    margin-left: auto;
-    float: right;
-    flex-direction: column;
-    background-color: #60EBE8;
-    text-align: start;
-}
-.textoapresentacao{
-    display:block;
-}
-    .textoapresentacao h1 {
-        margin-left:auto;
-        text-align: center;
-        margin-top: 50px;
-        color: #000000;
-        border: 2px solid #000000;
-        max-width: 50%;
-        background-color:#0FE2E6;
-        max-width: 230px;
-    }
-    .textoapresentacao p {
-        background-color:#FE6C00;
-        margin-left: auto;
-        max-width: 380px;
-        color: white;
-        border: 2px solid #000000;
-    }
 
 
 
 .body {
     overflow-y: hidden;
-}
-
-#menu__toggle {
-    opacity: 0;
-}
-
-    #menu__toggle:checked + .menu__btn > span {
-        transform: rotate(45deg);
-    }
-
-        #menu__toggle:checked + .menu__btn > span::before {
-            top: 0;
-            transform: rotate(0deg);
-        }
-
-        #menu__toggle:checked + .menu__btn > span::after {
-            top: 0;
-            transform: rotate(90deg);
-        }
-
-    #menu__toggle:checked ~ .menu__box {
-        left: 0 !important;
-    }
-
-.menu__btn {
-    position: fixed;
-    left: 12px;
-    width: 26px;
-    height: 26px;
-    cursor: pointer;
-    z-index: 13;
-    margin-top: 35px;
-}
-
-    .menu__btn > span,
-    .menu__btn > span::before,
-    .menu__btn > span::after {
-        display: block;
-        position: absolute;
-        width: 100%;
-        height: 2px;
-        background-color: #000000;
-        transition-duration: .25s;
-    }
-
-        .menu__btn > span::before {
-            content: '';
-            top: -8px;
-        }
-
-        .menu__btn > span::after {
-            content: '';
-            top: 8px;
-        }
-.absolute{
-    position:absolute;
-}
-.menu__box {
-    display: flex;
-    margin-top: -300px;
-    position: fixed;
-    left: -200px;
-    width: 150px;
-    height: 100%;
-    margin: 50px;
-    list-style: none;
-    background-color: #00000088;
-    box-shadow: 1px 1px 25px rgb(255, 255, 255);
-    transition-duration: .50s;
 }
 .barrinha {
     position: relative;
@@ -214,7 +96,7 @@ ul ul a {
         height: 3px;
         bottom: 0;
         left: 0;
-        background-color: #7E50C0;
+        background-color: #0FE2E6;
         visibility: hidden;
         -webkit-transform: scaleX(0);
         transform: scaleX(0);
@@ -225,20 +107,4 @@ ul ul a {
         visibility: visible;
         -webkit-transform: scaleX(1);
         transform: scaleX(1);
-    }
-
-.menu__item {
-    padding:5px;
-    margin-top:15px;
-    position: fixed;
-    color: #ffffff;
-    font-family: 'Roboto', sans-serif;
-    font-size: 15px;
-    font-weight: 600;
-    text-decoration: none;
-    transition-duration: .25s;
-}
-
-    .menu__item:hover {
-        color: white;
     }
