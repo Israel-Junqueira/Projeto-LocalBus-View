@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "HE9sd0kFZsbK/28029C91bbk3+NNT2e4dEXgXXpNFVk=",
+  "Hash": "kGIl/yELCWxvf9Y+oYSNXwj0R+TyoXBSxTJ6Z38879c=",
   "Source": "LocalBus",
   "BasePath": "_content/LocalBus",
   "Mode": "Default",
@@ -204,6 +204,23 @@
       "OriginalItemSpec": "wwwroot\\Images\\Escolas\\Enviarimg.png"
     },
     {
+      "Identity": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\Images\\LayoutAdministrador\\223077-middle.png",
+      "SourceId": "LocalBus",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\",
+      "BasePath": "_content/LocalBus",
+      "RelativePath": "Images/LayoutAdministrador/223077-middle.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\LayoutAdministrador\\223077-middle.png"
+    },
+    {
       "Identity": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\Images\\LayoutAdministrador\\mao.png",
       "SourceId": "LocalBus",
       "SourceType": "Discovered",
@@ -253,6 +270,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Images\\LayoutAdministrador\\onibuscolorido180x140.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\Images\\LayoutAdministrador\\pngtree-location-icon-on-the-map-png-image_1790147.jpg",
+      "SourceId": "LocalBus",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\",
+      "BasePath": "_content/LocalBus",
+      "RelativePath": "Images/LayoutAdministrador/pngtree-location-icon-on-the-map-png-image_1790147.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\LayoutAdministrador\\pngtree-location-icon-on-the-map-png-image_1790147.jpg"
     },
     {
       "Identity": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\Images\\LayoutAdministrador\\retro-abstract-background-vintage-geometric-stripes-design-simple-colorful-lines-classic-grunge-wallpaper-vector-1.png",

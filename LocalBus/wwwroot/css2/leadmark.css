@@ -3054,6 +3054,7 @@ fieldset:disabled a.btn {
     color: #fff;
     background-color: #1289A7;
     border-color: #1289A7;
+    
 }
 
     .btn-info:hover {
@@ -3064,7 +3065,7 @@ fieldset:disabled a.btn {
     }
 
     .btn-info:focus, .btn-info.focus {
-        box-shadow: 0 0 0 0.2rem rgba(255,255,255,0.5);
+        box-shadow: 0 0 0 0.2rem #8A2BE2;
     }
 
     .btn-info.disabled, .btn-info:disabled {
