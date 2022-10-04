@@ -4,7 +4,7 @@
 <head class="Barrahorizontal">
     <title>Local-Bus</title>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="~/css2/leadmark.css" />
+    <link rel="stylesheet" href="~/css2/leadmark2.css" />
     <link rel="shortcut icon" href="~/bus.ico" type="image/x-icon" />
 </head>
 
@@ -22,6 +22,18 @@
                     <li class="nav-item">
                         <a class="nav-link" asp-area="Usuario" asp-controller="Aluno" asp-action="Index"> Aluno</a>
                     </li>
+                        <li >
+                         @{
+                            if (User.IsInRole("Admin"))
+                            {
+                                <a  class="ml-4 nav-link btn btn-primary btn-sm rounded" asp-area="Admin" asp-controller="Admin" asp-action="Index"> Admin</a>
+                            }
+                            if (User.IsInRole("Member"))
+                            {
+                                <a class="ml-4 nav-link btn btn-primary btn-sm rounded" asp-area="Administrador" asp-controller="Administrador" asp-action="Index"> Gestão de Pontos</a>
+                            }
+                        }
+                        </li>
                     <li class="nav-item">
                         @await Html.PartialAsync("_LoginPartial")
                     </li>

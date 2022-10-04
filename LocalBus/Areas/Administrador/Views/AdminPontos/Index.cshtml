@@ -1,5 +1,4 @@
 ﻿
-<!DOCTYPE html>
 @{
     var Teste = ViewBag.PontosAtivoConvertido;
     Console.WriteLine();
@@ -31,6 +30,7 @@
     <script>
 
         function GetMap() {
+             
             let coordenadas = @Html.Raw(Json.Serialize(ViewData["PontoAtivo"]));
 
 

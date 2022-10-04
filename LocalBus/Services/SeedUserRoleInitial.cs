@@ -69,8 +69,6 @@ namespace LocalBus.Services
                 user.EmailConfirmed = true;
                 user.LockoutEnabled = false;
                 user.SecurityStamp = Guid.NewGuid().ToString();
-
-
                 IdentityResult result = _UserManager.CreateAsync(user, "Member123@").Result;
 
                 if (result.Succeeded)
