@@ -1,0 +1,116 @@
+body{
+    margin:0;
+    padding: 0;
+    overflow: hidden;
+}
+.MeuContainer{
+    display: grid;
+    width: 100%;
+    height: 100%;
+    background:rgb(240, 182, 248) ;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows:  6fr 1fr;
+    grid-template-areas: 
+    "l r"
+    "b b";
+    grid-gap: 5px;
+}
+
+
+
+.lefth{
+    width: 100vm;
+    height: 100%;
+    grid-area: l;
+    background: blue;
+}
+.rigth{
+    width: 99%;
+    height: 96.8%;
+    grid-area: r;
+    background-image: url("../Images/LayoutAdministrador/237-2377764_purple-color-gradient-purple-gradient-background-hd.jpg");
+    padding: 10px 0px 10px 0px;
+    display: grid;
+    grid-template-rows: 7fr 1fr;
+}
+    .rigth input {
+        justify-self: end;
+        align-self: flex-end;
+        padding: 10px 10px 10px 10px;
+        border: transparent;
+        background-color: #0000006e;
+        font-size: 17px;
+        cursor: pointer;
+    }
+
+
+.bottom{
+    grid-area: b;
+    background: black;
+    width: 100%;
+    height: 100px;
+}
+
+/*----table-------*/
+.btn-success:hover{
+    background-color:aquamarine;
+}
+.tabelinha {
+    background-color: #758ea831;
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.423);
+}
+.tabelinha a{
+  cursor: pointer;
+  background:#000;
+  border-color:black;
+  font-size:10px;
+  border-radius:25%;
+}
+
+.tabelinha a:hover{
+  cursor: pointer;
+  color: white;
+
+}
+
+.tabelinha thead{
+  color: rgba(255, 255, 255, 0.618);
+  text-align: center;
+}
+.tabelinha thead:hover{
+    background-color:#ffffff0e ;
+}
+    .tabelinha td:hover {
+        background-color: #ffffff6c;
+    }
+.tabelinha,th,td{
+  margin: auto;
+  width: 50%;
+  height: 10%;
+  max-height:95%;
+  
+  border-collapse: collapse;
+  text-align: center;
+  border:transparent;
+  border-radius:5%;
+  
+}
+.tabelinha i{
+  width: 100%;
+}
+.tabelinha th{
+  padding: 20px;
+
+}
+.tabelinha td{
+  padding: 2px 2px 2px 2px;
+  background-color: #fefefe00;
+  text-align: center;
+  color:white;
+  white-space:nowrap;
+}
+.tabelinha input{
+
+  justify-content: center;
+  align-items: center;
+}

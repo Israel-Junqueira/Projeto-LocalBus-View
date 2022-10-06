@@ -1,4 +1,8 @@
-﻿.meucontainer {
+﻿.body{
+    overflow:hidden;
+}
+
+.meucontainer {
     width: 100%;
     height: 100%;
     background-color: rgba(74, 237, 248, 0.82);

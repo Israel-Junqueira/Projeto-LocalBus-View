@@ -27,7 +27,7 @@ namespace LocalBus.Areas.Administrador.Controllers
         }
 
         // GET: AdminPontosController
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> RegistrodePontos()
         {
             var ids = userManager1.GetUserId(User);
             var IdDaEscolaOnlineString = _context.Escola.FirstOrDefault(e => e.MyUserId == ids).EscolaId.ToString();
@@ -168,7 +168,7 @@ namespace LocalBus.Areas.Administrador.Controllers
             var ponto = await _context.Pontos.FindAsync(id);
             _context.Pontos.Remove(ponto);
             await _context.SaveChangesAsync();
-            return RedirectToAction(nameof(Index));
+            return RedirectToAction(nameof(RegistrodePontos));
         }
 
         private bool PontoExiste(int id)

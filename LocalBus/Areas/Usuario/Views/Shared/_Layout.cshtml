@@ -8,35 +8,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Start your development with LeadMark landing page.">
     <meta name="author" content="Devcrud">
-   <link rel="stylesheet" href="~/css2/leadmark2.css">
-   <link rel="shortcut icon" href="~/bus.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="~/css2/leadmark.css">
+    <link rel="shortcut icon" href="~/bus.ico" type="image/x-icon" />
 
 
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
     <nav class="navbar navbar-expand-md  bg-white border-bottom-0 box-shadow mb-0 ">
-            <div class="container">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">
-                    <img src="~/Images/Leyout/bus.png" alt="Logo" />
-                </a>
-                <div class="collapse navbar-collapse">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item" >
-                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">Pagina Inicial</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" asp-area="Usuario" asp-controller="Aluno" asp-action="Index"> Aluno</a>
-                        </li>
-              
-                    </ul>
-                </div>
+        <div class="container">
+            <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">
+                <img src="~/Images/Leyout/bus.png" alt="Logo" />
+            </a>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">Pagina Inicial</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" asp-area="Usuario" asp-controller="Aluno" asp-action="Index"> Aluno</a>
+                    </li>
 
+                    <li class="nav-item ml-4 ">
+                        @{
+                            if (User.IsInRole("Admin"))
+                            {
+                                <a class="ml-4 nav-link btn btn-primary btn-sm rounded" asp-area="Admin" asp-controller="Admin" asp-action="Index"> Admin</a>
+                            }
+                            if (User.IsInRole("Member"))
+                            {
+                                <a class="ml-4 nav-link btn btn-primary btn-sm rounded" asp-area="Administrador" asp-controller="Administrador" asp-action="Index"> Gestão de Pontos</a>
+                            }
+                        }
+                    </li>
+                    <li class="nav-item">
+                        @await Html.PartialAsync("_LoginPartial")
+                    </li>
+                </ul>
             </div>
+
+        </div>
     </nav>
     <div>
         @RenderBody()
     </div>
-     <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>

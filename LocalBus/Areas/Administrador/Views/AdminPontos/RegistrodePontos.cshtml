@@ -1,0 +1,93 @@
+﻿@{
+    var Teste = ViewBag.PontosAtivoConvertido;
+    Console.WriteLine();
+}
+@model IEnumerable<EscolaPonto>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="~/css/registroadmin.css">
+  <script type='text/javascript'
+   src='https://www.bing.com/api/maps/mapcontrol?callback=GetMap&key=AkclvbgfjdRI43pyQ7TM48Mx0Gz8LpXOJzYsm8-T3b7fFOt2n-GMm0USIPHg-YLu&setLang=pt&setMkt=PT-BR'
+   async defer></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="~/js/sucess.js"></script>
+  <script src="~/js/sweetalert2.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+</head>
+<body onload="GetMap()">
+  <div class="MeuContainer">
+    <div class="lefth">
+      <div class="mapa" id="myMap"></div>
+    </div>
+    <div class="rigth">
+          <table class="tabelinha align-center">
+              <thead><!--cabeçaçho-->
+                <tr>
+                  <th>Nome</th>
+                  <th>Descrição</th>
+                  <th>Ponto Ativo</th>
+                  <th><i class="fa fa-cog"></i></th>
+               </tr>
+              </thead>
+              <tbody>
+               @{
+                  foreach (var item in Model)
+                  {
+                      <tr>
+                          <td>
+                              @item.Ponto.Nome
+                          </td>
+                          <td>
+                              @item.Ponto.DescriçãoPonto
+                          </td>
+                          <td>
+                           @Html.DisplayFor(modelItem => item.Ponto.AtivoPonto)
+                          </td>
+  
+                          <td>
+                                <a class="btn btn-success" asp-action="Edit"    asp-route-id="@item.Ponto.PontoId"> <em class="fa fa-pencil"></em></a>
+                                <a class="btn btn-danger"  onclick="salvar2(@item.Ponto.PontoId)"> <em class="fa fa-trash"></em></a>
+
+                          </td>
+  
+                      </tr>
+                  }
+              }
+              </tbody>
+              
+          </table>
+       <form asp-action="Delete" id="Delete">
+           <input type="text" name="inputid"/>
+       </form>
+    </div>
+    <div class="bottom"></div>
+  </div>
+  <script>
+       function GetMap() {
+             
+            let coordenadas = @Html.Raw(Json.Serialize(ViewData["PontoAtivo"]));
+            var map = new Microsoft.Maps.Map('#myMap', { center: new Microsoft.Maps.Location(-22.489303078308875,-48.54630861383559), zoom: 13 });
+            map.setView({
+                mapTypeId: Microsoft.Maps.MapTypeId.aerial
+            });
+                for (var i = 0; i < coordenadas.length  ; i++) {
+                     var pushpin = new Microsoft.Maps.Location(coordenadas[i]['ponto'].latitudePonto, coordenadas[i]['ponto'].longitudePonto)
+                     var pushpin2 = new Microsoft.Maps.Pushpin(pushpin,{
+                     })
+                     map.entities.push(pushpin2);
+                 }
+        }
+      
+    
+  </script>
+</body>
+
+</html>
