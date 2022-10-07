@@ -4,8 +4,10 @@
 }
 @model IEnumerable<EscolaPonto>
 
+
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,7 +21,7 @@
   <script src="~/js/sucess.js"></script>
   <script src="~/js/sweetalert2.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-
+  <script src="~/js/jquery.js"></script>
 
 </head>
 <body onload="GetMap()">
@@ -64,9 +66,15 @@
               </tbody>
               
           </table>
-       <form asp-action="Delete" id="Delete">
-           <input type="text" name="inputid"/>
+          
+       <form asp-controller="AdminPontos" asp-action="Delete" id="Delete" method="post">
+          <fieldset>
+           <input name="idPonto" type="hidden" id="inputid"/>
+          </fieldset>
        </form>
+       
+   
+
     </div>
     <div class="bottom"></div>
   </div>

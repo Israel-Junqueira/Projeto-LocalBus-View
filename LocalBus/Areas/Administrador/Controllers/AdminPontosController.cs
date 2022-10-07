@@ -77,7 +77,7 @@ namespace LocalBus.Areas.Administrador.Controllers
                     escolaPonto.EscolaId= IdDaEscola;
                     _context.Add(escolaPonto);
                   await _context.SaveChangesAsync();
-                    return RedirectToAction(nameof(Index));
+                    return RedirectToAction(nameof(Create));
                 }
             }
             catch (Exception ex)
@@ -162,13 +162,14 @@ namespace LocalBus.Areas.Administrador.Controllers
         // POST: AdminPontosController/Delete/5
         [HttpPost,ActionName("Delete")]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteConfirmed(int id)
+        public async Task<IActionResult> DeleteConfirmed(int idPonto)
         {
 
-            var ponto = await _context.Pontos.FindAsync(id);
+            var ponto = await _context.Pontos.FindAsync(idPonto);
             _context.Pontos.Remove(ponto);
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(RegistrodePontos));
+            
         }
 
         private bool PontoExiste(int id)

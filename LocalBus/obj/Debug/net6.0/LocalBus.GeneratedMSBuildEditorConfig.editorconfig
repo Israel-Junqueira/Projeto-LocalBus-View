@@ -11,7 +11,7 @@ build_property.RootNamespace = LocalBus
 build_property.ProjectDir = C:\Users\Usuario\Desktop\Geral\1_Informatica\Curso Udemy\ASP.NET\Etec-LocalBus\LocalBus\LocalBus\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
-build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = true
 build_property.MSBuildProjectDirectory = C:\Users\Usuario\Desktop\Geral\1_Informatica\Curso Udemy\ASP.NET\Etec-LocalBus\LocalBus\LocalBus
 build_property._RazorSourceGeneratorDebug = 
 
@@ -21,10 +21,6 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/Usuario/Desktop/Geral/1_Informatica/Curso Udemy/ASP.NET/Etec-LocalBus/LocalBus/LocalBus/Areas/Administrador/Views/AdminPontos/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5pc3RyYWRvclxWaWV3c1xBZG1pblBvbnRvc1xDcmVhdGUuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Usuario/Desktop/Geral/1_Informatica/Curso Udemy/ASP.NET/Etec-LocalBus/LocalBus/LocalBus/Areas/Administrador/Views/AdminPontos/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5pc3RyYWRvclxWaWV3c1xBZG1pblBvbnRvc1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Usuario/Desktop/Geral/1_Informatica/Curso Udemy/ASP.NET/Etec-LocalBus/LocalBus/LocalBus/Areas/Administrador/Views/AdminPontos/Edit.cshtml]

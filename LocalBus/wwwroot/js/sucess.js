@@ -33,34 +33,34 @@ function salvar2(id) {
         confirmButtonText: 'Sim',
         denyButtonText: `Cancelar`,
     }).then((result) => {
-        /* Read more about isConfirmed, isDenied below */
         if (result.isConfirmed) {
-            Swal.fire('Excluido!', '', 'success')
-            setTimeout(enviarform2(id2), 1500)
+            Swal.fire({
+                title: 'Excluido!',
+                icon: "success",
+                showDenyButton: true,
+                confirmButtonText: 'Ok',
+                denyButtonText: 'Desistir',
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    setTimeout(enviarform2(id2), 1500)
+                }
+            })
+           
         } else if (result.isDenied) {
             Swal.fire('Ponto nao excluido', '', 'error')
         }
     })
 }
-function enviarform3(id) {
-    console.log(id)
-    document.getElementById("idponto").innerText = id
-    console.log(document.getElementById("idponto"))
-    $("#Delete").submit();
-}
-
 function enviarform2(id) {
+    console.log(id)
     var dados = new FormData();
-    dados.append('IDPonto',id)
-    console.log(dados)
-    $.ajax({
-        url: 'https://localhost:7047/Administrador/AdminPontos/RegistrodePontos',
-        method: 'POST',
-        data: dados,
-        processDat: false
+    document.getElementById("inputid").value = id;
+    dados.append('IDPonto', id)
+    var xmlhttp = new XMLHttpRequest();
+    xmlhttp.open("POST", "https://localhost:7047/Administrador/AdminPontos/RegistrodePontos", true)
+    xmlhttp.send(dados);
+    $("#Delete").submit()
 
-    })
-    $("#Delete").submit();
 
 }
 
