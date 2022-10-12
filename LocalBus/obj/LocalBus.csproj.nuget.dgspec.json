@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\LocalBus.csproj": {}
+    "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\LocalBus.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\LocalBus.csproj": {
+    "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\LocalBus.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\LocalBus.csproj",
+        "projectUniqueName": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\LocalBus.csproj",
         "projectName": "LocalBus",
-        "projectPath": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\LocalBus.csproj",
+        "projectPath": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\LocalBus.csproj",
         "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\obj\\",
+        "outputPath": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -72,13 +72,21 @@
               "target": "Package",
               "version": "[2.1.0, )"
             },
-            "ReflectionIT.Mvc.Paging": {
-              "target": "Package",
-              "version": "[6.0.1, )"
-            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.3.0, )"
+            },
+            "X.PagedList": {
+              "target": "Package",
+              "version": "[8.4.3, )"
+            },
+            "X.PagedList.Mvc": {
+              "target": "Package",
+              "version": "[8.0.5, )"
+            },
+            "X.PagedList.Mvc.Core": {
+              "target": "Package",
+              "version": "[8.4.3, )"
             }
           },
           "imports": [

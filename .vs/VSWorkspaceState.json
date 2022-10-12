@@ -1,0 +1,11 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\LocalBus",
+    "\\LocalBus\\Areas",
+    "\\LocalBus\\Areas\\Administrador",
+    "\\LocalBus\\Areas\\Administrador\\Controllers"
+  ],
+  "SelectedNode": "\\LocalBus\\Areas\\Administrador\\Controllers\\AdminPontosController.cs",
+  "PreviewInSolutionExplorer": false
+}

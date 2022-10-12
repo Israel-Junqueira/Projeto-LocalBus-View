@@ -72,6 +72,7 @@
             map.setView({ mapTypeId: Microsoft.Maps.MapTypeId.aerial }); //seta a visualização do mapa
             Microsoft.Maps.Events.addHandler(map, 'click', function (e) { Get_latitude_and_Get_longitude(e); }); //pega o ponto com o click
             function Get_latitude_and_Get_longitude(map) {
+               
                 var latitude = map.location.latitude;
                 var longitude = map.location.longitude;
                 let lativirgula = latitude.toString().replace(".", ",")
@@ -85,6 +86,7 @@
                 manager.attachAutosuggest('#searchBox', '#searchBoxContainer', selectedSuggestion);
             });
             function selectedSuggestion(suggestionResult) {
+               
                 map.entities.clear();
                 map.setView({ bounds: suggestionResult.bestView });
                 var pushpin = new Microsoft.Maps.Pushpin(suggestionResult.location);
@@ -95,6 +97,9 @@
                 var longivirgula = longitude.toString().replace(".", ",")
                 document.getElementById("latitude").value = lativirgula //pega a coordenada e transfera para o label
                 document.getElementById("longitude").value = longivirgula
+
+                
+
             }
         }
     </script>

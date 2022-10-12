@@ -9,14 +9,14 @@
 }
 
 
-
 .nav {
     transition: 0.3s ease;
     display: none;
-  
-
 }
-
+.nav .Usuario{
+    font-size:35px;
+    color:#fff
+}
 
 .nav ul {
     padding: 23px;
@@ -36,8 +36,7 @@
         }
 
             .nav li a:hover {
-                font-weight: bold;
-                
+                color:aliceblue;
             }
             
 .menu-bg, #menu {
@@ -48,10 +47,10 @@
     z-index: 1;
     width: 0;
     height: 0;
-    margin: 30px 0px 0px 50px;
-    background: radial-gradient(circle, #8A2BE2, #2A1226);
-    border-radius: 90%;
-    transition: 0.70s ease;
+    margin: 30px 0px 0px 30px;
+    background: radial-gradient(circle, #8a2be2da, #18192aa7);
+    border-radius: 30%;
+    transition: 0.20s ease;
 }
 
 .change {
@@ -59,23 +58,23 @@
 }
 
     .change .bar {
-        background-color: white;
+        background-color: #ffd800;
     }
 
     .change #bar1 {
-        transform: translateY(10px) rotateZ(-145deg);
+        transform: translateY(60px) rotateZ(-145deg);
     }
 
     .change #bar2 {
-        opacity: 20;
+        opacity: 90%;
     }
 
     .change #bar3 {
-        transform: translateY(-6px) rotateZ(45deg);
+        transform: translateY(-60px) rotateZ(95deg);
     }
 
 .change-bg {
-    width: 720px;
-    height: 795px;
-    transform: translate(-17%,-40%);
+    width: 220px;
+    height: 195px;
+    transform: translate(-27%,-10%);
 }

@@ -1,7 +1,5 @@
 ﻿@using LocalBus.Context
 @using Microsoft.AspNetCore.Identity
-
-
 @inject SignInManager<MyUser> SignInManager
 @inject UserManager<MyUser> UserManager
 @inject AppDbContext context
@@ -10,7 +8,6 @@
 <head>
       <script src="~/js/MenuLogin.js"></script>
        <link rel="stylesheet" href="~/css/MenuLogin.css">
-       
 </head>
 
 @if (SignInManager.IsSignedIn(User))
@@ -21,18 +18,15 @@
                    </a>
                 <div class="nav" id="nav">
                     <ul>
-                        <li><a asp-controller="Account" asp-area = "Usuario" asp-action="Perfil" asp-route-id="@UserManager.GetUserId(User)" ><h3>@User.Identity.Name</h3></a></li> <hr />
+                        <li><a class="Usuario" asp-controller="Account" asp-area = "Usuario" asp-action="Perfil" asp-route-id="@UserManager.GetUserId(User)" ><h3>@User.Identity.Name</h3></a></li> 
                         <li><a asp-controller="Account" asp-area = "Usuario" asp-action="Perfil" asp-route-id="@UserManager.GetUserId(User)" >Perfil da Escola</a></li>
-                        <li><a asp-controller="Account" asp-area = "Usuario" asp-action="Foto"> Foto </a></li>
-                        <hr />
-                        <li><a href="#">Configurações do Usuario</a></li>
                         <li><a asp-controller="Account" asp-area = "Usuario" asp-action="Logout"> Sair </a></li>
                 
                     </ul>
                 </div>
                
             </div>
-        <div class="menu-bg" id="menu-bg"></div>
+          <div class="menu-bg" id="menu-bg"></div>
       
 }
 else

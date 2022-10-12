@@ -1,121 +1,106 @@
 ﻿@model LocalBus.Models.Ponto
 
-<h4 class="text-center">Ponto</h4>
-
-<head>
-  <script src = " https://unpkg.com/sweetalert/dist/sweetalert.min.js " > </script > 
-    <link rel="stylesheet" href="~/css/sweetalert.css">
-    <script src="~/js/sweetalert.js"></script>
-
-
-</head>
-<div class="row">
-    <div class="col-md-4" style="margin-left:350px">
-        <form asp-action="Edit">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <input type="hidden" asp-for="PontoId" />
-            <div class="form-group">
-                <label asp-for="Nome" class="control-label"></label>
-                <input asp-for="Nome" class="form-control" />
-                <span asp-validation-for="Nome" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="DescriçãoPonto" class="control-label"></label>
-                <input asp-for="DescriçãoPonto" class="form-control" />
-                <span asp-validation-for="DescriçãoPonto" class="text-danger"></span>
-            </div>
-            <div class="form-group form-check">
-                <label class="form-check-label">
-                    <input class="form-check-input" asp-for="AtivoPonto" /> @Html.DisplayNameFor(model => model.AtivoPonto)
-                </label>
-            </div>
-            <div class="form-group">
-                <label asp-for="latitudePonto" class="control-label"></label>
-                <input asp-for="latitudePonto" class="form-control" id="latitude"/>
-                <span asp-validation-for="latitudePonto" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="LongitudePonto" class="control-label" ></label>
-                <input asp-for="LongitudePonto" class="form-control" id="longitude" />
-                <span asp-validation-for="LongitudePonto" class="text-danger"></span>
-            </div>
-
-            <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-primary" />
-            </div>
-        </form>
-    </div>
-</div>
-
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <script src="~/js/mapa.js"></script>
-    <script type='text/javascript' src='https://www.bing.com/api/maps/mapcontrol?callback=GetMap&key=AkclvbgfjdRI43pyQ7TM48Mx0Gz8LpXOJzYsm8-T3b7fFOt2n-GMm0USIPHg-YLu&setLang=pt&setMkt=PT-BR' async defer></script>
-    <link rel="stylesheet" href="~/css/TableStyle.css" asp-append-version="true" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="~/css/editar.css">
+    <script type='text/javascript'
+            src='https://www.bing.com/api/maps/mapcontrol?callback=GetMap&key=AkclvbgfjdRI43pyQ7TM48Mx0Gz8LpXOJzYsm8-T3b7fFOt2n-GMm0USIPHg-YLu&setLang=pt&setMkt=PT-BR'
+            async defer>
+    </script>
 </head>
-<body onload="GetMap()">
 
-    <div id='searchBoxContainer' style="margin-left:800px;margin-top:-390px"><input type='text' id='searchBox' /></div>
-    <div id="myMap" style="position:absolute;width:500px;height:310px; margin-left:800px">
+<body onload="GetMap()">
+    <div class="meucontainer">
+        <div class="left">
+
+            <form asp-action="Edit">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <input type="hidden" asp-for="PontoId" />
+
+                <div class="tbodyy">
+                    <label asp-for="Nome">Nome</label>
+                    <input asp-for="Nome" class="form-control" />
+                    <span asp-validation-for="Nome" class="text-danger"></span>
+
+                    <label asp-for="DescriçãoPonto"></label>
+                    <input asp-for="DescriçãoPonto" class="form-control" />
+                    <span asp-validation-for="DescriçãoPonto" class="text-danger"></span>
+
+                    <label asp-for="latitudePonto"></label>
+                    <input asp-for="latitudePonto" class="form-control" id="latitude" />
+                    <span asp-validation-for="latitudePonto" class="text-danger"></span>
+
+                    <label asp-for="LongitudePonto"></label>
+                    <input asp-for="LongitudePonto" class="form-control" id="longitude" />
+                    <span asp-validation-for="LongitudePonto" class="text-danger"></span>
+
+                    <label asp-for="AtivoPonto">Ativar/Desativar</label>
+                    <div>
+                        <input class="espacamento2check" type="checkbox" asp-for="AtivoPonto" />
+                        <span asp-validation-for="AtivoPonto" class="text-danger"></span>
+                    </div>
+                </div>
+
+                <div class="espacamento22">
+                    <button type="submit" class="btn btn-primary">Salvar </button>
+                </div>
+            </form>
+
+        </div>
+        <div class="rigth">
+            <div class="mapa" id="myMap"></div>
+        </div>
+        <div class="bottom"></div>
     </div>
-    <p> </p>
 
     <script>
-
-             function GetMap() {
-                 var map = new Microsoft.Maps.Map('#myMap', { center: new Microsoft.Maps.Location(-22.489303078308875,-48.54630861383559), zoom: 13 });
-                 map.setView({ mapTypeId: Microsoft.Maps.MapTypeId.aerial}); //seta a visualização do mapa
-          
-                 
-                 Microsoft.Maps.Events.addHandler(map, 'click', function (e) { Get_latitude_and_Get_longitude(e); }); //pega o ponto com o click
-                      function Get_latitude_and_Get_longitude(map)
-                      {     
-                             
-
-                             var latitude  =  map.location.latitude;
-                             var longitude =  map.location.longitude;
-                             let lativirgula = latitude.toString().replace(".",",")
-                             let longivirgula = longitude.toString().replace(".",",")
-                        
-
-                        
-
-                           document.getElementById("latitude").value =  lativirgula;
-                           document.getElementById("longitude").value = longivirgula;
-                           
-                      }
-                   
-                    
+        function GetMap() {
+            var map = new Microsoft.Maps.Map('#myMap', { center: new Microsoft.Maps.Location(-22.489303078308875, -48.54630861383559), zoom: 13 });
+            map.setView({ mapTypeId: Microsoft.Maps.MapTypeId.aerial }); //seta a visualização do mapa
+            Microsoft.Maps.Events.addHandler(map, 'click', function (e) { Get_latitude_and_Get_longitude(e); }); //pega o ponto com o click
+            function Get_latitude_and_Get_longitude(map) {
+                var latitude = map.location.latitude;
+                var longitude = map.location.longitude;
+                let lativirgula = latitude.toString().replace(".", ",")
+                let longivirgula = longitude.toString().replace(".", ",")
+                document.getElementById("latitude").value = lativirgula;
+                document.getElementById("longitude").value = longivirgula;
+            }
+            Microsoft.Maps.loadModule('Microsoft.Maps.AutoSuggest', function () { //faz o algoritmo de busca do lugar
+                var options = { maxResults: 4, map: map };
+                var manager = new Microsoft.Maps.AutosuggestManager(options);
+                manager.attachAutosuggest('#searchBox', '#searchBoxContainer', selectedSuggestion);
+            });
+            function selectedSuggestion(suggestionResult) {
+                map.entities.clear();
+                map.setView({ bounds: suggestionResult.bestView });
+                var pushpin = new Microsoft.Maps.Pushpin(suggestionResult.location);
+                map.entities.push(pushpin);
+                var latitude = suggestionResult.location.latitude;
+                var longitude = suggestionResult.location.longitude;
+                var lativirgula = latitude.toString().replace(".", ",")
+                var longivirgula = longitude.toString().replace(".", ",")
+                document.getElementById("latitude").value = lativirgula //pega a coordenada e transfera para o label
+                document.getElementById("longitude").value = longivirgula
                 
-
-
-                 Microsoft.Maps.loadModule('Microsoft.Maps.AutoSuggest', function () { //faz o algoritmo de busca do lugar
-                  var options = { maxResults: 4,map: map};
-                  var manager = new Microsoft.Maps.AutosuggestManager(options);
-                      manager.attachAutosuggest('#searchBox', '#searchBoxContainer', selectedSuggestion);});
-
-                      function selectedSuggestion(suggestionResult) {
-                         map.entities.clear();
-                         map.setView({ bounds: suggestionResult.bestView });
-
-                         var pushpin = new Microsoft.Maps.Pushpin(suggestionResult.location);
-                         map.entities.push(pushpin);
-
-                             var latitude  = suggestionResult.location.latitude;
-                             var longitude =  suggestionResult.location.longitude;
-                             var lativirgula = latitude.toString().replace(".",",")
-                             var longivirgula = longitude.toString().replace(".",",")
-                             document.getElementById("latitude").value = lativirgula //pega a coordenada e transfera para o label
-                             document.getElementById("longitude").value = longivirgula
-                      }
-
+            }
         }
     </script>
 </body>
 </html>
-<div class="text-center "style="margin-top:400px" >
-    <a asp-action="Index">Back to List</a>
-</div>
+
+
+
+
+
+
+
+
+
+
 

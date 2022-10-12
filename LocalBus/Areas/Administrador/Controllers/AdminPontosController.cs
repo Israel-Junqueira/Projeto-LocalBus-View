@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
+using X.PagedList;
 
 namespace LocalBus.Areas.Administrador.Controllers
 {
@@ -27,18 +28,41 @@ namespace LocalBus.Areas.Administrador.Controllers
         }
 
         // GET: AdminPontosController
-        public async Task<IActionResult> RegistrodePontos()
+
+        public async Task<IActionResult> RegistrodePontos(string sortOrder, string currentFilter, string searchString, int? page)
         {
+            ViewBag.CurrentSort = sortOrder;
+            ViewBag.NomeParam = String.IsNullOrEmpty(sortOrder) ? "Nome_desc" : "";
+            ViewBag.DateParm = sortOrder == "Date" ? "Date_desc" : "Date";
+            int pageSize = 5;
+            int pageNumber = (page ?? 1);
+
+            if (searchString != null)
+            {
+                page = 1;
+            }
+            else
+            {
+                searchString = currentFilter;
+            }
+
+            ViewBag.CurrentFilter = searchString;
+
             var ids = userManager1.GetUserId(User);
             var IdDaEscolaOnlineString = _context.Escola.FirstOrDefault(e => e.MyUserId == ids).EscolaId.ToString();
             var IdDaEscolaOnlineInt = Convert.ToInt32(IdDaEscolaOnlineString);
-            ViewData["PontoAtivo"] = _context.EscolasPontos.Where(p => p.EscolaId.Equals(IdDaEscolaOnlineInt)).Include(c=>c.Ponto).Where(c=>c.Ponto.AtivoPonto==true).ToArray();
+            ViewData["PontoAtivo"] = _context.EscolasPontos.Where(p => p.EscolaId.Equals(IdDaEscolaOnlineInt)).Include(c => c.Ponto).Where(c => c.Ponto.AtivoPonto == true).ToArray();
+            var pontosDoUsuarioLogado = _context.EscolasPontos.Where(p => p.EscolaId.Equals(IdDaEscolaOnlineInt)).Include(c => c.Ponto).ToPagedList(pageNumber,pageSize);
+
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                pontosDoUsuarioLogado = pontosDoUsuarioLogado.Where(s => s.Ponto.Nome.ToUpper().Contains(searchString.ToUpper())
+                                       || s.Ponto.Nome.ToUpper().Contains(searchString.ToUpper())).ToPagedList();
+            }
+       
         
-            var pontosDoUsuarioLogado = _context.EscolasPontos.Where(p => p.EscolaId.Equals(IdDaEscolaOnlineInt)).Include(c => c.Ponto).ToArray();
-            var result = await _context.EscolasPontos.Where(p => p.EscolaId.Equals(ids)).ToListAsync();
-            var conversao = result.ToArray();
-            ViewBag.PontosAtivoConvertido = _context.EscolasPontos.Where(p => p.EscolaId.Equals(IdDaEscolaOnlineInt)).Include(c => c.Ponto).ToArray(); 
             return View(pontosDoUsuarioLogado);
+
         }
 
         // GET: AdminPontosController/Details/5
@@ -137,7 +161,7 @@ namespace LocalBus.Areas.Administrador.Controllers
                         throw;
                     }
                 }
-                return RedirectToAction(nameof(Index));
+                return RedirectToAction(nameof(RegistrodePontos));
             }
             return View(ponto);
         }

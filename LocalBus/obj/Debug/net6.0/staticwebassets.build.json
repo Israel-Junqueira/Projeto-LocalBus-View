@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "C2veONDo3BXwZEOD6BByCl0d63fAx0ojegsCAoUf0T8=",
+  "Hash": "rU1Q+91v0KdbtCiIsf3OBBDhQDvFursBmRCXuSEJqSY=",
   "Source": "LocalBus",
   "BasePath": "_content/LocalBus",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "LocalBus\\wwwroot",
       "Source": "LocalBus",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\",
       "BasePath": "_content/LocalBus",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\bus.ico",
+      "Identity": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\bus.ico",
       "SourceId": "LocalBus",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\",
       "BasePath": "_content/LocalBus",
       "RelativePath": "bus.ico",
       "AssetKind": "All",
@@ -34,10 +34,10 @@
       "OriginalItemSpec": "wwwroot\\bus.ico"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\css\\admincreate.css",
+      "Identity": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\css\\admincreate.css",
       "SourceId": "LocalBus",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\",
       "BasePath": "_content/LocalBus",
       "RelativePath": "css/admincreate.css",
       "AssetKind": "All",
@@ -51,10 +51,61 @@
       "OriginalItemSpec": "wwwroot\\css\\admincreate.css"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\css\\MenuAdmin.css",
+      "Identity": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\css\\alteracao.css",
       "SourceId": "LocalBus",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\",
+      "BasePath": "_content/LocalBus",
+      "RelativePath": "css/alteracao.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\alteracao.css"
+    },
+    {
+      "Identity": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\css\\editar.css",
+      "SourceId": "LocalBus",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\",
+      "BasePath": "_content/LocalBus",
+      "RelativePath": "css/editar.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\editar.css"
+    },
+    {
+      "Identity": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\css\\forgt.css",
+      "SourceId": "LocalBus",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\",
+      "BasePath": "_content/LocalBus",
+      "RelativePath": "css/forgt.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\forgt.css"
+    },
+    {
+      "Identity": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\css\\MenuAdmin.css",
+      "SourceId": "LocalBus",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\",
       "BasePath": "_content/LocalBus",
       "RelativePath": "css/MenuAdmin.css",
       "AssetKind": "All",
@@ -68,10 +119,10 @@
       "OriginalItemSpec": "wwwroot\\css\\MenuAdmin.css"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\css\\MenuLogin.css",
+      "Identity": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\css\\MenuLogin.css",
       "SourceId": "LocalBus",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\",
       "BasePath": "_content/LocalBus",
       "RelativePath": "css/MenuLogin.css",
       "AssetKind": "All",
@@ -85,10 +136,10 @@
       "OriginalItemSpec": "wwwroot\\css\\MenuLogin.css"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\css\\registroadmin.css",
+      "Identity": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\css\\registroadmin.css",
       "SourceId": "LocalBus",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\",
       "BasePath": "_content/LocalBus",
       "RelativePath": "css/registroadmin.css",
       "AssetKind": "All",
@@ -102,10 +153,10 @@
       "OriginalItemSpec": "wwwroot\\css\\registroadmin.css"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\css\\site.css",
+      "Identity": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\css\\site.css",
       "SourceId": "LocalBus",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\",
       "BasePath": "_content/LocalBus",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
@@ -119,10 +170,10 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\css\\stiloAdmin.css",
+      "Identity": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\css\\stiloAdmin.css",
       "SourceId": "LocalBus",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\",
       "BasePath": "_content/LocalBus",
       "RelativePath": "css/stiloAdmin.css",
       "AssetKind": "All",
@@ -136,10 +187,10 @@
       "OriginalItemSpec": "wwwroot\\css\\stiloAdmin.css"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\css\\style.css",
+      "Identity": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\css\\style.css",
       "SourceId": "LocalBus",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\",
       "BasePath": "_content/LocalBus",
       "RelativePath": "css/style.css",
       "AssetKind": "All",
@@ -153,10 +204,10 @@
       "OriginalItemSpec": "wwwroot\\css\\style.css"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\css\\TableStyle.css",
+      "Identity": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\css\\TableStyle.css",
       "SourceId": "LocalBus",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\",
       "BasePath": "_content/LocalBus",
       "RelativePath": "css/TableStyle.css",
       "AssetKind": "All",
@@ -170,10 +221,10 @@
       "OriginalItemSpec": "wwwroot\\css\\TableStyle.css"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\css2\\leadmark.css",
+      "Identity": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\css2\\leadmark.css",
       "SourceId": "LocalBus",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\",
       "BasePath": "_content/LocalBus",
       "RelativePath": "css2/leadmark.css",
       "AssetKind": "All",
@@ -187,10 +238,10 @@
       "OriginalItemSpec": "wwwroot\\css2\\leadmark.css"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\css2\\leadmark2.css",
+      "Identity": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\css2\\leadmark2.css",
       "SourceId": "LocalBus",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\",
       "BasePath": "_content/LocalBus",
       "RelativePath": "css2/leadmark2.css",
       "AssetKind": "All",
@@ -204,10 +255,10 @@
       "OriginalItemSpec": "wwwroot\\css2\\leadmark2.css"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\css2\\themify-icons.css",
+      "Identity": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\css2\\themify-icons.css",
       "SourceId": "LocalBus",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\",
       "BasePath": "_content/LocalBus",
       "RelativePath": "css2/themify-icons.css",
       "AssetKind": "All",
@@ -221,10 +272,10 @@
       "OriginalItemSpec": "wwwroot\\css2\\themify-icons.css"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\Images\\Escolas\\Enviarimg.png",
+      "Identity": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\Images\\Escolas\\Enviarimg.png",
       "SourceId": "LocalBus",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\",
       "BasePath": "_content/LocalBus",
       "RelativePath": "Images/Escolas/Enviarimg.png",
       "AssetKind": "All",
@@ -238,10 +289,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\Escolas\\Enviarimg.png"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\Images\\LayoutAdministrador\\223077-middle.png",
+      "Identity": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\Images\\LayoutAdministrador\\223077-middle.png",
       "SourceId": "LocalBus",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\",
       "BasePath": "_content/LocalBus",
       "RelativePath": "Images/LayoutAdministrador/223077-middle.png",
       "AssetKind": "All",
@@ -255,10 +306,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\LayoutAdministrador\\223077-middle.png"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\Images\\LayoutAdministrador\\237-2377764_purple-color-gradient-purple-gradient-background-hd.jpg",
+      "Identity": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\Images\\LayoutAdministrador\\237-2377764_purple-color-gradient-purple-gradient-background-hd.jpg",
       "SourceId": "LocalBus",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\",
       "BasePath": "_content/LocalBus",
       "RelativePath": "Images/LayoutAdministrador/237-2377764_purple-color-gradient-purple-gradient-background-hd.jpg",
       "AssetKind": "All",
@@ -272,10 +323,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\LayoutAdministrador\\237-2377764_purple-color-gradient-purple-gradient-background-hd.jpg"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\Images\\LayoutAdministrador\\mao.png",
+      "Identity": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\Images\\LayoutAdministrador\\mao.png",
       "SourceId": "LocalBus",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\",
       "BasePath": "_content/LocalBus",
       "RelativePath": "Images/LayoutAdministrador/mao.png",
       "AssetKind": "All",
@@ -289,10 +340,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\LayoutAdministrador\\mao.png"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\Images\\LayoutAdministrador\\maorigt.png",
+      "Identity": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\Images\\LayoutAdministrador\\maorigt.png",
       "SourceId": "LocalBus",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\",
       "BasePath": "_content/LocalBus",
       "RelativePath": "Images/LayoutAdministrador/maorigt.png",
       "AssetKind": "All",
@@ -306,10 +357,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\LayoutAdministrador\\maorigt.png"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\Images\\LayoutAdministrador\\onibuscolorido180x140.jpg",
+      "Identity": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\Images\\LayoutAdministrador\\onibuscolorido180x140.jpg",
       "SourceId": "LocalBus",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\",
       "BasePath": "_content/LocalBus",
       "RelativePath": "Images/LayoutAdministrador/onibuscolorido180x140.jpg",
       "AssetKind": "All",
@@ -323,10 +374,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\LayoutAdministrador\\onibuscolorido180x140.jpg"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\Images\\LayoutAdministrador\\pngtree-location-icon-on-the-map-png-image_1790147.jpg",
+      "Identity": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\Images\\LayoutAdministrador\\pngtree-location-icon-on-the-map-png-image_1790147.jpg",
       "SourceId": "LocalBus",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\",
       "BasePath": "_content/LocalBus",
       "RelativePath": "Images/LayoutAdministrador/pngtree-location-icon-on-the-map-png-image_1790147.jpg",
       "AssetKind": "All",
@@ -340,10 +391,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\LayoutAdministrador\\pngtree-location-icon-on-the-map-png-image_1790147.jpg"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\Images\\LayoutAdministrador\\pngtree-maps-icon-design-png-image_2156485.jpg",
+      "Identity": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\Images\\LayoutAdministrador\\pngtree-maps-icon-design-png-image_2156485.jpg",
       "SourceId": "LocalBus",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\",
       "BasePath": "_content/LocalBus",
       "RelativePath": "Images/LayoutAdministrador/pngtree-maps-icon-design-png-image_2156485.jpg",
       "AssetKind": "All",
@@ -357,10 +408,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\LayoutAdministrador\\pngtree-maps-icon-design-png-image_2156485.jpg"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\Images\\LayoutAdministrador\\retro-abstract-background-vintage-geometric-stripes-design-simple-colorful-lines-classic-grunge-wallpaper-vector-1.png",
+      "Identity": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\Images\\LayoutAdministrador\\retro-abstract-background-vintage-geometric-stripes-design-simple-colorful-lines-classic-grunge-wallpaper-vector-1.png",
       "SourceId": "LocalBus",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\",
       "BasePath": "_content/LocalBus",
       "RelativePath": "Images/LayoutAdministrador/retro-abstract-background-vintage-geometric-stripes-design-simple-colorful-lines-classic-grunge-wallpaper-vector-1.png",
       "AssetKind": "All",
@@ -374,10 +425,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\LayoutAdministrador\\retro-abstract-background-vintage-geometric-stripes-design-simple-colorful-lines-classic-grunge-wallpaper-vector-1.png"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\Images\\LayoutAdministrador\\udemy.jpg",
+      "Identity": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\Images\\LayoutAdministrador\\udemy.jpg",
       "SourceId": "LocalBus",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\",
       "BasePath": "_content/LocalBus",
       "RelativePath": "Images/LayoutAdministrador/udemy.jpg",
       "AssetKind": "All",
@@ -391,10 +442,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\LayoutAdministrador\\udemy.jpg"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\Images\\Leyout\\bus 450.jpg",
+      "Identity": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\Images\\Leyout\\bus 450.jpg",
       "SourceId": "LocalBus",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\",
       "BasePath": "_content/LocalBus",
       "RelativePath": "Images/Leyout/bus 450.jpg",
       "AssetKind": "All",
@@ -408,10 +459,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\Leyout\\bus 450.jpg"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\Images\\Leyout\\bus.png",
+      "Identity": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\Images\\Leyout\\bus.png",
       "SourceId": "LocalBus",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\",
       "BasePath": "_content/LocalBus",
       "RelativePath": "Images/Leyout/bus.png",
       "AssetKind": "All",
@@ -425,10 +476,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\Leyout\\bus.png"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\Images\\Leyout\\CPS.jpg",
+      "Identity": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\Images\\Leyout\\CPS.jpg",
       "SourceId": "LocalBus",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\",
       "BasePath": "_content/LocalBus",
       "RelativePath": "Images/Leyout/CPS.jpg",
       "AssetKind": "All",
@@ -442,10 +493,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\Leyout\\CPS.jpg"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\Images\\Leyout\\edriano.jpg",
+      "Identity": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\Images\\Leyout\\edriano.jpg",
       "SourceId": "LocalBus",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\",
       "BasePath": "_content/LocalBus",
       "RelativePath": "Images/Leyout/edriano.jpg",
       "AssetKind": "All",
@@ -459,10 +510,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\Leyout\\edriano.jpg"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\Images\\Leyout\\Etec.jpg",
+      "Identity": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\Images\\Leyout\\Etec.jpg",
       "SourceId": "LocalBus",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\",
       "BasePath": "_content/LocalBus",
       "RelativePath": "Images/Leyout/Etec.jpg",
       "AssetKind": "All",
@@ -476,10 +527,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\Leyout\\Etec.jpg"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\Images\\Leyout\\Gallo.jpg",
+      "Identity": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\Images\\Leyout\\Gallo.jpg",
       "SourceId": "LocalBus",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\",
       "BasePath": "_content/LocalBus",
       "RelativePath": "Images/Leyout/Gallo.jpg",
       "AssetKind": "All",
@@ -493,10 +544,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\Leyout\\Gallo.jpg"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\Images\\Leyout\\GoSp.jpg",
+      "Identity": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\Images\\Leyout\\GoSp.jpg",
       "SourceId": "LocalBus",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\",
       "BasePath": "_content/LocalBus",
       "RelativePath": "Images/Leyout/GoSp.jpg",
       "AssetKind": "All",
@@ -510,10 +561,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\Leyout\\GoSp.jpg"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\Images\\Leyout\\Israel623.jpg",
+      "Identity": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\Images\\Leyout\\Israel623.jpg",
       "SourceId": "LocalBus",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\",
       "BasePath": "_content/LocalBus",
       "RelativePath": "Images/Leyout/Israel623.jpg",
       "AssetKind": "All",
@@ -527,10 +578,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\Leyout\\Israel623.jpg"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\Images\\Leyout\\luzes.jpg",
+      "Identity": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\Images\\Leyout\\luzes.jpg",
       "SourceId": "LocalBus",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\",
       "BasePath": "_content/LocalBus",
       "RelativePath": "Images/Leyout/luzes.jpg",
       "AssetKind": "All",
@@ -544,10 +595,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\Leyout\\luzes.jpg"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\Images\\Leyout\\Milena750x563.jpg",
+      "Identity": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\Images\\Leyout\\Milena750x563.jpg",
       "SourceId": "LocalBus",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\",
       "BasePath": "_content/LocalBus",
       "RelativePath": "Images/Leyout/Milena750x563.jpg",
       "AssetKind": "All",
@@ -561,10 +612,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\Leyout\\Milena750x563.jpg"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\Images\\Leyout\\Naile750x500.jpg",
+      "Identity": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\Images\\Leyout\\Naile750x500.jpg",
       "SourceId": "LocalBus",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\",
       "BasePath": "_content/LocalBus",
       "RelativePath": "Images/Leyout/Naile750x500.jpg",
       "AssetKind": "All",
@@ -578,10 +629,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\Leyout\\Naile750x500.jpg"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\Images\\Leyout\\Nailiexemplo750x523.jpg",
+      "Identity": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\Images\\Leyout\\Nailiexemplo750x523.jpg",
       "SourceId": "LocalBus",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\",
       "BasePath": "_content/LocalBus",
       "RelativePath": "Images/Leyout/Nailiexemplo750x523.jpg",
       "AssetKind": "All",
@@ -595,10 +646,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\Leyout\\Nailiexemplo750x523.jpg"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\Images\\Leyout\\Pedro744x523.jpg",
+      "Identity": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\Images\\Leyout\\Pedro744x523.jpg",
       "SourceId": "LocalBus",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\",
       "BasePath": "_content/LocalBus",
       "RelativePath": "Images/Leyout/Pedro744x523.jpg",
       "AssetKind": "All",
@@ -612,10 +663,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\Leyout\\Pedro744x523.jpg"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\Images\\Leyout\\rosi.jpg",
+      "Identity": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\Images\\Leyout\\rosi.jpg",
       "SourceId": "LocalBus",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\",
       "BasePath": "_content/LocalBus",
       "RelativePath": "Images/Leyout/rosi.jpg",
       "AssetKind": "All",
@@ -629,10 +680,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\Leyout\\rosi.jpg"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\Images\\Leyout\\sergio.jpg",
+      "Identity": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\Images\\Leyout\\sergio.jpg",
       "SourceId": "LocalBus",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\",
       "BasePath": "_content/LocalBus",
       "RelativePath": "Images/Leyout/sergio.jpg",
       "AssetKind": "All",
@@ -646,10 +697,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\Leyout\\sergio.jpg"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\Images\\Leyout\\Taina1126.jpg",
+      "Identity": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\Images\\Leyout\\Taina1126.jpg",
       "SourceId": "LocalBus",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\",
       "BasePath": "_content/LocalBus",
       "RelativePath": "Images/Leyout/Taina1126.jpg",
       "AssetKind": "All",
@@ -663,10 +714,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\Leyout\\Taina1126.jpg"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\Images\\Leyout\\val.jpg",
+      "Identity": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\Images\\Leyout\\val.jpg",
       "SourceId": "LocalBus",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\",
       "BasePath": "_content/LocalBus",
       "RelativePath": "Images/Leyout/val.jpg",
       "AssetKind": "All",
@@ -680,10 +731,61 @@
       "OriginalItemSpec": "wwwroot\\Images\\Leyout\\val.jpg"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\Images\\usadasnoprojeto\\perfil-de-usuario.png",
+      "Identity": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\Images\\usadasnoprojeto\\bus-stop (1).png",
       "SourceId": "LocalBus",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\",
+      "BasePath": "_content/LocalBus",
+      "RelativePath": "Images/usadasnoprojeto/bus-stop (1).png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\usadasnoprojeto\\bus-stop (1).png"
+    },
+    {
+      "Identity": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\Images\\usadasnoprojeto\\bus-stop (2).png",
+      "SourceId": "LocalBus",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\",
+      "BasePath": "_content/LocalBus",
+      "RelativePath": "Images/usadasnoprojeto/bus-stop (2).png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\usadasnoprojeto\\bus-stop (2).png"
+    },
+    {
+      "Identity": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\Images\\usadasnoprojeto\\bus-stop.png",
+      "SourceId": "LocalBus",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\",
+      "BasePath": "_content/LocalBus",
+      "RelativePath": "Images/usadasnoprojeto/bus-stop.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\usadasnoprojeto\\bus-stop.png"
+    },
+    {
+      "Identity": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\Images\\usadasnoprojeto\\perfil-de-usuario.png",
+      "SourceId": "LocalBus",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\",
       "BasePath": "_content/LocalBus",
       "RelativePath": "Images/usadasnoprojeto/perfil-de-usuario.png",
       "AssetKind": "All",
@@ -697,10 +799,44 @@
       "OriginalItemSpec": "wwwroot\\Images\\usadasnoprojeto\\perfil-de-usuario.png"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\imgs\\montanha.jpg",
+      "Identity": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\Images\\usadasnoprojeto\\placeholder-point.png",
       "SourceId": "LocalBus",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\",
+      "BasePath": "_content/LocalBus",
+      "RelativePath": "Images/usadasnoprojeto/placeholder-point.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\usadasnoprojeto\\placeholder-point.png"
+    },
+    {
+      "Identity": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\Images\\usadasnoprojeto\\pointer.png",
+      "SourceId": "LocalBus",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\",
+      "BasePath": "_content/LocalBus",
+      "RelativePath": "Images/usadasnoprojeto/pointer.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\usadasnoprojeto\\pointer.png"
+    },
+    {
+      "Identity": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\imgs\\montanha.jpg",
+      "SourceId": "LocalBus",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\",
       "BasePath": "_content/LocalBus",
       "RelativePath": "imgs/montanha.jpg",
       "AssetKind": "All",
@@ -714,10 +850,10 @@
       "OriginalItemSpec": "wwwroot\\imgs\\montanha.jpg"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\js\\jquery.js",
+      "Identity": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\js\\jquery.js",
       "SourceId": "LocalBus",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\",
       "BasePath": "_content/LocalBus",
       "RelativePath": "js/jquery.js",
       "AssetKind": "All",
@@ -731,10 +867,10 @@
       "OriginalItemSpec": "wwwroot\\js\\jquery.js"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\js\\leadmark.js",
+      "Identity": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\js\\leadmark.js",
       "SourceId": "LocalBus",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\",
       "BasePath": "_content/LocalBus",
       "RelativePath": "js/leadmark.js",
       "AssetKind": "All",
@@ -748,10 +884,10 @@
       "OriginalItemSpec": "wwwroot\\js\\leadmark.js"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\js\\manuadmin.js",
+      "Identity": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\js\\manuadmin.js",
       "SourceId": "LocalBus",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\",
       "BasePath": "_content/LocalBus",
       "RelativePath": "js/manuadmin.js",
       "AssetKind": "All",
@@ -765,10 +901,10 @@
       "OriginalItemSpec": "wwwroot\\js\\manuadmin.js"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\js\\mapa.js",
+      "Identity": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\js\\mapa.js",
       "SourceId": "LocalBus",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\",
       "BasePath": "_content/LocalBus",
       "RelativePath": "js/mapa.js",
       "AssetKind": "All",
@@ -782,10 +918,10 @@
       "OriginalItemSpec": "wwwroot\\js\\mapa.js"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\js\\MenuLogin.js",
+      "Identity": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\js\\MenuLogin.js",
       "SourceId": "LocalBus",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\",
       "BasePath": "_content/LocalBus",
       "RelativePath": "js/MenuLogin.js",
       "AssetKind": "All",
@@ -799,10 +935,10 @@
       "OriginalItemSpec": "wwwroot\\js\\MenuLogin.js"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\js\\sucess.js",
+      "Identity": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\js\\sucess.js",
       "SourceId": "LocalBus",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\",
       "BasePath": "_content/LocalBus",
       "RelativePath": "js/sucess.js",
       "AssetKind": "All",
@@ -816,10 +952,10 @@
       "OriginalItemSpec": "wwwroot\\js\\sucess.js"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\js\\sweetalert2.min.js",
+      "Identity": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\js\\sweetalert2.min.js",
       "SourceId": "LocalBus",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\",
       "BasePath": "_content/LocalBus",
       "RelativePath": "js/sweetalert2.min.js",
       "AssetKind": "All",
@@ -833,10 +969,10 @@
       "OriginalItemSpec": "wwwroot\\js\\sweetalert2.min.js"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Identity": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "SourceId": "LocalBus",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\",
       "BasePath": "_content/LocalBus",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css",
       "AssetKind": "All",
@@ -850,10 +986,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Identity": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "SourceId": "LocalBus",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\",
       "BasePath": "_content/LocalBus",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css.map",
       "AssetKind": "All",
@@ -867,10 +1003,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Identity": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "SourceId": "LocalBus",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\",
       "BasePath": "_content/LocalBus",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css",
       "AssetKind": "All",
@@ -884,10 +1020,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Identity": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "SourceId": "LocalBus",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\",
       "BasePath": "_content/LocalBus",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -901,10 +1037,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Identity": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "SourceId": "LocalBus",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\",
       "BasePath": "_content/LocalBus",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css",
       "AssetKind": "All",
@@ -918,10 +1054,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Identity": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "SourceId": "LocalBus",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\",
       "BasePath": "_content/LocalBus",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css.map",
       "AssetKind": "All",
@@ -935,10 +1071,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Identity": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "SourceId": "LocalBus",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\",
       "BasePath": "_content/LocalBus",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css",
       "AssetKind": "All",
@@ -952,10 +1088,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Identity": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "SourceId": "LocalBus",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\",
       "BasePath": "_content/LocalBus",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
       "AssetKind": "All",
@@ -969,10 +1105,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Identity": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "SourceId": "LocalBus",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\",
       "BasePath": "_content/LocalBus",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css",
       "AssetKind": "All",
@@ -986,10 +1122,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Identity": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "SourceId": "LocalBus",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\",
       "BasePath": "_content/LocalBus",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css.map",
       "AssetKind": "All",
@@ -1003,10 +1139,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Identity": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "SourceId": "LocalBus",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\",
       "BasePath": "_content/LocalBus",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css",
       "AssetKind": "All",
@@ -1020,10 +1156,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Identity": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "SourceId": "LocalBus",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\",
       "BasePath": "_content/LocalBus",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
       "AssetKind": "All",
@@ -1037,10 +1173,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Identity": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "SourceId": "LocalBus",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\",
       "BasePath": "_content/LocalBus",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
       "AssetKind": "All",
@@ -1054,10 +1190,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Identity": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "SourceId": "LocalBus",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\",
       "BasePath": "_content/LocalBus",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
       "AssetKind": "All",
@@ -1071,10 +1207,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Identity": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "SourceId": "LocalBus",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\",
       "BasePath": "_content/LocalBus",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
       "AssetKind": "All",
@@ -1088,10 +1224,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Identity": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "SourceId": "LocalBus",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\",
       "BasePath": "_content/LocalBus",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
       "AssetKind": "All",
@@ -1105,10 +1241,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Identity": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "SourceId": "LocalBus",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\",
       "BasePath": "_content/LocalBus",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css",
       "AssetKind": "All",
@@ -1122,10 +1258,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Identity": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "SourceId": "LocalBus",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\",
       "BasePath": "_content/LocalBus",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css.map",
       "AssetKind": "All",
@@ -1139,10 +1275,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Identity": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "SourceId": "LocalBus",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\",
       "BasePath": "_content/LocalBus",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css",
       "AssetKind": "All",
@@ -1156,10 +1292,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Identity": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "SourceId": "LocalBus",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\",
       "BasePath": "_content/LocalBus",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
       "AssetKind": "All",
@@ -1173,10 +1309,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Identity": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "SourceId": "LocalBus",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\",
       "BasePath": "_content/LocalBus",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
       "AssetKind": "All",
@@ -1190,10 +1326,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Identity": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "SourceId": "LocalBus",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\",
       "BasePath": "_content/LocalBus",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
       "AssetKind": "All",
@@ -1207,10 +1343,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Identity": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "SourceId": "LocalBus",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\",
       "BasePath": "_content/LocalBus",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
       "AssetKind": "All",
@@ -1224,10 +1360,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Identity": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "SourceId": "LocalBus",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\",
       "BasePath": "_content/LocalBus",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
       "AssetKind": "All",
@@ -1241,10 +1377,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Identity": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "SourceId": "LocalBus",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\",
       "BasePath": "_content/LocalBus",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css",
       "AssetKind": "All",
@@ -1258,10 +1394,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Identity": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "SourceId": "LocalBus",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\",
       "BasePath": "_content/LocalBus",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css.map",
       "AssetKind": "All",
@@ -1275,10 +1411,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Identity": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "SourceId": "LocalBus",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\",
       "BasePath": "_content/LocalBus",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css",
       "AssetKind": "All",
@@ -1292,10 +1428,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Identity": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "SourceId": "LocalBus",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\",
       "BasePath": "_content/LocalBus",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
       "AssetKind": "All",
@@ -1309,10 +1445,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Identity": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "SourceId": "LocalBus",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\",
       "BasePath": "_content/LocalBus",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
       "AssetKind": "All",
@@ -1326,10 +1462,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Identity": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "SourceId": "LocalBus",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\",
       "BasePath": "_content/LocalBus",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
       "AssetKind": "All",
@@ -1343,10 +1479,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Identity": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "SourceId": "LocalBus",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\",
       "BasePath": "_content/LocalBus",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
       "AssetKind": "All",
@@ -1360,10 +1496,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Identity": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "SourceId": "LocalBus",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\",
       "BasePath": "_content/LocalBus",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
       "AssetKind": "All",
@@ -1377,10 +1513,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\lib\\bootstrap\\dist\\isotope\\isotope.pkgd.js",
+      "Identity": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\lib\\bootstrap\\dist\\isotope\\isotope.pkgd.js",
       "SourceId": "LocalBus",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\",
       "BasePath": "_content/LocalBus",
       "RelativePath": "lib/bootstrap/dist/isotope/isotope.pkgd.js",
       "AssetKind": "All",
@@ -1394,10 +1530,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\isotope\\isotope.pkgd.js"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\lib\\bootstrap\\dist\\isotope\\isotope.pkgd.min.js",
+      "Identity": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\lib\\bootstrap\\dist\\isotope\\isotope.pkgd.min.js",
       "SourceId": "LocalBus",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\",
       "BasePath": "_content/LocalBus",
       "RelativePath": "lib/bootstrap/dist/isotope/isotope.pkgd.min.js",
       "AssetKind": "All",
@@ -1411,10 +1547,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\isotope\\isotope.pkgd.min.js"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Identity": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "SourceId": "LocalBus",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\",
       "BasePath": "_content/LocalBus",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js",
       "AssetKind": "All",
@@ -1428,10 +1564,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Identity": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "SourceId": "LocalBus",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\",
       "BasePath": "_content/LocalBus",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js.map",
       "AssetKind": "All",
@@ -1445,10 +1581,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Identity": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "SourceId": "LocalBus",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\",
       "BasePath": "_content/LocalBus",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js",
       "AssetKind": "All",
@@ -1462,10 +1598,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Identity": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "SourceId": "LocalBus",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\",
       "BasePath": "_content/LocalBus",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
       "AssetKind": "All",
@@ -1479,10 +1615,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Identity": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "SourceId": "LocalBus",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\",
       "BasePath": "_content/LocalBus",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js",
       "AssetKind": "All",
@@ -1496,10 +1632,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Identity": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "SourceId": "LocalBus",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\",
       "BasePath": "_content/LocalBus",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js.map",
       "AssetKind": "All",
@@ -1513,10 +1649,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Identity": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "SourceId": "LocalBus",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\",
       "BasePath": "_content/LocalBus",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js",
       "AssetKind": "All",
@@ -1530,10 +1666,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Identity": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "SourceId": "LocalBus",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\",
       "BasePath": "_content/LocalBus",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
       "AssetKind": "All",
@@ -1547,10 +1683,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Identity": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "SourceId": "LocalBus",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\",
       "BasePath": "_content/LocalBus",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js",
       "AssetKind": "All",
@@ -1564,10 +1700,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Identity": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "SourceId": "LocalBus",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\",
       "BasePath": "_content/LocalBus",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js.map",
       "AssetKind": "All",
@@ -1581,10 +1717,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Identity": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "SourceId": "LocalBus",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\",
       "BasePath": "_content/LocalBus",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js",
       "AssetKind": "All",
@@ -1598,10 +1734,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Identity": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "SourceId": "LocalBus",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\",
       "BasePath": "_content/LocalBus",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js.map",
       "AssetKind": "All",
@@ -1615,10 +1751,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\lib\\bootstrap\\dist\\js\\dropdown.js",
+      "Identity": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\lib\\bootstrap\\dist\\js\\dropdown.js",
       "SourceId": "LocalBus",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\",
       "BasePath": "_content/LocalBus",
       "RelativePath": "lib/bootstrap/dist/js/dropdown.js",
       "AssetKind": "All",
@@ -1632,10 +1768,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\dropdown.js"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\lib\\bootstrap\\dist\\js\\dropdown.js.map",
+      "Identity": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\lib\\bootstrap\\dist\\js\\dropdown.js.map",
       "SourceId": "LocalBus",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\",
       "BasePath": "_content/LocalBus",
       "RelativePath": "lib/bootstrap/dist/js/dropdown.js.map",
       "AssetKind": "All",
@@ -1649,10 +1785,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\dropdown.js.map"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\lib\\bootstrap\\dist\\jslayot\\bootstrap.affix.js",
+      "Identity": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\lib\\bootstrap\\dist\\jslayot\\bootstrap.affix.js",
       "SourceId": "LocalBus",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\",
       "BasePath": "_content/LocalBus",
       "RelativePath": "lib/bootstrap/dist/jslayot/bootstrap.affix.js",
       "AssetKind": "All",
@@ -1666,10 +1802,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\jslayot\\bootstrap.affix.js"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\lib\\bootstrap\\dist\\jslayot\\bootstrap.bundle.js",
+      "Identity": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\lib\\bootstrap\\dist\\jslayot\\bootstrap.bundle.js",
       "SourceId": "LocalBus",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\",
       "BasePath": "_content/LocalBus",
       "RelativePath": "lib/bootstrap/dist/jslayot/bootstrap.bundle.js",
       "AssetKind": "All",
@@ -1683,10 +1819,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\jslayot\\bootstrap.bundle.js"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\lib\\bootstrap\\dist\\jslayot\\bootstrap.bundle.js.map",
+      "Identity": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\lib\\bootstrap\\dist\\jslayot\\bootstrap.bundle.js.map",
       "SourceId": "LocalBus",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\",
       "BasePath": "_content/LocalBus",
       "RelativePath": "lib/bootstrap/dist/jslayot/bootstrap.bundle.js.map",
       "AssetKind": "All",
@@ -1700,10 +1836,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\jslayot\\bootstrap.bundle.js.map"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Identity": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\lib\\bootstrap\\LICENSE",
       "SourceId": "LocalBus",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\",
       "BasePath": "_content/LocalBus",
       "RelativePath": "lib/bootstrap/LICENSE",
       "AssetKind": "All",
@@ -1717,10 +1853,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\LICENSE"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Identity": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "SourceId": "LocalBus",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\",
       "BasePath": "_content/LocalBus",
       "RelativePath": "lib/jquery/dist/jquery.js",
       "AssetKind": "All",
@@ -1734,10 +1870,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Identity": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "SourceId": "LocalBus",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\",
       "BasePath": "_content/LocalBus",
       "RelativePath": "lib/jquery/dist/jquery.min.js",
       "AssetKind": "All",
@@ -1751,10 +1887,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Identity": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "SourceId": "LocalBus",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\",
       "BasePath": "_content/LocalBus",
       "RelativePath": "lib/jquery/dist/jquery.min.map",
       "AssetKind": "All",
@@ -1768,10 +1904,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\lib\\jquery\\dist\\jquery-3.4.1.js",
+      "Identity": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\lib\\jquery\\dist\\jquery-3.4.1.js",
       "SourceId": "LocalBus",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\",
       "BasePath": "_content/LocalBus",
       "RelativePath": "lib/jquery/dist/jquery-3.4.1.js",
       "AssetKind": "All",
@@ -1785,10 +1921,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery-3.4.1.js"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\lib\\jquery\\dist\\jquery-3.4.1.min.js",
+      "Identity": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\lib\\jquery\\dist\\jquery-3.4.1.min.js",
       "SourceId": "LocalBus",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\",
       "BasePath": "_content/LocalBus",
       "RelativePath": "lib/jquery/dist/jquery-3.4.1.min.js",
       "AssetKind": "All",
@@ -1802,10 +1938,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery-3.4.1.min.js"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\lib\\jquery\\dist\\jquery-3.4.1.min.map",
+      "Identity": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\lib\\jquery\\dist\\jquery-3.4.1.min.map",
       "SourceId": "LocalBus",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\",
       "BasePath": "_content/LocalBus",
       "RelativePath": "lib/jquery/dist/jquery-3.4.1.min.map",
       "AssetKind": "All",
@@ -1819,10 +1955,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery-3.4.1.min.map"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\lib\\jquery\\dist\\jquery-3.4.1.slim.js",
+      "Identity": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\lib\\jquery\\dist\\jquery-3.4.1.slim.js",
       "SourceId": "LocalBus",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\",
       "BasePath": "_content/LocalBus",
       "RelativePath": "lib/jquery/dist/jquery-3.4.1.slim.js",
       "AssetKind": "All",
@@ -1836,10 +1972,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery-3.4.1.slim.js"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\lib\\jquery\\dist\\jquery-3.4.1.slim.min.js",
+      "Identity": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\lib\\jquery\\dist\\jquery-3.4.1.slim.min.js",
       "SourceId": "LocalBus",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\",
       "BasePath": "_content/LocalBus",
       "RelativePath": "lib/jquery/dist/jquery-3.4.1.slim.min.js",
       "AssetKind": "All",
@@ -1853,10 +1989,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery-3.4.1.slim.min.js"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\lib\\jquery\\dist\\jquery-3.4.1.slim.min.map",
+      "Identity": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\lib\\jquery\\dist\\jquery-3.4.1.slim.min.map",
       "SourceId": "LocalBus",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\",
       "BasePath": "_content/LocalBus",
       "RelativePath": "lib/jquery/dist/jquery-3.4.1.slim.min.map",
       "AssetKind": "All",
@@ -1870,10 +2006,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery-3.4.1.slim.min.map"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Identity": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "SourceId": "LocalBus",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\",
       "BasePath": "_content/LocalBus",
       "RelativePath": "lib/jquery/LICENSE.txt",
       "AssetKind": "All",
@@ -1887,10 +2023,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Identity": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "SourceId": "LocalBus",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\",
       "BasePath": "_content/LocalBus",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.js",
       "AssetKind": "All",
@@ -1904,10 +2040,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Identity": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "SourceId": "LocalBus",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\",
       "BasePath": "_content/LocalBus",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.min.js",
       "AssetKind": "All",
@@ -1921,10 +2057,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Identity": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "SourceId": "LocalBus",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\",
       "BasePath": "_content/LocalBus",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.js",
       "AssetKind": "All",
@@ -1938,10 +2074,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Identity": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "SourceId": "LocalBus",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\",
       "BasePath": "_content/LocalBus",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.min.js",
       "AssetKind": "All",
@@ -1955,10 +2091,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Identity": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "SourceId": "LocalBus",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\",
       "BasePath": "_content/LocalBus",
       "RelativePath": "lib/jquery-validation/LICENSE.md",
       "AssetKind": "All",
@@ -1972,10 +2108,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Identity": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "SourceId": "LocalBus",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\",
       "BasePath": "_content/LocalBus",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
       "AssetKind": "All",
@@ -1989,10 +2125,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Identity": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "SourceId": "LocalBus",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\",
       "BasePath": "_content/LocalBus",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
       "AssetKind": "All",
@@ -2006,10 +2142,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Identity": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "SourceId": "LocalBus",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\Geral\\1_Informatica\\Curso Udemy\\ASP.NET\\Etec-LocalBus\\LocalBus\\LocalBus\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\",
       "BasePath": "_content/LocalBus",
       "RelativePath": "lib/jquery-validation-unobtrusive/LICENSE.txt",
       "AssetKind": "All",

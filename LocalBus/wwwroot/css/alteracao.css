@@ -1,0 +1,71 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.meucontainer {
+    background: rgb(234, 255, 250);
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+        "r";
+}
+
+.center {
+    grid-area: r;
+    background-color: #18192A;
+    width: 30%;
+    height: 70%;
+    margin: 0 auto;
+    align-self: center;
+    border-radius: 10%;
+}
+
+.center h1 {
+    text-align: center;
+    color: #FFF;
+}
+
+.center input {
+    justify-content: center;
+   
+}
+
+.meubotao {
+    padding: 20px 0px 0px 0px;
+    text-align: center;
+
+}
+
+.meubotao button {
+    border: transparent;
+    cursor: pointer;
+    background-color: #8A2BE2;
+    padding: 10px;
+    width: 40%;
+}
+
+.espacamento {
+    padding: 20px 0px 0px 70px;
+}
+
+.form-horizontal input {
+    background: #18192A;
+    border: transparent;
+    border-bottom: 2px solid rgb(255, 255, 255);
+    color: #FFF;
+    font-size: 15px;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0px 0px 0px;
+}
+
+.form-horizontal input:focus {
+    background: #18192A;
+    border: transparent;
+    outline: 0;
+    border-bottom: 2px solid rgb(255, 255, 255);
+}

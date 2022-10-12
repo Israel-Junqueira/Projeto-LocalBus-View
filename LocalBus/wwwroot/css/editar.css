@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow:hidden;
+}
+
+.meucontainer {
+    background: #b801f7;
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 3fr 1fr;
+    grid-template-areas:
+        "l r"
+        "b b";
+    grid-gap:5px 5px;
+}
+
+
+.left {
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+    grid-area: l;
+    
+    margin: 0auto;
+}
+
+.espacamento22{
+    width:53%;
+    background:#fff;
+    margin: 0 auto;
+    padding:10px
+}
+
+
+.tbodyy {
+    background: #fff;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+.left input {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    border-color: #000;
+    color:#808080;
+}
+
+.form-control {
+    padding: 10px;
+    height: 0px;
+    line-height: 0px;
+    border-width: 0 0 2px 0;
+    font-size: 14px;
+}
+.left input:hover {
+    border-color: #B801f7;
+}
+    .left input:focus {
+        border-color: #B801f7;
+    }
+
+.left label {
+    font-size: 15px;
+    color: #000;
+    justify-self: end;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding:40px 00px 00px 00px;
+}
+
+
+.rigth {
+        padding: 0px 0px 0px 0px;
+        background-color: #fff;
+        width: 99%;
+        height: 100%;
+        grid-area: r;
+}
+
+.bottom {
+    background-color: #18192A;
+    height: 200px;
+    width: 100%;
+    grid-area: b;
+}
+.espacamento2check{
+    cursor:pointer;
+}
+
+ul ul a {
+    font-size: 15px !important;
+    padding-left: 30px !important;
+}

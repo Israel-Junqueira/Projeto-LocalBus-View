@@ -349,7 +349,7 @@ namespace LocalBus.Controllers
                     var resetURL = Url.Action("ResetPassword", "Account", new { token = token, email = model.Email }, Request.Scheme);
 
                     var email = new MimeMessage();
-                    email.From.Add(MailboxAddress.Parse("bimborcas123@outlook.com"));
+                    email.From.Add(MailboxAddress.Parse("LocalBusEtec@outlook.com"));
                     email.To.Add(MailboxAddress.Parse(model.Email));
                     email.Subject = "BIIII BIII - Esqueci minha senha!";
                     email.Body = new TextPart(TextFormat.Plain)
@@ -364,7 +364,7 @@ namespace LocalBus.Controllers
                             smtp.ServerCertificateValidationCallback = (s, c, h, e) => true;
                             smtp.Connect("smtp.office365.com", 587, SecureSocketOptions.StartTls);
 
-                            smtp.Authenticate("bimborcas123@outlook.com", "lfmrra@@");
+                            smtp.Authenticate("LocalBusEtec@outlook.com", "LocalBus123@");
                             smtp.Send(email);
                             smtp.Disconnect(true);
                         }
@@ -407,7 +407,7 @@ namespace LocalBus.Controllers
                         }
                         return View();
                     }
-                    return View("SucessoAlteracaoSenha"); //falta implementar
+                    return View("Login"); //falta implementar
                 }
                 ModelState.AddModelError("", "Invalid Request");
             }
