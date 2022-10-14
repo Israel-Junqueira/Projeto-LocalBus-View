@@ -1,37 +1,70 @@
 ﻿@model EscolaListViewModel
 
-@await Html.PartialAsync("_LayoutAluno");
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <script type='text/javascript' src='https://www.bing.com/api/maps/mapcontrol?callback=GetMap&key=AkclvbgfjdRI43pyQ7TM48Mx0Gz8LpXOJzYsm8-T3b7fFOt2n-GMm0USIPHg-YLu&setLang=pt&setMkt=PT-BR' async defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="~/css/aluno.css ">
+    <script type='text/javascript'
+            src='https://www.bing.com/api/maps/mapcontrol?callback=GetMap&key=AkclvbgfjdRI43pyQ7TM48Mx0Gz8LpXOJzYsm8-T3b7fFOt2n-GMm0USIPHg-YLu&setLang=pt&setMkt=PT-BR'
+            async defer>
+    </script>
 </head>
 <body onload="GetMap()">
+    <div class="meucontainer">
+        <div class="left">
+            <div id="myMap" class="text-center"></div>
+        </div>
+        <div class="rigth">
+            <div class="textos">
+                <h1>Bem vindo!!</h1>
+                <p>Selecione sua instituição no botão abaixo e assim, os pontos disponíveis para sua escola apareceram no mapa.</p>
+                   <div class="meudropdown">
+                        <a class="btn btn-primary dropdown-toggle" role="button"id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">Escolas</a>
+                        <ul class="dropdown-menu">
+                            @foreach (var item in Model.NomesDasEscolas)
+                            {
+                                <li class="dropdown-item">
+                                    <a class="dropdown-item" asp-controller="MapAluno" asp-area="Usuario" asp-action="Index" style="color:black"
+                                   asp-route-IdEscola="@item.EscolaId">@item.NomeEscola </a>
+                                </li>
+                            }
+                            <li class="dropdown-divider"></li>
+                            <li>
+                                <a class="dropdown-item" asp-controller="Aluno" asp-action="Index" asp-route-IdEscola="0"
+                                   style="color:black">Todas as Escolas</a>
+                            </li>
+                        </ul>
+                   </div>
+              </div>
+        </div>
+        <div class="bottom"></div>
+    </div>
     <script>
         function GetMap() {
-
-
             var map = new Microsoft.Maps.Map('#myMap',
-            {
-                center: new Microsoft.Maps.Location(-22.489303078308875, -48.54630861383559),
-                zoom: 13
+                {
+                    center: new Microsoft.Maps.Location(-22.489303078308875, -48.54630861383559),
+                    zoom: 13
 
-            });
+                });
 
             map.setView({
                 mapTypeId: Microsoft.Maps.MapTypeId.aerial
             });
             var num = 3
 
-                var loc2 = new Microsoft.Maps.Location(-22.489303078308875,-48.54630861383559)
-                var pin2 = new Microsoft.Maps.Pushpin(loc2,{
-                title:"ETEC",
-                subTitle:"João Rayz"
-                });
-                map.entities.push(pin2);
-              }
+            var loc2 = new Microsoft.Maps.Location(-22.489303078308875, -48.54630861383559)
+            var pin2 = new Microsoft.Maps.Pushpin(loc2, {
+                title: "ETEC",
+                subTitle: "João Rayz",
+                icon:'https://www.bingmapsportal.com/Content/images/poi_custom.png',
+            });
+            map.entities.push(pin2);
+        }
     </script>
 </body>
 </html>

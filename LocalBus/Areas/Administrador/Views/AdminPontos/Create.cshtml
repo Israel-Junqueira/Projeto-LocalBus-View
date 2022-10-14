@@ -70,16 +70,28 @@
         function GetMap() {
             var map = new Microsoft.Maps.Map('#myMap', { center: new Microsoft.Maps.Location(-22.489303078308875, -48.54630861383559), zoom: 13 });
             map.setView({ mapTypeId: Microsoft.Maps.MapTypeId.aerial }); //seta a visualização do mapa
-            Microsoft.Maps.Events.addHandler(map, 'click', function (e) { Get_latitude_and_Get_longitude(e); }); //pega o ponto com o click
-            function Get_latitude_and_Get_longitude(map) {
-               
-                var latitude = map.location.latitude;
-                var longitude = map.location.longitude;
+
+            Microsoft.Maps.Events.addHandler(map, 'click', function (e) {  Get_latitude_and_Get_longitude(e); }); //pega o ponto com o click
+            function Get_latitude_and_Get_longitude(pontos) {
+              map.entities.removeAt(0);
+
+                var latitude = pontos.location.latitude;
+                var longitude = pontos.location.longitude;
                 let lativirgula = latitude.toString().replace(".", ",")
                 let longivirgula = longitude.toString().replace(".", ",")
                 document.getElementById("latitude").value = lativirgula;
                 document.getElementById("longitude").value = longivirgula;
+              
+
+                 var pushpin = new Microsoft.Maps.Location(pontos.location.latitude,pontos.location.longitude)
+                 var pushpin2 = new Microsoft.Maps.Pushpin(pushpin, {  
+                 title:'Local',
+                 icon:'https://www.bingmapsportal.com/Content/images/poi_custom.png',
+                 anchor:new Microsoft.Maps.Point(11, 29),
+                 });
+                 map.entities.push(pushpin2);
             }
+
             Microsoft.Maps.loadModule('Microsoft.Maps.AutoSuggest', function () { //faz o algoritmo de busca do lugar
                 var options = { maxResults: 4, map: map };
                 var manager = new Microsoft.Maps.AutosuggestManager(options);

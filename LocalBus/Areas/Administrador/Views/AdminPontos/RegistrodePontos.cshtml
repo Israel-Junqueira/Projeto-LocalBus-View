@@ -92,18 +92,49 @@
         function GetMap() {
 
              let coordenadas = @Html.Raw(Json.Serialize(ViewData["PontoAtivo"]));
-             var map = new Microsoft.Maps.Map('#myMap', { center: new Microsoft.Maps.Location(-22.489303078308875,-48.54630861383559), zoom: 13 });
-             map.setView({
-                 mapTypeId: Microsoft.Maps.MapTypeId.aerial
+            console.log(coordenadas)
+
+             var map = new Microsoft.Maps.Map('#myMap', {
+                 center: new Microsoft.Maps.Location(-22.489303078308875,-48.54630861383559), 
+                 zoom: 13,
+                 showSearchBar: true
              });
+             map.setView({mapTypeId: Microsoft.Maps.MapTypeId.aerial,});
+             
                  for (var i = 0; i < coordenadas.length  ; i++) {
+                     
                       var pushpin = new Microsoft.Maps.Location(coordenadas[i]['ponto'].latitudePonto, coordenadas[i]['ponto'].longitudePonto)
-                      var pushpin2 = new Microsoft.Maps.Pushpin(pushpin,{
-                      icon:'https://lh3.googleusercontent.com/2R2ZKEUJx1TLIauRh5mP5Xp7LqGSM68AOp2d90jqnBuqOxeqaL96J9qbBM_Oc4pBhI1IKpzMZfOyLLb0jWimAYiOyN-Rt9MObc6XCTDnvUXI8KeRWhLlS16bt9z9JhZPfB7YgiRDd0A5heKQVy8fVZF086d-xhS8-zMW2tp1WTo_cgB1BvmpUPYDrfUbiod3Z4N7kNhSsAmnMDi_josQ4BnCuAHHpNRrREudQtP00g-VelPBoDKmtExol5x3xAhI-8iD3xCPpsec6pJlnn80XvRr_ML8jdaMyP8ZFRyfirpvJzGwViDoWpp48LXEiuDoe_iZkFTpoxoQ_Bh8zJOrf2VcKWo0PuCpxl-vFTtW0bimucO_m2lblkxVzO_L_AVvAazsvOb63P1Ve5-N-vDf_GnPPtfKuXYopIGEpiwAbRWonoO66DMf4bLs8dr5EfUcDHjhR-heZP_WeA4xIpNcibKtxfJbXV-KS3cn948n0e0H9w7BCvsVZ4t-3cIKnGjnfQWYrg8jRlOWwS1vRStEzqlaXCvUIPOotRNNIT9oAIPjaorsYbisOhBBJKmBhHTzyLga0Zm6XwWxSgu-vokWQc9E-q-z-5CC7WQjobX3h4geCwQAlRF6B-T7yFG-wRdfBBISAWFG-aeb0Mc1hbOSa0gmB8F5sGI062bGU96P9FlQ2c2H0E60TIC0HUQFeNMRdJaIbCFFmN9uMoOud7jlXkl2u3T8BtO6SOV3nlaUSBDXrw0E6sdVW0W21PxNrVL_Hh6Qn2Zr39ffY3H4zhlXD2AErfhpL7Hv0yt-HZOudgLJdqoBNi3DDNBLAp49gxXmstw7s37mBTAbCAvOVlqf5UQ27SC4HRGRvuuUIalnw9E8InvEABbWNgJmkgd7nl2d4EDhBIepvkS3QETWtsp4VmGtfFD3ZBowBZL24A=s24-no?authuser=0',
-                      anchor:new Microsoft.Maps.Point(12, 39)
-                      })
+                    
+                      var pushpin2 = new Microsoft.Maps.Pushpin(pushpin,
+                      {
+                      title:coordenadas[i]['ponto'].nome,
+                      subTitle:coordenadas[i]['ponto'].descriçãoPonto,
+                      icon:'https://www.bingmapsportal.com/Content/images/poi_custom.png',
+                      anchor:new Microsoft.Maps.Point(11, 29),
+                      text:coordenadas[i]['ponto'].pontoId,
+                      textOffset: new Microsoft.Maps.Point(0, 26),
+
+                      });
+                       
+                      var infobox = new Microsoft.Maps.Infobox(pushpin, { visible: false, autoAlignment: true  });
+                      infobox.setMap(map);
+                  
+                      var descricao = Array()
+                      descricao = coordenadas
+               
+                     Microsoft.Maps.Events.addHandler(pushpin2, 'click', function (ponto) {
+                         console.log(ponto)
+                            infobox.setOptions({ 
+                             location: ponto.location,
+                             title: ponto.target.entity.title,
+                              description:ponto.target.entity.subtitle,
+                             visible: true });
+                      });
+
                       map.entities.push(pushpin2);
+
                   }
+              
          }
     </script>
 </body>

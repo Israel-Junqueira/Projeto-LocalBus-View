@@ -8,11 +8,11 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = LocalBus
 build_property.RootNamespace = LocalBus
-build_property.ProjectDir = C:\Users\Usuario\Source\Repos\Israel-Junqueira\Projeto-Etec-LocalBus\LocalBus\
+build_property.ProjectDir = C:\Users\Usuario\source\repos\Israel-Junqueira\Projeto-Etec-LocalBus\LocalBus\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Usuario\Source\Repos\Israel-Junqueira\Projeto-Etec-LocalBus\LocalBus
+build_property.MSBuildProjectDirectory = C:\Users\Usuario\source\repos\Israel-Junqueira\Projeto-Etec-LocalBus\LocalBus
 build_property._RazorSourceGeneratorDebug = 
 
 [C:/Users/Usuario/source/repos/Israel-Junqueira/Projeto-Etec-LocalBus/LocalBus/Areas/Administrador/Views/Administrador/Index.cshtml]
@@ -109,10 +109,6 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/Usuario/source/repos/Israel-Junqueira/Projeto-Etec-LocalBus/LocalBus/Areas/Usuario/Views/Aluno/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXN1YXJpb1xWaWV3c1xBbHVub1xJbmRleC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Usuario/source/repos/Israel-Junqueira/Projeto-Etec-LocalBus/LocalBus/Areas/Usuario/Views/Aluno/_LayoutAluno.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXN1YXJpb1xWaWV3c1xBbHVub1xfTGF5b3V0QWx1bm8uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Usuario/source/repos/Israel-Junqueira/Projeto-Etec-LocalBus/LocalBus/Areas/Usuario/Views/MapAluno/Index.cshtml]

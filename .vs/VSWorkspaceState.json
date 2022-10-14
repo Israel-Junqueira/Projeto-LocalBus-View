@@ -4,8 +4,10 @@
     "\\LocalBus",
     "\\LocalBus\\Areas",
     "\\LocalBus\\Areas\\Administrador",
-    "\\LocalBus\\Areas\\Administrador\\Controllers"
+    "\\LocalBus\\Areas\\Administrador\\Controllers",
+    "\\LocalBus\\Areas\\Administrador\\Views",
+    "\\LocalBus\\Areas\\Administrador\\Views\\AdminPontos"
   ],
-  "SelectedNode": "\\LocalBus\\Areas\\Administrador\\Controllers\\AdminPontosController.cs",
+  "SelectedNode": "\\LocalBus\\Areas\\Administrador\\Views\\AdminPontos\\RegistrodePontos.cshtml",
   "PreviewInSolutionExplorer": false
 }

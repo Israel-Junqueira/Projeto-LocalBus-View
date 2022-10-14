@@ -170,7 +170,7 @@ namespace LocalBus.Controllers
                 //confirmação do email
                 if (!await _userManeger.IsEmailConfirmedAsync(user))
                 {
-                    ModelState.AddModelError("", "Seu E-mail Ainda Não Foi Válido! ");
+                    ModelState.AddModelError("", "Seu E-mail Ainda Não Foi Válido!,Contate os Administradores ");
                     return View();
                 }
 
@@ -261,9 +261,9 @@ namespace LocalBus.Controllers
 
                     var email = new MimeMessage();
                     email.From.Add(MailboxAddress.Parse("LocalBusEtec@outlook.com"));
-                    email.To.Add(MailboxAddress.Parse(registro.Email));
+                    email.To.Add(MailboxAddress.Parse("israelribeiro313@gmail.com"));
                     email.Subject = "BIIII BIII - Pedido de Validação Para o Usuario";
-                    email.Body = new TextPart(TextFormat.Plain) { Text =$"Usuario de Nome: {registro.UserName}, Nome da escola {registro.NomedaEscola}, " +
+                    email.Body = new TextPart(TextFormat.Plain) { Text =$"Usuario de Nome: {registro.UserName}, Nome da escola: {registro.NomedaEscola}, " +
                         $"Numero para contato:{registro.TelefonedaEscola}, E-mail:{registro.Email} " +
                         $"Clique aqui para validar o Usuario {confirmacaoEmail}"};
 

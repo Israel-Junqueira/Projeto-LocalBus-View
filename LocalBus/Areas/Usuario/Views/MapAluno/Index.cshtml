@@ -1,41 +1,62 @@
 ﻿@model IEnumerable<EscolaPonto>
- 
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-         <meta charset="UTF-8">
-         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-         <script src="~/js/mapa.js"></script>
-         <script type='text/javascript' src='https://www.bing.com/api/maps/mapcontrol?callback=GetMap&key=AkclvbgfjdRI43pyQ7TM48Mx0Gz8LpXOJzYsm8-T3b7fFOt2n-GMm0USIPHg-YLu&setLang=pt&setMkt=PT-BR' async defer></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="~/css/aluno.css ">
+    <script type='text/javascript'
+            src='https://www.bing.com/api/maps/mapcontrol?callback=GetMap&key=AkclvbgfjdRI43pyQ7TM48Mx0Gz8LpXOJzYsm8-T3b7fFOt2n-GMm0USIPHg-YLu&setLang=pt&setMkt=PT-BR'
+            async defer>
+    </script>
 </head>
-<body onload = "GetMap()">
-
-  <a class="btn-link" asp-area="Usuario" asp-controller="Aluno" asp-action="Index"> Voltar</a>
-
-<div id="myMap" style="position:relative;width:1100px;height:500px;"></div>
-  
-<script>
-    
+<body onload="GetMap()">
+     <div class="meucontainer">
+        <div class="left">
+            <div id="myMap" class="text-center"></div>
+        </div>
+        <div class="rigth">
+            <div class="textos">
+                <h1>Pontos da Instituição</h1>
+                <p>Para maiores informações clique no alfinete!!</p>
+               <div class="meudropdown">
+                <a class="btn-primary" asp-controller="Aluno" asp-area="Usuario" asp-action="Index"> Voltar</a>
+              </div>
+           </div> 
+       </div>
+        <div class="bottom"></div>
+    </div>
+    <script>
         function GetMap() {
-            let coordenadas = @Html.Raw(Json.Serialize(Model.Select(x => new { x.Ponto.latitudePonto,x.Ponto.LongitudePonto,x.Ponto.Nome} ).ToArray()));    
-  
-           
+            let coordenadas = @Html.Raw(Json.Serialize(Model.Select(x => new { x.Ponto.latitudePonto,x.Ponto.LongitudePonto,x.Ponto.Nome,x.Ponto.DescriçãoPonto} ).ToArray()));
             console.log(coordenadas)
-
             var map = new Microsoft.Maps.Map('#myMap', { center: new Microsoft.Maps.Location(-22.489303078308875,-48.54630861383559), zoom: 13 });
-          
             map.setView({
                 mapTypeId: Microsoft.Maps.MapTypeId.aerial
             });
             var num = 3
-            
+
                 for (var i = 0; i < coordenadas.length  ; i++) {
                      var pushpin = new Microsoft.Maps.Location(coordenadas[i].latitudePonto, coordenadas[i].longitudePonto)
                      var pushpin2 = new Microsoft.Maps.Pushpin(pushpin,{
+                      title:coordenadas[i].nome,
+                      subTitle:coordenadas[i].descriçãoPonto,
+                      icon:'https://www.bingmapsportal.com/Content/images/poi_custom.png',
+                      anchor:new Microsoft.Maps.Point(11, 29),
+                     
                      })
+                 Microsoft.Maps.Events.addHandler(pushpin2, 'click', function (ponto) {
+                         console.log(ponto)
+                        
+                      });
+
                      map.entities.push(pushpin2);
                  }
-        }  
-</script>
+               
+        }
+    </script>
 </body>
 </html>

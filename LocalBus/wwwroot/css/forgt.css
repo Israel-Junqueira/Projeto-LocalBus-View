@@ -29,6 +29,11 @@ body {
     text-align: center;
     color: #FFF;
 }
+.center p{
+    color:#fff;
+    padding: 20px 20px 20px 20px;
+    text-align:center;
+}
 
 .center input {
     justify-content: center;

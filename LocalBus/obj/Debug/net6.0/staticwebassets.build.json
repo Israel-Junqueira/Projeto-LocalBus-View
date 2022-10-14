@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "rU1Q+91v0KdbtCiIsf3OBBDhQDvFursBmRCXuSEJqSY=",
+  "Hash": "vSfvYt69dREECf7GMXtYYtiBj/e71mq1DcanD+0zE9E=",
   "Source": "LocalBus",
   "BasePath": "_content/LocalBus",
   "Mode": "Default",
@@ -66,6 +66,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\alteracao.css"
+    },
+    {
+      "Identity": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\css\\aluno.css",
+      "SourceId": "LocalBus",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\",
+      "BasePath": "_content/LocalBus",
+      "RelativePath": "css/aluno.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\aluno.css"
     },
     {
       "Identity": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\css\\editar.css",
