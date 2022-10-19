@@ -18,27 +18,27 @@ partida e chegada, localização e qual instituição o transporte pertence.
 ▶ Padrão do Projeto.<br>
   ✤ MVC
 
-▶ Serviços usados
+▶ Serviços usados.<br>
   ✤ Github
 
-▶ Hospedagem
+▶ Hospedagem.<br>
   ✤ Azure
 
-▶ Iniciar o Projeto
-  ✤ 1 Baixar o arquivo zip e descompacta-lo 
-  ✤ 2 Abrir o Projeto com Visual Studios
-  ✤ 3 Alterar a string de conecção em defaultConnection,para o seu banco de dados ou padrão 
-  "Data Source=(localdb)\\mssqllocaldb;Initial Catalog = DbLocalBus;Integrated Security=True"
-  ![string de conecção image] (https://github.com/Israel-Junqueira/Projeto-LocalBus-View/blob/main/Readme/appsettings.png)
+▶ Iniciar o Projeto.<br>
+  ✤ 1 Baixar o arquivo zip e descompacta-lo.<br>
+  ✤ 2 Abrir o Projeto com Visual Studios.<br>
+  ✤ 3 Alterar a string de conecção em defaultConnection,para o seu banco de dados ou padrão.<br>
+  "Data Source=(localdb)\\mssqllocaldb;Initial Catalog = DbLocalBus;Integrated Security=True".<br>
+  ![string de conecção image] (https://github.com/Israel-Junqueira/Projeto-LocalBus-View/blob/main/Readme/appsettings.png).<br>
   
-  ✤ 4 No console gerenciador de Pacotes do Visual Studios, use um update-database para que crie as as tabelas no banco de dados
+  ✤ 4 No console gerenciador de Pacotes do Visual Studios, use um update-database para que crie as as tabelas no banco de dados.<br>
  ![Updatedata-base image] (https://github.com/Israel-Junqueira/Projeto-LocalBus-View/blob/main/Readme/updata.png)
   
-  ✤ O projeto ja pode ser iniciado.
+  ✤ O projeto ja pode ser iniciado.<br>
 
-▶ Paginas do Projeto
+▶ Paginas do Projeto.<br>
 
-  ✤ 1 - Acesso a home principal. Para o Usuario sem login ele poderá acessar diretamente a pagina do Aluno
+  ✤ 1 - Acesso a home principal. Para o Usuario sem login ele poderá acessar diretamente a pagina do Aluno.<br>
   ![Homepage image](https://github.com/Israel-Junqueira/Projeto-LocalBus-View/blob/main/Readme/home.png)
 
   ✤ 2 - Pagina do Aluno: Aqui o usuario comum pode clicar no dropdonw e escolher uma das escolas. (se não contiver nenhuma escola faça o registro de uma na pagina "Registro")
