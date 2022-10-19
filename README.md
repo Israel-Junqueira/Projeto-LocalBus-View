@@ -8,12 +8,15 @@ pontos de ônibus de diferentes instituições, desburocratizando o processo de 
 partida e chegada, localização e qual instituição o transporte pertence.  
 
 
-▶ Tecnologias Usadas
-  ✤ SQL-Server da Microsoft  ![Sql-server image] (https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.flaticon.com%2Ffree-icon%2Fsql-server_5968364&psig=AOvVaw1JvdEmlfoAA0HYc20sqmEj&ust=1666289336533000&source=images&cd=vfe&ved=0CA4QjhxqFwoTCJi46bTx7PoCFQAAAAAdAAAAABAE)
-  ✤ Entity-Framework   ![Entity-Framework image]  (https://codeopinion.com/wp-content/uploads/2017/10/Bitmap-MEDIUM_Entity-Framework-Core-Logo_2colors_Square_Boxed_RGB.png)
-  ✤ Identity in ASP.NET  ![asp.net image] (https://pbs.twimg.com/profile_images/590044322600525824/nE4X8cxi_400x400.jpg)
-  ✤ AspNet Core 6.0.1
-  ✤ Bootstrap  ![Bootstrap image](https://www.google.com/url?sa=i&url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3ABootstrap_logo.svg&psig=AOvVaw2_qx5W7TWrHU0oIuof9-Ul&ust=1666289437731000&source=images&cd=vfe&ved=0CA4QjhxqFwoTCNCti-Xx7PoCFQAAAAAdAAAAABAE)
+▶ Tecnologias Usadas.<br>
+  ✤ SQL-Server da Microsoft  ![Sql-server image] https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.flaticon.com%2Ffree-icon%2Fsql-server_5968364&psig=AOvVaw1JvdEmlfoAA0HYc20sqmEj&ust=1666289336533000&source=images&cd=vfe&ved=0CA4QjhxqFwoTCJi46bTx7PoCFQAAAAAdAAAAABAE.<br>
+  
+  ✤ Entity-Framework   ![Entity-Framework image]  https://codeopinion.com/wp-content/uploads/2017/10/Bitmap-MEDIUM_Entity-Framework-Core-Logo_2colors_Square_Boxed_RGB.png.<br>
+  
+  ✤ Identity in ASP.NET  ![asp.net image] (https://pbs.twimg.com/profile_images/590044322600525824/nE4X8cxi_400x400.jpg).<br>
+  
+  ✤ AspNet Core 6.0.1.<br>
+  ✤ Bootstrap  ![Bootstrap image] https://www.google.com/url?sa=i&url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3ABootstrap_logo.svg&psig=AOvVaw2_qx5W7TWrHU0oIuof9-Ul&ust=1666289437731000&source=images&cd=vfe&ved=0CA4QjhxqFwoTCNCti-Xx7PoCFQAAAAAdAAAAABAE.<br>
 
 ▶ Padrão do Projeto.<br>
   ✤ MVC
