@@ -2,14 +2,9 @@
   "ExpandedNodes": [
     "",
     "\\LocalBus",
-    "\\LocalBus\\Areas\\Administrador",
-    "\\LocalBus\\Areas\\Administrador\\Controllers",
-    "\\LocalBus\\Areas\\Administrador\\Views",
-    "\\LocalBus\\Areas\\Administrador\\Views\\AdminPontos",
-    "\\LocalBus\\Areas\\Usuario",
-    "\\LocalBus\\Areas\\Usuario\\Controllers",
     "\\LocalBus\\wwwroot",
-    "\\LocalBus\\wwwroot\\css"
+    "\\LocalBus\\wwwroot\\css",
+    "\\Readme"
   ],
   "SelectedNode": "\\LocalBus\\wwwroot\\css\\admincreate.css",
   "PreviewInSolutionExplorer": false
