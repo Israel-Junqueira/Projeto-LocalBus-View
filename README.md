@@ -15,7 +15,7 @@ partida e chegada, localização e qual instituição o transporte pertence.
   ✤ AspNet Core 6.0.1
   ✤ Bootstrap  ![Bootstrap image](https://www.google.com/url?sa=i&url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3ABootstrap_logo.svg&psig=AOvVaw2_qx5W7TWrHU0oIuof9-Ul&ust=1666289437731000&source=images&cd=vfe&ved=0CA4QjhxqFwoTCNCti-Xx7PoCFQAAAAAdAAAAABAE)
 
-▶ Padrão do Projeto.
+▶ Padrão do Projeto.<\br>
   ✤ MVC
 
 ▶ Serviços usados
