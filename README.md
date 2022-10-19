@@ -30,7 +30,7 @@ partida e chegada, localização e qual instituição o transporte pertence.
   ✤ 3 Alterar a string de conecção em defaultConnection,para o seu banco de dados ou padrão.<br>
   <br>
   "Data Source=(localdb)\\mssqllocaldb;Initial Catalog = DbLocalBus;Integrated Security=True".<br>
-  ![string de conecção image](https://github.com/Israel-Junqueira/Projeto-LocalBus-View/blob/main/Readme/appsettings.png).<br>
+  ![string de conecção image](https://github.com/Israel-Junqueira/Projeto-LocalBus-View/blob/main/Readme/appsettings.png)<br>
   
   ✤ 4 No console gerenciador de Pacotes do Visual Studios, use um update-database para que crie as as tabelas no banco de dados.<br>
  ![Updatedata-base image](https://github.com/Israel-Junqueira/Projeto-LocalBus-View/blob/main/Readme/updata.png)<br>
