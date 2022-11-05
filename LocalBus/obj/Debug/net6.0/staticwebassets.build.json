@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "vSfvYt69dREECf7GMXtYYtiBj/e71mq1DcanD+0zE9E=",
+  "Hash": "+QjSgDDuyApSvdxdT82G0BrTwPR8k2zb5u0IRzdN5OI=",
   "Source": "LocalBus",
   "BasePath": "_content/LocalBus",
   "Mode": "Default",
@@ -627,6 +627,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Images\\Leyout\\Milena750x563.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\Images\\Leyout\\naile.png",
+      "SourceId": "LocalBus",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\",
+      "BasePath": "_content/LocalBus",
+      "RelativePath": "Images/Leyout/naile.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\Leyout\\naile.png"
     },
     {
       "Identity": "C:\\Users\\Usuario\\Source\\Repos\\Israel-Junqueira\\Projeto-Etec-LocalBus\\LocalBus\\wwwroot\\Images\\Leyout\\Naile750x500.jpg",

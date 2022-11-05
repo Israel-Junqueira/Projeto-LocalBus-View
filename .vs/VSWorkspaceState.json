@@ -2,10 +2,9 @@
   "ExpandedNodes": [
     "",
     "\\LocalBus",
-    "\\LocalBus\\wwwroot",
     "\\LocalBus\\wwwroot\\css",
     "\\Readme"
   ],
-  "SelectedNode": "\\LocalBus\\wwwroot\\css\\admincreate.css",
+  "SelectedNode": "\\LocalBus.sln",
   "PreviewInSolutionExplorer": false
 }
