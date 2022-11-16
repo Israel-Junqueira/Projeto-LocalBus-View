@@ -2,9 +2,8 @@
   "ExpandedNodes": [
     "",
     "\\LocalBus",
-    "\\LocalBus\\wwwroot\\css",
     "\\Readme"
   ],
-  "SelectedNode": "\\LocalBus.sln",
+  "SelectedNode": "\\LocalBus\\appsettings.json",
   "PreviewInSolutionExplorer": false
 }
