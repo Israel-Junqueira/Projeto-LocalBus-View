@@ -2,8 +2,10 @@
   "ExpandedNodes": [
     "",
     "\\LocalBus",
+    "\\LocalBus\\Views",
+    "\\LocalBus\\Views\\Shared",
     "\\Readme"
   ],
-  "SelectedNode": "\\LocalBus\\appsettings.json",
+  "SelectedNode": "\\LocalBus\\Views\\Shared\\_Layout.cshtml",
   "PreviewInSolutionExplorer": false
 }

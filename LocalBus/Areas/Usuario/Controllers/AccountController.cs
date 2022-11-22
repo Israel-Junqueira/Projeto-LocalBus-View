@@ -260,7 +260,7 @@ namespace LocalBus.Controllers
                     var confirmacaoEmail = Url.Action("ConfirmEmailAdress","Account",new {token = token ,email = registro.Email},Request.Scheme);
 
                     var email = new MimeMessage();
-                    email.From.Add(MailboxAddress.Parse("LocalBusEtec@outlook.com"));
+                    email.From.Add(MailboxAddress.Parse("LocalBusEtec2@outlook.com"));
                     email.To.Add(MailboxAddress.Parse("israelribeiro313@gmail.com"));
                     email.Subject = "BIIII BIII - Pedido de Validação Para o Usuario";
                     email.Body = new TextPart(TextFormat.Plain) { Text =$"Usuario de Nome: {registro.UserName}, Nome da escola: {registro.NomedaEscola}, " +
@@ -274,7 +274,7 @@ namespace LocalBus.Controllers
                             smtp.ServerCertificateValidationCallback = (s, c, h, e) => true;
                             smtp.Connect("smtp.office365.com", 587, SecureSocketOptions.StartTls);
 
-                            smtp.Authenticate("LocalBusEtec@outlook.com", "LocalBus123@");
+                            smtp.Authenticate("LocalBusEtec2@outlook.com", "LocalBus1234@");
                             smtp.Send(email);
                             smtp.Disconnect(true);
                         }
@@ -364,7 +364,7 @@ namespace LocalBus.Controllers
                             smtp.ServerCertificateValidationCallback = (s, c, h, e) => true;
                             smtp.Connect("smtp.office365.com", 587, SecureSocketOptions.StartTls);
 
-                            smtp.Authenticate("LocalBusEtec@outlook.com", "LocalBus123@");
+                            smtp.Authenticate("LocalBusEtec2@outlook.com", "LocalBus1234@");
                             smtp.Send(email);
                             smtp.Disconnect(true);
                         }
